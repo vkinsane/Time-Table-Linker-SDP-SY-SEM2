@@ -9,7 +9,12 @@
 #include <comdef.h> // you will need this
 
 using namespace libxl;
-
+template <class Key,											// map::key_type
+		  class T,												// map::mapped_type
+		  class Compare = std::less<Key>,						// map::key_compare
+		  class Alloc = std::allocator<std::pair<const Key, T>> // map::allocator_type
+		  >
+class map;
 namespace TimeTableLinkerProject
 {
 	using namespace std;
@@ -95,6 +100,24 @@ public
 		System::Windows::Forms::Label ^ time_label;
 
 	private:
+		System::Windows::Forms::TextBox ^ textBox3;
+
+	private:
+		System::Windows::Forms::Button ^ monday_lec2_btn;
+
+	private:
+		System::Windows::Forms::Button ^ monday_lec3_btn;
+
+	private:
+		System::Windows::Forms::Button ^ monday_lec4_btn;
+
+	private:
+		System::Windows::Forms::Button ^ monday_lec5_btn;
+
+	private:
+		System::Windows::Forms::Button ^ monday_lec6_btn;
+
+	private:
 	private:
 		System::ComponentModel::IContainer ^ components;
 
@@ -125,6 +148,12 @@ public
 			this->friday_label = (gcnew System::Windows::Forms::Label());
 			this->saturday_label = (gcnew System::Windows::Forms::Label());
 			this->time_label = (gcnew System::Windows::Forms::Label());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
+			this->monday_lec2_btn = (gcnew System::Windows::Forms::Button());
+			this->monday_lec3_btn = (gcnew System::Windows::Forms::Button());
+			this->monday_lec4_btn = (gcnew System::Windows::Forms::Button());
+			this->monday_lec5_btn = (gcnew System::Windows::Forms::Button());
+			this->monday_lec6_btn = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			//
 			// create_quick_meet_btn
@@ -202,6 +231,7 @@ public
 			this->monday_lec1_btn->Text = L"Mon Lec 1";
 			this->monday_lec1_btn->UseVisualStyleBackColor = true;
 			this->monday_lec1_btn->Visible = false;
+			this->monday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec1_btn_Click);
 			//
 			// tuesday_lec1_btn
 			//
@@ -251,17 +281,76 @@ public
 			// time_label
 			//
 			this->time_label->AutoSize = true;
-			this->time_label->Location = System::Drawing::Point(19, 84);
+			this->time_label->Location = System::Drawing::Point(22, 70);
 			this->time_label->Name = L"time_label";
 			this->time_label->Size = System::Drawing::Size(39, 17);
 			this->time_label->TabIndex = 16;
 			this->time_label->Text = L"Time";
+			//
+			// textBox3
+			//
+			this->textBox3->Location = System::Drawing::Point(557, 43);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(100, 22);
+			this->textBox3->TabIndex = 17;
+			//
+			// monday_lec2_btn
+			//
+			this->monday_lec2_btn->Location = System::Drawing::Point(281, 108);
+			this->monday_lec2_btn->Name = L"monday_lec2_btn";
+			this->monday_lec2_btn->Size = System::Drawing::Size(129, 23);
+			this->monday_lec2_btn->TabIndex = 18;
+			this->monday_lec2_btn->Text = L"Mon Lec 2";
+			this->monday_lec2_btn->UseVisualStyleBackColor = true;
+			this->monday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec2_btn_Click);
+			//
+			// monday_lec3_btn
+			//
+			this->monday_lec3_btn->Location = System::Drawing::Point(441, 108);
+			this->monday_lec3_btn->Name = L"monday_lec3_btn";
+			this->monday_lec3_btn->Size = System::Drawing::Size(129, 23);
+			this->monday_lec3_btn->TabIndex = 19;
+			this->monday_lec3_btn->Text = L"Mon Lec 3";
+			this->monday_lec3_btn->UseVisualStyleBackColor = true;
+			//
+			// monday_lec4_btn
+			//
+			this->monday_lec4_btn->Location = System::Drawing::Point(602, 108);
+			this->monday_lec4_btn->Name = L"monday_lec4_btn";
+			this->monday_lec4_btn->Size = System::Drawing::Size(129, 23);
+			this->monday_lec4_btn->TabIndex = 20;
+			this->monday_lec4_btn->Text = L"Mon Lec 4";
+			this->monday_lec4_btn->UseVisualStyleBackColor = true;
+			//
+			// monday_lec5_btn
+			//
+			this->monday_lec5_btn->Location = System::Drawing::Point(764, 108);
+			this->monday_lec5_btn->Name = L"monday_lec5_btn";
+			this->monday_lec5_btn->Size = System::Drawing::Size(129, 23);
+			this->monday_lec5_btn->TabIndex = 21;
+			this->monday_lec5_btn->Text = L"Mon Lec 5";
+			this->monday_lec5_btn->UseVisualStyleBackColor = true;
+			//
+			// monday_lec6_btn
+			//
+			this->monday_lec6_btn->Location = System::Drawing::Point(926, 108);
+			this->monday_lec6_btn->Name = L"monday_lec6_btn";
+			this->monday_lec6_btn->Size = System::Drawing::Size(129, 23);
+			this->monday_lec6_btn->TabIndex = 22;
+			this->monday_lec6_btn->Text = L"Mon Lec 6";
+			this->monday_lec6_btn->UseVisualStyleBackColor = true;
 			//
 			// Main_Ui
 			//
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(1156, 471);
+			this->Controls->Add(this->monday_lec6_btn);
+			this->Controls->Add(this->monday_lec5_btn);
+			this->Controls->Add(this->monday_lec4_btn);
+			this->Controls->Add(this->monday_lec3_btn);
+			this->Controls->Add(this->monday_lec2_btn);
+			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->time_label);
 			this->Controls->Add(this->saturday_label);
 			this->Controls->Add(this->friday_label);
@@ -287,6 +376,10 @@ public
 		System::String ^ global_file_path;
 		int monday_row;
 		int monday_col;
+		int string_row;
+		int string_col;
+		System::String ^ monday_lec1_url;
+		System::String ^ monday_lec2_url;
 		void find_monday(Sheet *sheet)
 		{
 			//Find Monday
@@ -317,28 +410,86 @@ public
 				}
 			}
 		};
-		void display_buttons(Sheet *sheet)
-		{
-			for (int row = monday_row; row < sheet->lastRow(); ++row)
-			{
-				for (int col = monday_col + 1; col < sheet->lastCol(); ++col)
-				{
-					 
-					const wchar_t *monday_lec1_string = sheet->readStr(monday_row, monday_col + 1);
-					wstring lec1(monday_lec1_string);
-					string lec1_str(lec1.begin(), lec1.end());
 
-					//button1->Visible = true;
-					//wstring lecture_wstring_type(lecture_string);
-					//string lecture_string_type((*lecture_string).begin(), lecture_string.end());
-					//System::Windows::Forms::Button^ monday_lec1_btn;
-					//msclr::interop::marshal_as<System::Windows::Forms::Button^>("monday_lec1_btn")->Visible = true;
-					//monday_lec1_btn->Text = msclr::interop::marshal_as<wstring>(lecture_string);
-					monday_lec1_btn->Visible = true;
-					monday_lec1_btn->Text = "";
-					monday_lec1_btn->Text = monday_lec1_btn->Text + msclr::interop::marshal_as<System::String ^>(lec1_str);
+		void find_string(Sheet *sheet, wstring toFind)
+		{
+			textBox3->Text = msclr::interop::marshal_as<System::String ^>(toFind);
+			for (int row = monday_row + 7; row < sheet->lastRow(); ++row)
+			{
+				for (int col = monday_col; col < sheet->lastCol(); ++col)
+				{
+					CellType cellType = sheet->cellType(row, col);
+
+					//if (sheet->isFormula(row, col))
+					if (cellType == CELLTYPE_STRING)
+					{
+						//const wchar_t *s = sheet->readFormula(row, col);
+						//std::wcout << (s ? s : L"null") << " [formula]";
+						std::wstring str(toFind);
+						const wchar_t *szStr = str.c_str();
+						const wchar_t *s = sheet->readStr(row, col);
+
+						if (*s == *szStr)
+						{
+							string_row = row;
+							string_col = col;
+							//std::cout<< "[row = " << row << ",column" << col << "]";
+						}
+						//std::wcout << (s ? s : L"null") << " [string]";
+					}
+					//std::wcout << std::endl;
 				}
 			}
+		};
+
+		void display_buttons(Sheet *sheet)
+		{
+			/*for (int row = monday_row; row < sheet->lastRow(); ++row)
+			{
+				for (int col = monday_col + 1; col < sheet->lastCol(); ++col)
+				{*/
+
+			//Monday Lec1
+			int row, col;
+			row = monday_row;
+			col = monday_col + 1;
+			const wchar_t *monday_lec1_lec_string = sheet->readStr(row, col);
+			wstring monday_lec1_lec(monday_lec1_lec_string);
+			string monday_lec1_lec_str(monday_lec1_lec.begin(), monday_lec1_lec.end());
+
+			monday_lec1_btn->Visible = true;
+			monday_lec1_btn->Text = "";
+			monday_lec1_btn->Text = monday_lec1_btn->Text + msclr::interop::marshal_as<System::String ^>(monday_lec1_lec_str);
+			find_string(sheet, monday_lec1_lec);
+			const wchar_t *monday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
+			wstring monday_lec1_url_raw_2(monday_lec1_url_raw);
+			string monday_lec1_url_raw_3(monday_lec1_url_raw_2.begin(), monday_lec1_url_raw_2.end());
+			monday_lec1_url = monday_lec1_url + msclr::interop::marshal_as<System::String ^>(monday_lec1_url_raw_3);
+
+			//Monday Lec2
+			col = col + 1;
+			const wchar_t *lec_string = sheet->readStr(row, col);
+			wstring lec(lec_string);
+			string lec_str(lec.begin(), lec.end());
+
+			monday_lec2_btn->Visible = true;
+			monday_lec2_btn->Text = "";
+			monday_lec2_btn->Text = monday_lec2_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
+			find_string(sheet, lec);
+			const wchar_t *monday_lec2_url_raw = sheet->readStr(14, 2);
+			wstring monday_lec2_url_raw_2(monday_lec2_url_raw);
+			string monday_lec2_url_raw_3(monday_lec2_url_raw_2.begin(), monday_lec2_url_raw_2.end());
+			monday_lec2_url = monday_lec2_url + msclr::interop::marshal_as<System::String ^>(monday_lec2_url_raw_3);
+			//Monday Lec3
+			//Monday Lec4
+			//Monday Lec5
+			//Monday Lec6
+			//Monday Lec7
+			//Monday Lec8
+			//Monday Lec9
+
+			/*}
+			}*/
 		}
 		void read_file(System::String ^ file_path)
 		{
@@ -378,7 +529,7 @@ public
 			System::String ^ filename;
 			//openFileDialog1->Filter = "Text File|*.txt|Word Doc|*.doc|Excel Sheet|*.xlsx";
 			openFileDialog1->Filter = "Excel Sheet|*.xlsx";
-			openFileDialog1->InitialDirectory = "C:\\";
+			openFileDialog1->InitialDirectory = "C:\\Users\\abhis\\Desktop\\SDP_Works\\Time_Table_Linker_Project\\My_Folder";
 			openFileDialog1->Title = "Open Excel Files";
 			openFileDialog1->ShowDialog();
 			filename = openFileDialog1->FileName;
@@ -395,6 +546,22 @@ public
 		{
 			read_file(global_file_path);
 			//textBox2->Text = global_file_path;
+		}
+
+	private:
+		System::Void monday_lec1_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ monday_lec1_url_secondary = "" + monday_lec1_url;
+			std::string monday_lec1_final_url = msclr::interop::marshal_as<std::string>(monday_lec1_url_secondary);
+			system(("start " + monday_lec1_final_url).c_str());
+		}
+
+	private:
+		System::Void monday_lec2_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ monday_lec2_url_secondary = "" + monday_lec2_url;
+			std::string monday_lec2_final_url = msclr::interop::marshal_as<std::string>(monday_lec2_url_secondary);
+			system(("start " + monday_lec2_final_url).c_str());
 		}
 	};
 }
