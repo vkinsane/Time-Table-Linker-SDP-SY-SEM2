@@ -116,7 +116,14 @@ public
 
 	private:
 		System::Windows::Forms::Button ^ monday_lec6_btn;
-	private: System::Windows::Forms::Button^ friday_lec1_btn;
+
+	private:
+		System::Windows::Forms::Button ^ friday_lec1_btn;
+
+	private:
+		System::Windows::Forms::Button ^ friday_lec2_btn;
+
+	private: System::Windows::Forms::Panel^ panel1;
 
 	private:
 	private:
@@ -134,6 +141,7 @@ public
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Main_Ui::typeid));
 			this->create_quick_meet_btn = (gcnew System::Windows::Forms::Button());
 			this->choose_excel_file_btn = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
@@ -156,6 +164,8 @@ public
 			this->monday_lec5_btn = (gcnew System::Windows::Forms::Button());
 			this->monday_lec6_btn = (gcnew System::Windows::Forms::Button());
 			this->friday_lec1_btn = (gcnew System::Windows::Forms::Button());
+			this->friday_lec2_btn = (gcnew System::Windows::Forms::Button());
+			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->SuspendLayout();
 			// 
 			// create_quick_meet_btn
@@ -170,20 +180,30 @@ public
 			// 
 			// choose_excel_file_btn
 			// 
-			this->choose_excel_file_btn->Location = System::Drawing::Point(441, 435);
+			this->choose_excel_file_btn->BackColor = System::Drawing::Color::Transparent;
+			this->choose_excel_file_btn->FlatAppearance->BorderColor = System::Drawing::Color::Black;
+			this->choose_excel_file_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Gray;
+			this->choose_excel_file_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->choose_excel_file_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->choose_excel_file_btn->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->choose_excel_file_btn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"choose_excel_file_btn.Image")));
+			this->choose_excel_file_btn->Location = System::Drawing::Point(269, 412);
 			this->choose_excel_file_btn->Name = L"choose_excel_file_btn";
-			this->choose_excel_file_btn->Size = System::Drawing::Size(205, 23);
+			this->choose_excel_file_btn->Size = System::Drawing::Size(200, 47);
 			this->choose_excel_file_btn->TabIndex = 1;
 			this->choose_excel_file_btn->Text = L"Choose Excel File";
-			this->choose_excel_file_btn->UseVisualStyleBackColor = true;
+			this->choose_excel_file_btn->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
+			this->choose_excel_file_btn->UseVisualStyleBackColor = false;
 			this->choose_excel_file_btn->Click += gcnew System::EventHandler(this, &Main_Ui::choose_excel_file_btn_Click);
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(15, 436);
+			this->textBox1->Location = System::Drawing::Point(12, 424);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(408, 22);
+			this->textBox1->Size = System::Drawing::Size(251, 22);
 			this->textBox1->TabIndex = 2;
+			this->textBox1->Text = L"File Path...";
 			// 
 			// openFileDialog1
 			// 
@@ -191,17 +211,24 @@ public
 			// 
 			// read_file_btn
 			// 
-			this->read_file_btn->Location = System::Drawing::Point(1039, 436);
+			this->read_file_btn->BackColor = System::Drawing::Color::Transparent;
+			this->read_file_btn->FlatAppearance->BorderColor = System::Drawing::Color::Black;
+			this->read_file_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->read_file_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Gray;
+			this->read_file_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->read_file_btn->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
+			this->read_file_btn->Location = System::Drawing::Point(1019, 424);
 			this->read_file_btn->Name = L"read_file_btn";
-			this->read_file_btn->Size = System::Drawing::Size(105, 23);
+			this->read_file_btn->Size = System::Drawing::Size(105, 35);
 			this->read_file_btn->TabIndex = 3;
 			this->read_file_btn->Text = L"Read File";
-			this->read_file_btn->UseVisualStyleBackColor = true;
+			this->read_file_btn->UseVisualStyleBackColor = false;
 			this->read_file_btn->Click += gcnew System::EventHandler(this, &Main_Ui::read_file_btn_Click);
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(666, 435);
+			this->textBox2->Location = System::Drawing::Point(618, 425);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(367, 22);
 			this->textBox2->TabIndex = 6;
@@ -353,11 +380,33 @@ public
 			this->friday_lec1_btn->UseVisualStyleBackColor = true;
 			this->friday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec1_btn_Click);
 			// 
+			// friday_lec2_btn
+			// 
+			this->friday_lec2_btn->Location = System::Drawing::Point(281, 285);
+			this->friday_lec2_btn->Name = L"friday_lec2_btn";
+			this->friday_lec2_btn->Size = System::Drawing::Size(129, 23);
+			this->friday_lec2_btn->TabIndex = 24;
+			this->friday_lec2_btn->Text = L"Fri Lec 2";
+			this->friday_lec2_btn->UseVisualStyleBackColor = true;
+			this->friday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec2_btn_Click);
+			// 
+			// panel1
+			// 
+			this->panel1->BackColor = System::Drawing::Color::White;
+			this->panel1->Location = System::Drawing::Point(22, 396);
+			this->panel1->Name = L"panel1";
+			this->panel1->Size = System::Drawing::Size(1080, 1);
+			this->panel1->TabIndex = 26;
+			// 
 			// Main_Ui
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(34)), static_cast<System::Int32>(static_cast<System::Byte>(36)),
+				static_cast<System::Int32>(static_cast<System::Byte>(49)));
 			this->ClientSize = System::Drawing::Size(1156, 471);
+			this->Controls->Add(this->panel1);
+			this->Controls->Add(this->friday_lec2_btn);
 			this->Controls->Add(this->friday_lec1_btn);
 			this->Controls->Add(this->monday_lec6_btn);
 			this->Controls->Add(this->monday_lec5_btn);
@@ -381,6 +430,7 @@ public
 			this->Controls->Add(this->create_quick_meet_btn);
 			this->Name = L"Main_Ui";
 			this->Text = L"Main_Ui";
+			this->Load += gcnew System::EventHandler(this, &Main_Ui::Main_Ui_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -388,16 +438,18 @@ public
 #pragma endregion
 
 	private:
-		System::String ^ global_file_path;
+		System::String ^ global_file_path = L"";
 		int monday_row;
 		int monday_col;
 		int string_row;
 		int string_col;
+		CellType cellType;
 		System::String ^ monday_lec1_url;
 		System::String ^ monday_lec2_url;
 		System::String ^ tuesday_lec1_url;
 		System::String ^ friday_lec1_url;
-		
+		System::String ^ friday_lec2_url;
+
 		void find_monday(Sheet *sheet)
 		{
 			//Find Monday
@@ -428,7 +480,7 @@ public
 				}
 			}
 		};
-		
+
 		void find_string(Sheet *sheet, wstring toFind)
 		{
 			textBox3->Text = msclr::interop::marshal_as<System::String ^>(toFind);
@@ -460,38 +512,48 @@ public
 			}
 		};
 
-		void monday_buttons_maker(Sheet* sheet) {
-			//Monday Lec1
+		void monday_buttons_maker(Sheet *sheet)
+		{
+
 			int row, col;
+			//Monday Lec1
 			row = monday_row;
 			col = monday_col + 1;
-			const wchar_t* monday_lec1_lec_string = sheet->readStr(row, col);
-			wstring monday_lec1_lec(monday_lec1_lec_string);
-			string monday_lec1_lec_str(monday_lec1_lec.begin(), monday_lec1_lec.end());
+			cellType = sheet->cellType(row, col);
+			if (cellType != CELLTYPE_BLANK)
+			{
+				const wchar_t *monday_lec1_lec_string = sheet->readStr(row, col);
+				wstring monday_lec1_lec(monday_lec1_lec_string);
+				string monday_lec1_lec_str(monday_lec1_lec.begin(), monday_lec1_lec.end());
 
-			monday_lec1_btn->Visible = true;
-			monday_lec1_btn->Text = "";
-			monday_lec1_btn->Text = monday_lec1_btn->Text + msclr::interop::marshal_as<System::String^>(monday_lec1_lec_str);
-			find_string(sheet, monday_lec1_lec);
-			const wchar_t* monday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
-			wstring monday_lec1_url_raw_2(monday_lec1_url_raw);
-			string monday_lec1_url_raw_3(monday_lec1_url_raw_2.begin(), monday_lec1_url_raw_2.end());
-			monday_lec1_url = monday_lec1_url + msclr::interop::marshal_as<System::String^>(monday_lec1_url_raw_3);
+				monday_lec1_btn->Visible = true;
+				monday_lec1_btn->Text = "";
+				monday_lec1_btn->Text = monday_lec1_btn->Text + msclr::interop::marshal_as<System::String ^>(monday_lec1_lec_str);
+				find_string(sheet, monday_lec1_lec);
+				const wchar_t *monday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
+				wstring monday_lec1_url_raw_2(monday_lec1_url_raw);
+				string monday_lec1_url_raw_3(monday_lec1_url_raw_2.begin(), monday_lec1_url_raw_2.end());
+				monday_lec1_url = monday_lec1_url + msclr::interop::marshal_as<System::String ^>(monday_lec1_url_raw_3);
+			}
 
 			//Monday Lec2
 			col = col + 1;
-			const wchar_t* lec_string = sheet->readStr(row, col);
-			wstring lec(lec_string);
-			string lec_str(lec.begin(), lec.end());
+			cellType = sheet->cellType(row, col);
+			if (cellType != CELLTYPE_BLANK)
+			{
+				const wchar_t *lec_string = sheet->readStr(row, col);
+				wstring lec(lec_string);
+				string lec_str(lec.begin(), lec.end());
 
-			monday_lec2_btn->Visible = true;
-			monday_lec2_btn->Text = "";
-			monday_lec2_btn->Text = monday_lec2_btn->Text + msclr::interop::marshal_as<System::String^>(lec_str);
-			find_string(sheet, lec);
-			const wchar_t* monday_lec2_url_raw = sheet->readStr(14, 2);
-			wstring monday_lec2_url_raw_2(monday_lec2_url_raw);
-			string monday_lec2_url_raw_3(monday_lec2_url_raw_2.begin(), monday_lec2_url_raw_2.end());
-			monday_lec2_url = monday_lec2_url + msclr::interop::marshal_as<System::String^>(monday_lec2_url_raw_3);
+				monday_lec2_btn->Visible = true;
+				monday_lec2_btn->Text = "";
+				monday_lec2_btn->Text = monday_lec2_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
+				find_string(sheet, lec);
+				const wchar_t *monday_lec2_url_raw = sheet->readStr(14, 2);
+				wstring monday_lec2_url_raw_2(monday_lec2_url_raw);
+				string monday_lec2_url_raw_3(monday_lec2_url_raw_2.begin(), monday_lec2_url_raw_2.end());
+				monday_lec2_url = monday_lec2_url + msclr::interop::marshal_as<System::String ^>(monday_lec2_url_raw_3);
+			}
 			//Monday Lec3
 			//Monday Lec4
 			//Monday Lec5
@@ -501,24 +563,28 @@ public
 			//Monday Lec9
 		}
 
-		void tuesday_buttons_maker(Sheet* sheet)
+		void tuesday_buttons_maker(Sheet *sheet)
 		{
-			//tuesday Lec1
 			int row, col;
+			//tuesday Lec1
 			row = monday_row + 1;
 			col = monday_col + 1;
-			const wchar_t* tuesday_lec1_lec_string = sheet->readStr(row, col);
-			wstring tuesday_lec1_lec(tuesday_lec1_lec_string);
-			string tuesday_lec1_lec_str(tuesday_lec1_lec.begin(), tuesday_lec1_lec.end());
+			cellType = sheet->cellType(row, col);
+			if (cellType != CELLTYPE_BLANK)
+			{
+				const wchar_t *tuesday_lec1_lec_string = sheet->readStr(row, col);
+				wstring tuesday_lec1_lec(tuesday_lec1_lec_string);
+				string tuesday_lec1_lec_str(tuesday_lec1_lec.begin(), tuesday_lec1_lec.end());
 
-			tuesday_lec1_btn->Visible = true;
-			tuesday_lec1_btn->Text = "";
-			tuesday_lec1_btn->Text = tuesday_lec1_btn->Text + msclr::interop::marshal_as<System::String^>(tuesday_lec1_lec_str);
-			find_string(sheet, tuesday_lec1_lec);
-			const wchar_t* tuesday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
-			wstring tuesday_lec1_url_raw_2(tuesday_lec1_url_raw);
-			string tuesday_lec1_url_raw_3(tuesday_lec1_url_raw_2.begin(), tuesday_lec1_url_raw_2.end());
-			tuesday_lec1_url = tuesday_lec1_url + msclr::interop::marshal_as<System::String^>(tuesday_lec1_url_raw_3);
+				tuesday_lec1_btn->Visible = true;
+				tuesday_lec1_btn->Text = "";
+				tuesday_lec1_btn->Text = tuesday_lec1_btn->Text + msclr::interop::marshal_as<System::String ^>(tuesday_lec1_lec_str);
+				find_string(sheet, tuesday_lec1_lec);
+				const wchar_t *tuesday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
+				wstring tuesday_lec1_url_raw_2(tuesday_lec1_url_raw);
+				string tuesday_lec1_url_raw_3(tuesday_lec1_url_raw_2.begin(), tuesday_lec1_url_raw_2.end());
+				tuesday_lec1_url = tuesday_lec1_url + msclr::interop::marshal_as<System::String ^>(tuesday_lec1_url_raw_3);
+			}
 
 			//tuesday Lec2
 			// col = col + 1;
@@ -542,27 +608,49 @@ public
 			//tuesday Lec8
 			//tuesday Lec9
 		}
-		
-		void friday_buttons_maker(Sheet* sheet)
+
+		void friday_buttons_maker(Sheet *sheet)
 		{
 			//friday Lec1
 			int row, col;
 			row = monday_row + 4;
 			col = monday_col + 1;
-			const wchar_t* friday_lec1_lec_string = sheet->readStr(row, col);
-			wstring friday_lec1_lec(friday_lec1_lec_string);
-			string friday_lec1_lec_str(friday_lec1_lec.begin(), friday_lec1_lec.end());
+			cellType = sheet->cellType(row, col);
 
-			friday_lec1_btn->Visible = true;
-			friday_lec1_btn->Text = "";
-			friday_lec1_btn->Text = friday_lec1_btn->Text + msclr::interop::marshal_as<System::String^>(friday_lec1_lec_str);
-			find_string(sheet, friday_lec1_lec);
-			const wchar_t* friday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
-			wstring friday_lec1_url_raw_2(friday_lec1_url_raw);
-			string friday_lec1_url_raw_3(friday_lec1_url_raw_2.begin(), friday_lec1_url_raw_2.end());
-			friday_lec1_url = friday_lec1_url + msclr::interop::marshal_as<System::String^>(friday_lec1_url_raw_3);
+			if (cellType != CELLTYPE_BLANK)
+			{
+				const wchar_t *friday_lec1_lec_string = sheet->readStr(row, col);
+				wstring friday_lec1_lec(friday_lec1_lec_string);
+				string friday_lec1_lec_str(friday_lec1_lec.begin(), friday_lec1_lec.end());
 
+				friday_lec1_btn->Visible = true;
+				friday_lec1_btn->Text = "";
+				friday_lec1_btn->Text = friday_lec1_btn->Text + msclr::interop::marshal_as<System::String ^>(friday_lec1_lec_str);
+				find_string(sheet, friday_lec1_lec);
+				const wchar_t *friday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
+				wstring friday_lec1_url_raw_2(friday_lec1_url_raw);
+				string friday_lec1_url_raw_3(friday_lec1_url_raw_2.begin(), friday_lec1_url_raw_2.end());
+				friday_lec1_url = friday_lec1_url + msclr::interop::marshal_as<System::String ^>(friday_lec1_url_raw_3);
+			}
 			//friday Lec2
+			col = col + 1;
+			cellType = sheet->cellType(row, col);
+
+			if (cellType != CELLTYPE_BLANK)
+			{
+				const wchar_t *friday_lec2_lec_string = sheet->readStr(row, col);
+				wstring friday_lec2_lec(friday_lec2_lec_string);
+				string friday_lec2_lec_str(friday_lec2_lec.begin(), friday_lec2_lec.end());
+
+				friday_lec2_btn->Visible = true;
+				friday_lec2_btn->Text = "";
+				friday_lec2_btn->Text = friday_lec2_btn->Text + msclr::interop::marshal_as<System::String ^>(friday_lec2_lec_str);
+				find_string(sheet, friday_lec2_lec);
+				const wchar_t *friday_lec2_url_raw = sheet->readStr(string_row, string_col + 1);
+				wstring friday_lec2_url_raw_2(friday_lec2_url_raw);
+				string friday_lec2_url_raw_3(friday_lec2_url_raw_2.begin(), friday_lec2_url_raw_2.end());
+				friday_lec2_url = friday_lec2_url + msclr::interop::marshal_as<System::String ^>(friday_lec2_url_raw_3);
+			}
 
 			//friday Lec3
 			//friday Lec4
@@ -572,7 +660,7 @@ public
 			//friday Lec8
 			//friday Lec9
 		}
-		
+
 		void display_buttons(Sheet *sheet)
 		{
 			/*for (int row = monday_row; row < sheet->lastRow(); ++row)
@@ -584,10 +672,10 @@ public
 			tuesday_buttons_maker(sheet);
 			friday_buttons_maker(sheet);
 
-
 			/*}
 			}*/
 		}
+
 		void read_file(System::String ^ file_path)
 		{
 			//String ^ to std::string
@@ -625,6 +713,7 @@ public
 		{
 			System::String ^ filename;
 			//openFileDialog1->Filter = "Text File|*.txt|Word Doc|*.doc|Excel Sheet|*.xlsx";
+			openFileDialog1->FileName = "";
 			openFileDialog1->Filter = "Excel Sheet|*.xlsx";
 			openFileDialog1->InitialDirectory = "C:\\Users\\abhis\\Desktop\\SDP_Works\\Time_Table_Linker_Project\\My_Folder";
 			openFileDialog1->Title = "Open Excel Files";
@@ -636,12 +725,22 @@ public
 			global_file_path = filename;
 			//std::string converted_filename = msclr::interop::marshal_as< std::string >(filename);
 			textBox2->Text = global_file_path;
+			if (global_file_path != "") {
+				MessageBox::Show("File Imported Successfully", "Time Table Linker", MessageBoxButtons::OK, MessageBoxIcon::Information);
+			}
+			
 		}
 
 	private:
 		System::Void read_file_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
 		{
-			read_file(global_file_path);
+			if (global_file_path != L"")
+			{
+				read_file(global_file_path);
+			}
+			else {
+				MessageBox::Show("Please Choose File", "Time Table Linker", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			}
 			//textBox2->Text = global_file_path;
 		}
 
@@ -660,15 +759,31 @@ public
 			std::string monday_lec2_final_url = msclr::interop::marshal_as<std::string>(monday_lec2_url_secondary);
 			system(("start " + monday_lec2_final_url).c_str());
 		}
-	private: System::Void tuesday_lec1_btn_Click(System::Object^ sender, System::EventArgs^ e) {
-		System::String^ tuesday_lec1_url_secondary = "" + tuesday_lec1_url;
-		std::string tuesday_lec1_final_url = msclr::interop::marshal_as<std::string>(tuesday_lec1_url_secondary);
-		system(("start " + tuesday_lec1_final_url).c_str());
+
+	private:
+		System::Void tuesday_lec1_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ tuesday_lec1_url_secondary = "" + tuesday_lec1_url;
+			std::string tuesday_lec1_final_url = msclr::interop::marshal_as<std::string>(tuesday_lec1_url_secondary);
+			system(("start " + tuesday_lec1_final_url).c_str());
+		}
+
+	private:
+		System::Void friday_lec1_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ friday_lec1_url_secondary = "" + friday_lec1_url;
+			std::string friday_lec1_final_url = msclr::interop::marshal_as<std::string>(friday_lec1_url_secondary);
+			system(("start " + friday_lec1_final_url).c_str());
+		}
+
+	private:
+		System::Void friday_lec2_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ friday_lec2_url_secondary = "" + friday_lec2_url;
+			std::string friday_lec2_final_url = msclr::interop::marshal_as<std::string>(friday_lec2_url_secondary);
+			system(("start " + friday_lec2_final_url).c_str());
+		}
+	private: System::Void Main_Ui_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
-private: System::Void friday_lec1_btn_Click(System::Object^ sender, System::EventArgs^ e) {
-	System::String^ friday_lec1_url_secondary = "" + friday_lec1_url;
-	std::string friday_lec1_final_url = msclr::interop::marshal_as<std::string>(friday_lec1_url_secondary);
-	system(("start " + friday_lec1_final_url).c_str());
-}
 };
 }
