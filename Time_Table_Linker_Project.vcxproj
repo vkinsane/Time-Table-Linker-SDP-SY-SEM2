@@ -137,6 +137,9 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="$this.BackgroundImage.jpg" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
     <Import Project="packages\Aspose.Cells.Cpp.21.5.0\build\native\Aspose.Cells.Cpp.targets" Condition="Exists('packages\Aspose.Cells.Cpp.21.5.0\build\native\Aspose.Cells.Cpp.targets')" />
