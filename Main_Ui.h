@@ -29,7 +29,7 @@ public
 		Main_Ui(void)
 		{
 			InitializeComponent();
-			//read_previous_file();
+			read_previous_file();
 			//
 			//TODO: Add the constructor code here
 			//
@@ -2106,14 +2106,17 @@ public
 			this->PerformLayout();
 		}
 #pragma endregion
-
+		//Initializations
 	private:
 		System::String ^ global_file_path = L"";
 		int monday_row;
 		int monday_col;
 		int string_row;
 		int string_col;
+		int links_table_start_row;
+		int links_table_start_col;
 		CellType cellType;
+		System::String ^ system_string_up_arrow;
 		System::String ^ monday_lec1_url, ^monday_lec2_url, ^monday_lec3_url, ^monday_lec4_url, ^monday_lec5_url, ^monday_lec6_url, ^monday_lec7_url, ^monday_lec8_url, ^monday_lec9_url;
 		System::String ^ tuesday_lec1_url, ^tuesday_lec2_url, ^tuesday_lec3_url, ^tuesday_lec4_url, ^tuesday_lec5_url, ^tuesday_lec6_url, ^tuesday_lec7_url, ^tuesday_lec8_url, ^tuesday_lec9_url;
 		System::String ^ wednesday_lec1_url, ^wednesday_lec2_url, ^wednesday_lec3_url, ^wednesday_lec4_url, ^wednesday_lec5_url, ^wednesday_lec6_url, ^wednesday_lec7_url, ^wednesday_lec8_url, ^wednesday_lec9_url;
@@ -2121,22 +2124,105 @@ public
 		System::String ^ friday_lec1_url, ^friday_lec2_url, ^friday_lec3_url, ^friday_lec4_url, ^friday_lec5_url, ^friday_lec6_url, ^friday_lec7_url, ^friday_lec8_url, ^friday_lec9_url;
 		System::String ^ saturday_lec1_url, ^saturday_lec2_url, ^saturday_lec3_url, ^saturday_lec4_url, ^saturday_lec5_url, ^saturday_lec6_url, ^saturday_lec7_url, ^saturday_lec8_url, ^saturday_lec9_url;
 
-		string wchar_t_to_string(const wchar_t *toConvert)
+		System::String ^ links_modifier(const wchar_t *cell_string_data)
+		{
+			wstring cell_string_data_wide(cell_string_data);
+			string cell_string_data_string(cell_string_data_wide.begin(), cell_string_data_wide.end());
+			system_string_up_arrow = system_string_up_arrow + msclr::interop::marshal_as<System::String ^>(cell_string_data_string);
+			return system_string_up_arrow;
+		}
+
+			void find_links_table(Sheet *sheet, wstring toFind)
+		{
+			for (int row = sheet->firstRow(); row <= sheet->lastRow(); ++row)
+			{
+				for (int col = sheet->firstCol(); col < sheet->lastCol(); ++col)
+				{
+					/*cin >> x;
+            cout << row << col;*/
+					CellType cellType = sheet->cellType(row, col);
+					//std::wcout << "(" << row << ", " << col << ") = ";
+					if (cellType == CELLTYPE_STRING)
+					{
+						//const wchar_t *s = sheet->readFormula(row, col);
+						//std::wcout << (s ? s : L"null") << " [formula]";
+						std::wstring str(toFind);
+						const wchar_t *szStr = str.c_str();
+						const wchar_t *s = sheet->readStr(row, col);
+
+						wstring ws1(s);
+						string str1(ws1.begin(), ws1.end());
+
+						wstring ws2(szStr);
+						string str2(ws2.begin(), ws2.end());
+
+						// fstream my_file;
+						// my_file.open("error_logs.txt", ios::out);
+						// if (my_file)
+						// {
+						// 	my_file << *s + *(s + 1);
+						// 	my_file.close();
+						// }
+						if (str1 == str2)
+						{
+							links_table_start_row = row;
+							links_table_start_col = col;
+							std::cout << "[row = " << row << ",column" << col << "]";
+							return;
+						}
+						//std::wcout << (s ? s : L"null") << " [string]";
+					}
+				}
+			}
+		}
+
+		void find_strings_in_links_table(Sheet *sheet, wstring toFind)
+		{
+			for (int row = links_table_start_row; row <= sheet->lastRow(); ++row)
+			{
+				for (int col = links_table_start_col; col < sheet->lastCol(); ++col)
+				{
+					CellType cellType = sheet->cellType(row, col);
+					if (cellType == CELLTYPE_STRING)
+					{
+						std::wstring str(toFind);
+						const wchar_t *szStr = str.c_str();
+						const wchar_t *s = sheet->readStr(row, col);
+
+						wstring ws1(s);
+						string str1(ws1.begin(), ws1.end());
+
+						wstring ws2(szStr);
+						string str2(ws2.begin(), ws2.end());
+						if (str1 == str2)
+						{
+							string_row = row;
+							string_col = col;
+
+							std::cout << "[row = " << row << ",column" << col << "]";
+							return;
+						}
+					}
+				}
+			}
+		}
+
+		string wchar_t_ptr_to_string(const wchar_t *toConvert)
 		{
 			wstring wide_string(toConvert);
 			string converted(wide_string.begin(), wide_string.end());
 			return converted;
 		}
-		wstring wchar_t_to_wstring(const wchar_t *toConvert)
+		wstring wchar_t_ptr_to_wstring(const wchar_t *toConvert)
 		{
 			wstring converted_wide_string(toConvert);
 			return converted_wide_string;
 		}
-		void button_maker(System::Windows::Forms::Button ^ btn, const wchar_t *lec_str)
+		void button_modifier(System::Windows::Forms::Button ^ btn, const wchar_t *lec_str)
 		{
 			btn->Visible = true;
 			btn->Text = "";
-			btn->Text = btn->Text + msclr::interop::marshal_as<System::String ^>(wchar_t_to_string(lec_str));
+			btn->Text = btn->Text + msclr::interop::marshal_as<System::String ^>(wchar_t_ptr_to_string(lec_str));
 		}
 		void replaceAll(std::string &str, const std::string &from, const std::string &to)
 		{
@@ -2206,9 +2292,9 @@ public
 		void find_string(Sheet *sheet, wstring toFind)
 		{
 			//textBox3->Text = msclr::interop::marshal_as<System::String ^>(toFind);
-			for (int row = monday_row + 7; row < sheet->lastRow(); ++row)
+			for (int row = links_table_start_row; row < sheet->lastRow(); ++row)
 			{
-				for (int col = monday_col; col < sheet->lastCol(); ++col)
+				for (int col = links_table_start_col; col < sheet->lastCol(); ++col)
 				{
 					CellType cellType = sheet->cellType(row, col);
 
@@ -2350,21 +2436,28 @@ public
 			//Monday Lec1
 			col = monday_col + 1;
 			cellType = sheet->cellType(row, col);
+
 			if (cellType != CELLTYPE_BLANK)
 			{
-				button_maker(monday_lec1_btn, sheet->readStr(row, col));
-				// 	const wchar_t *monday_lec1_lec_string = sheet->readStr(row, col);
-				// wstring monday_lec1_lec(monday_lec1_lec_string);
-				// string monday_lec1_lec_str(monday_lec1_lec.begin(), monday_lec1_lec.end());
+				button_modifier(monday_lec1_btn, sheet->readStr(row, col));
 
-				// monday_lec1_btn->Visible = true;
-				// monday_lec1_btn->Text = "";
-				// monday_lec1_btn->Text = monday_lec1_btn->Text + msclr::interop::marshal_as<System::String ^>(monday_lec1_lec_str);
-				// find_string(sheet, monday_lec1_lec);
-				// const wchar_t *monday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring monday_lec1_url_raw_2(monday_lec1_url_raw);
-				// string monday_lec1_url_raw_3(monday_lec1_url_raw_2.begin(), monday_lec1_url_raw_2.end());
-				// monday_lec1_url = monday_lec1_url + msclr::interop::marshal_as<System::String ^>(monday_lec1_url_raw_3);
+				//find_string(sheet, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, L"AAB DS");
+
+				const wchar_t *monday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
+				wstring monday_lec1_url_raw_2(monday_lec1_url_raw);
+				string monday_lec1_url_raw_3(monday_lec1_url_raw_2.begin(), monday_lec1_url_raw_2.end());
+
+				monday_lec1_url = monday_lec1_url + msclr::interop::marshal_as<System::String ^>(monday_lec1_url_raw_3);
+
+				//std::string string_in_file = msclr::interop::marshal_as<std::string>(monday_lec1_url_raw_3);
+				fstream my_file;
+				my_file.open("log_file.txt", ios::out);
+				if (my_file)
+				{
+					my_file << monday_lec1_url_raw_3 << "  " << string_row << "  " << string_col;
+					my_file.close();
+				}
 			}
 
 			//Monday Lec2
@@ -2379,11 +2472,11 @@ public
 				monday_lec2_btn->Visible = true;
 				monday_lec2_btn->Text = "";
 				monday_lec2_btn->Text = monday_lec2_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				find_string(sheet, lec);
-				const wchar_t *monday_lec2_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring monday_lec2_url_raw_2(monday_lec2_url_raw);
-				string monday_lec2_url_raw_3(monday_lec2_url_raw_2.begin(), monday_lec2_url_raw_2.end());
-				monday_lec2_url = monday_lec2_url + msclr::interop::marshal_as<System::String ^>(monday_lec2_url_raw_3);
+				// find_string(sheet, lec);
+				// const wchar_t *monday_lec2_url_raw = sheet->readStr(string_row, string_col + 1);
+				// wstring monday_lec2_url_raw_2(monday_lec2_url_raw);
+				// string monday_lec2_url_raw_3(monday_lec2_url_raw_2.begin(), monday_lec2_url_raw_2.end());
+				// monday_lec2_url = monday_lec2_url + msclr::interop::marshal_as<System::String ^>(monday_lec2_url_raw_3);
 			}
 			//Monday Lec3
 			col = col + 1;
@@ -2397,11 +2490,11 @@ public
 				monday_lec3_btn->Visible = true;
 				monday_lec3_btn->Text = "";
 				monday_lec3_btn->Text = monday_lec3_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				find_string(sheet, lec);
-				const wchar_t *monday_lec3_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring monday_lec3_url_raw_2(monday_lec3_url_raw);
-				string monday_lec3_url_raw_3(monday_lec3_url_raw_2.begin(), monday_lec3_url_raw_2.end());
-				monday_lec3_url = monday_lec3_url + msclr::interop::marshal_as<System::String ^>(monday_lec3_url_raw_3);
+				// find_string(sheet, lec);
+				// const wchar_t *monday_lec3_url_raw = sheet->readStr(string_row, string_col + 1);
+				// wstring monday_lec3_url_raw_2(monday_lec3_url_raw);
+				// string monday_lec3_url_raw_3(monday_lec3_url_raw_2.begin(), monday_lec3_url_raw_2.end());
+				// monday_lec3_url = monday_lec3_url + msclr::interop::marshal_as<System::String ^>(monday_lec3_url_raw_3);
 			}
 			//Monday Lec4
 			col = col + 1;
@@ -2415,11 +2508,11 @@ public
 				monday_lec4_btn->Visible = true;
 				monday_lec4_btn->Text = "";
 				monday_lec4_btn->Text = monday_lec4_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				find_string(sheet, lec);
-				const wchar_t *monday_lec4_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring monday_lec4_url_raw_2(monday_lec4_url_raw);
-				string monday_lec4_url_raw_3(monday_lec4_url_raw_2.begin(), monday_lec4_url_raw_2.end());
-				monday_lec4_url = monday_lec4_url + msclr::interop::marshal_as<System::String ^>(monday_lec4_url_raw_3);
+				// find_string(sheet, lec);
+				// const wchar_t *monday_lec4_url_raw = sheet->readStr(string_row, string_col + 1);
+				// wstring monday_lec4_url_raw_2(monday_lec4_url_raw);
+				// string monday_lec4_url_raw_3(monday_lec4_url_raw_2.begin(), monday_lec4_url_raw_2.end());
+				// monday_lec4_url = monday_lec4_url + msclr::interop::marshal_as<System::String ^>(monday_lec4_url_raw_3);
 			}
 			//Monday Lec5
 			col = col + 1;
@@ -2433,11 +2526,11 @@ public
 				monday_lec5_btn->Visible = true;
 				monday_lec5_btn->Text = "";
 				monday_lec5_btn->Text = monday_lec5_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				find_string(sheet, lec);
-				const wchar_t *monday_lec5_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring monday_lec5_url_raw_2(monday_lec5_url_raw);
-				string monday_lec5_url_raw_3(monday_lec5_url_raw_2.begin(), monday_lec5_url_raw_2.end());
-				monday_lec5_url = monday_lec5_url + msclr::interop::marshal_as<System::String ^>(monday_lec5_url_raw_3);
+				// find_string(sheet, lec);
+				// const wchar_t *monday_lec5_url_raw = sheet->readStr(string_row, string_col + 1);
+				// wstring monday_lec5_url_raw_2(monday_lec5_url_raw);
+				// string monday_lec5_url_raw_3(monday_lec5_url_raw_2.begin(), monday_lec5_url_raw_2.end());
+				// monday_lec5_url = monday_lec5_url + msclr::interop::marshal_as<System::String ^>(monday_lec5_url_raw_3);
 			}
 			//Monday Lec6
 			col = col + 1;
@@ -2451,11 +2544,11 @@ public
 				monday_lec6_btn->Visible = true;
 				monday_lec6_btn->Text = "";
 				monday_lec6_btn->Text = monday_lec6_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				find_string(sheet, lec);
-				const wchar_t *monday_lec6_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring monday_lec6_url_raw_2(monday_lec6_url_raw);
-				string monday_lec6_url_raw_3(monday_lec6_url_raw_2.begin(), monday_lec6_url_raw_2.end());
-				monday_lec6_url = monday_lec6_url + msclr::interop::marshal_as<System::String ^>(monday_lec6_url_raw_3);
+				// find_string(sheet, lec);
+				// const wchar_t *monday_lec6_url_raw = sheet->readStr(string_row, string_col + 1);
+				// wstring monday_lec6_url_raw_2(monday_lec6_url_raw);
+				// string monday_lec6_url_raw_3(monday_lec6_url_raw_2.begin(), monday_lec6_url_raw_2.end());
+				// monday_lec6_url = monday_lec6_url + msclr::interop::marshal_as<System::String ^>(monday_lec6_url_raw_3);
 			}
 			//Monday Lec7
 			col = col + 1;
@@ -2469,11 +2562,11 @@ public
 				monday_lec7_btn->Visible = true;
 				monday_lec7_btn->Text = "";
 				monday_lec7_btn->Text = monday_lec7_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				find_string(sheet, lec);
-				const wchar_t *monday_lec7_url_raw = sheet->readStr(17, 2);
-				wstring monday_lec7_url_raw_2(monday_lec7_url_raw);
-				string monday_lec7_url_raw_3(monday_lec7_url_raw_2.begin(), monday_lec7_url_raw_2.end());
-				monday_lec7_url = monday_lec7_url + msclr::interop::marshal_as<System::String ^>(monday_lec7_url_raw_3);
+				// find_string(sheet, lec);
+				// const wchar_t *monday_lec7_url_raw = sheet->readStr(17, 2);
+				// wstring monday_lec7_url_raw_2(monday_lec7_url_raw);
+				// string monday_lec7_url_raw_3(monday_lec7_url_raw_2.begin(), monday_lec7_url_raw_2.end());
+				// monday_lec7_url = monday_lec7_url + msclr::interop::marshal_as<System::String ^>(monday_lec7_url_raw_3);
 			}
 			//Monday Lec8
 			col = col + 1;
@@ -2487,11 +2580,11 @@ public
 				monday_lec8_btn->Visible = true;
 				monday_lec8_btn->Text = "";
 				monday_lec8_btn->Text = monday_lec8_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				find_string(sheet, lec);
-				const wchar_t *monday_lec8_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring monday_lec8_url_raw_2(monday_lec8_url_raw);
-				string monday_lec8_url_raw_3(monday_lec8_url_raw_2.begin(), monday_lec8_url_raw_2.end());
-				monday_lec8_url = monday_lec8_url + msclr::interop::marshal_as<System::String ^>(monday_lec8_url_raw_3);
+				// find_string(sheet, lec);
+				// const wchar_t *monday_lec8_url_raw = sheet->readStr(string_row, string_col + 1);
+				// wstring monday_lec8_url_raw_2(monday_lec8_url_raw);
+				// string monday_lec8_url_raw_3(monday_lec8_url_raw_2.begin(), monday_lec8_url_raw_2.end());
+				// monday_lec8_url = monday_lec8_url + msclr::interop::marshal_as<System::String ^>(monday_lec8_url_raw_3);
 			}
 			//Monday Lec9
 			col = col + 1;
@@ -2505,11 +2598,11 @@ public
 				monday_lec9_btn->Visible = true;
 				monday_lec9_btn->Text = "";
 				monday_lec9_btn->Text = monday_lec9_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				find_string(sheet, lec);
-				const wchar_t *monday_lec9_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring monday_lec9_url_raw_2(monday_lec9_url_raw);
-				string monday_lec9_url_raw_3(monday_lec9_url_raw_2.begin(), monday_lec9_url_raw_2.end());
-				monday_lec9_url = monday_lec9_url + msclr::interop::marshal_as<System::String ^>(monday_lec9_url_raw_3);
+				// find_string(sheet, lec);
+				// const wchar_t *monday_lec9_url_raw = sheet->readStr(string_row, string_col + 1);
+				// wstring monday_lec9_url_raw_2(monday_lec9_url_raw);
+				// string monday_lec9_url_raw_3(monday_lec9_url_raw_2.begin(), monday_lec9_url_raw_2.end());
+				// monday_lec9_url = monday_lec9_url + msclr::interop::marshal_as<System::String ^>(monday_lec9_url_raw_3);
 			}
 		}
 
@@ -3375,12 +3468,13 @@ public
 				for (int col = monday_col + 1; col < sheet->lastCol(); ++col)
 				{*/
 			timeline_buttons_maker(sheet);
+			find_links_table(sheet, L"Links");
 			monday_buttons_maker(sheet);
-			tuesday_buttons_maker(sheet);
-			wednesday_buttons_maker(sheet);
-			thursday_buttons_maker(sheet);
-			friday_buttons_maker(sheet);
-			saturday_buttons_maker(sheet);
+			//tuesday_buttons_maker(sheet);
+			//wednesday_buttons_maker(sheet);
+			//thursday_buttons_maker(sheet);
+			//friday_buttons_maker(sheet);
+			//saturday_buttons_maker(sheet);
 
 			/*}
 			}*/
