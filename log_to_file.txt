@@ -1,0 +1,7 @@
+fstream my_file;
+				my_file.open("log_file.txt", ios::out);
+				if (my_file)
+				{
+					my_file << string_row << "  " << string_col;
+					my_file.close();
+				}

@@ -320,6 +320,9 @@ public
 		System::Windows::Forms::Button ^ friday_lec8_btn;
 
 	private:
+		System::Windows::Forms::TextBox ^ textBox3;
+
+	private:
 	private:
 		System::ComponentModel::IContainer ^ components;
 
@@ -419,6 +422,7 @@ public
 			this->friday_lec8_btn = (gcnew System::Windows::Forms::Button());
 			this->friday_lec9_btn = (gcnew System::Windows::Forms::Button());
 			this->tableLayoutPanel4 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->tableLayoutPanel3->SuspendLayout();
 			this->tableLayoutPanel5->SuspendLayout();
 			this->tableLayoutPanel6->SuspendLayout();
@@ -796,6 +800,7 @@ public
 			this->tableLayoutPanel3->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
 																								  20)));
 			this->tableLayoutPanel3->Controls->Add(this->create_quick_meet_btn, 1, 0);
+			this->tableLayoutPanel3->Controls->Add(this->textBox3, 0, 0);
 			this->tableLayoutPanel3->Location = System::Drawing::Point(20, 32);
 			this->tableLayoutPanel3->Name = L"tableLayoutPanel3";
 			this->tableLayoutPanel3->RowCount = 1;
@@ -2070,6 +2075,13 @@ public
 			this->tableLayoutPanel4->Size = System::Drawing::Size(1087, 69);
 			this->tableLayoutPanel4->TabIndex = 82;
 			//
+			// textBox3
+			//
+			this->textBox3->Location = System::Drawing::Point(3, 3);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(100, 22);
+			this->textBox3->TabIndex = 1;
+			//
 			// Main_Ui
 			//
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -2093,6 +2105,7 @@ public
 			this->Text = L"Main_Ui";
 			this->Load += gcnew System::EventHandler(this, &Main_Ui::Main_Ui_Load);
 			this->tableLayoutPanel3->ResumeLayout(false);
+			this->tableLayoutPanel3->PerformLayout();
 			this->tableLayoutPanel5->ResumeLayout(false);
 			this->tableLayoutPanel5->PerformLayout();
 			this->tableLayoutPanel6->ResumeLayout(false);
@@ -2442,22 +2455,8 @@ public
 				button_modifier(monday_lec1_btn, sheet->readStr(row, col));
 
 				//find_string(sheet, sheet->readStr(row, col));
-				find_strings_in_links_table(sheet, L"AAB DS");
-
-				const wchar_t *monday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring monday_lec1_url_raw_2(monday_lec1_url_raw);
-				string monday_lec1_url_raw_3(monday_lec1_url_raw_2.begin(), monday_lec1_url_raw_2.end());
-
-				monday_lec1_url = monday_lec1_url + msclr::interop::marshal_as<System::String ^>(monday_lec1_url_raw_3);
-
-				//std::string string_in_file = msclr::interop::marshal_as<std::string>(monday_lec1_url_raw_3);
-				fstream my_file;
-				my_file.open("log_file.txt", ios::out);
-				if (my_file)
-				{
-					my_file << monday_lec1_url_raw_3 << "  " << string_row << "  " << string_col;
-					my_file.close();
-				}
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				monday_lec1_url = monday_lec1_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
 			//Monday Lec2
@@ -2465,18 +2464,27 @@ public
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string = sheet->readStr(row, col);
-				wstring lec(lec_string);
-				string lec_str(lec.begin(), lec.end());
+				button_modifier(monday_lec2_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				monday_lec2_btn->Visible = true;
-				monday_lec2_btn->Text = "";
-				monday_lec2_btn->Text = monday_lec2_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
+				monday_lec2_url = monday_lec2_url + links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				const wchar_t *monday_lec2_url_raw = sheet->readStr(string_row, string_col + 1);
+				wstring monday_lec2_url_raw_2(monday_lec2_url_raw);
+				string monday_lec2_url_raw_3(monday_lec2_url_raw_2.begin(), monday_lec2_url_raw_2.end());
+				monday_lec2_url = "";
+				monday_lec2_url = monday_lec2_url + msclr::interop::marshal_as<System::String ^>(monday_lec2_url_raw_3);
+				textBox3->Text = monday_lec2_url;
+				wstring ws1(monday_lec2_url_raw);
+				string str1(ws1.begin(), ws1.end());
 				// find_string(sheet, lec);
-				// const wchar_t *monday_lec2_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring monday_lec2_url_raw_2(monday_lec2_url_raw);
-				// string monday_lec2_url_raw_3(monday_lec2_url_raw_2.begin(), monday_lec2_url_raw_2.end());
-				// monday_lec2_url = monday_lec2_url + msclr::interop::marshal_as<System::String ^>(monday_lec2_url_raw_3);
+				fstream my_file;
+				my_file.open("log_file.txt", ios::out);
+				if (my_file)
+				{
+					my_file << monday_lec2_url_raw_3 << " " << string_row << "  " << string_col;
+					my_file.close();
+				}
 			}
 			//Monday Lec3
 			col = col + 1;
