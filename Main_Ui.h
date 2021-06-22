@@ -359,6 +359,7 @@ public
 			this->monday_lec8_btn = (gcnew System::Windows::Forms::Button());
 			this->monday_lec9_btn = (gcnew System::Windows::Forms::Button());
 			this->tableLayoutPanel3 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->tableLayoutPanel5 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->time_8_label = (gcnew System::Windows::Forms::Label());
 			this->time_7_label = (gcnew System::Windows::Forms::Label());
@@ -422,7 +423,6 @@ public
 			this->friday_lec8_btn = (gcnew System::Windows::Forms::Button());
 			this->friday_lec9_btn = (gcnew System::Windows::Forms::Button());
 			this->tableLayoutPanel4 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->tableLayoutPanel3->SuspendLayout();
 			this->tableLayoutPanel5->SuspendLayout();
 			this->tableLayoutPanel6->SuspendLayout();
@@ -807,6 +807,13 @@ public
 			this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
 			this->tableLayoutPanel3->Size = System::Drawing::Size(1087, 60);
 			this->tableLayoutPanel3->TabIndex = 77;
+			//
+			// textBox3
+			//
+			this->textBox3->Location = System::Drawing::Point(3, 3);
+			this->textBox3->Name = L"textBox3";
+			this->textBox3->Size = System::Drawing::Size(100, 22);
+			this->textBox3->TabIndex = 1;
 			//
 			// tableLayoutPanel5
 			//
@@ -1417,6 +1424,7 @@ public
 			this->wednesday_lec1_btn->Text = L"Wed Lec 1";
 			this->wednesday_lec1_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec1_btn->Visible = false;
+			this->wednesday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec1_btn_Click);
 			//
 			// tuesday_lec3_btn
 			//
@@ -1597,6 +1605,7 @@ public
 			this->wednesday_lec2_btn->Text = L"Wed Lec 1";
 			this->wednesday_lec2_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec2_btn->Visible = false;
+			this->wednesday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec2_btn_Click);
 			//
 			// wednesday_lec3_btn
 			//
@@ -1617,6 +1626,7 @@ public
 			this->wednesday_lec3_btn->Text = L"Wed Lec 1";
 			this->wednesday_lec3_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec3_btn->Visible = false;
+			this->wednesday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec3_btn_Click);
 			//
 			// wednesday_lec4_btn
 			//
@@ -1637,6 +1647,7 @@ public
 			this->wednesday_lec4_btn->Text = L"Wed Lec 1";
 			this->wednesday_lec4_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec4_btn->Visible = false;
+			this->wednesday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec4_btn_Click);
 			//
 			// wednesday_lec5_btn
 			//
@@ -1657,6 +1668,7 @@ public
 			this->wednesday_lec5_btn->Text = L"Wed Lec 1";
 			this->wednesday_lec5_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec5_btn->Visible = false;
+			this->wednesday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec5_btn_Click);
 			//
 			// wednesday_lec6_btn
 			//
@@ -1677,6 +1689,7 @@ public
 			this->wednesday_lec6_btn->Text = L"Wed Lec 1";
 			this->wednesday_lec6_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec6_btn->Visible = false;
+			this->wednesday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec6_btn_Click);
 			//
 			// wednesday_lec7_btn
 			//
@@ -1697,6 +1710,7 @@ public
 			this->wednesday_lec7_btn->Text = L"Wed Lec 1";
 			this->wednesday_lec7_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec7_btn->Visible = false;
+			this->wednesday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec7_btn_Click);
 			//
 			// wednesday_lec8_btn
 			//
@@ -1717,6 +1731,7 @@ public
 			this->wednesday_lec8_btn->Text = L"Wed Lec 1";
 			this->wednesday_lec8_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec8_btn->Visible = false;
+			this->wednesday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec8_btn_Click);
 			//
 			// wednesday_lec9_btn
 			//
@@ -1737,6 +1752,7 @@ public
 			this->wednesday_lec9_btn->Text = L"Wed Lec 1";
 			this->wednesday_lec9_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec9_btn->Visible = false;
+			this->wednesday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec9_btn_Click);
 			//
 			// thursday_lec1_btn
 			//
@@ -2075,13 +2091,6 @@ public
 			this->tableLayoutPanel4->Size = System::Drawing::Size(1087, 69);
 			this->tableLayoutPanel4->TabIndex = 82;
 			//
-			// textBox3
-			//
-			this->textBox3->Location = System::Drawing::Point(3, 3);
-			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(100, 22);
-			this->textBox3->TabIndex = 1;
-			//
 			// Main_Ui
 			//
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
@@ -2141,6 +2150,7 @@ public
 		{
 			wstring cell_string_data_wide(cell_string_data);
 			string cell_string_data_string(cell_string_data_wide.begin(), cell_string_data_wide.end());
+			system_string_up_arrow = "";
 			system_string_up_arrow = system_string_up_arrow + msclr::interop::marshal_as<System::String ^>(cell_string_data_string);
 			return system_string_up_arrow;
 		}
@@ -2453,10 +2463,9 @@ public
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(monday_lec1_btn, sheet->readStr(row, col));
-
 				//find_string(sheet, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				monday_lec1_url = monday_lec1_url + links_modifier(sheet->readStr(string_row, string_col + 1));
+				monday_lec1_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
 			//Monday Lec2
@@ -2466,175 +2475,90 @@ public
 			{
 				button_modifier(monday_lec2_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-
-				monday_lec2_url = monday_lec2_url + links_modifier(sheet->readStr(string_row, string_col + 1));
-
-				const wchar_t *monday_lec2_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring monday_lec2_url_raw_2(monday_lec2_url_raw);
-				string monday_lec2_url_raw_3(monday_lec2_url_raw_2.begin(), monday_lec2_url_raw_2.end());
-				monday_lec2_url = "";
-				monday_lec2_url = monday_lec2_url + msclr::interop::marshal_as<System::String ^>(monday_lec2_url_raw_3);
-				textBox3->Text = monday_lec2_url;
-				wstring ws1(monday_lec2_url_raw);
-				string str1(ws1.begin(), ws1.end());
-				// find_string(sheet, lec);
-				fstream my_file;
-				my_file.open("log_file.txt", ios::out);
-				if (my_file)
-				{
-					my_file << monday_lec2_url_raw_3 << " " << string_row << "  " << string_col;
-					my_file.close();
-				}
+				monday_lec2_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+				//textBox3->Text = monday_lec2_url;
 			}
+
 			//Monday Lec3
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string = sheet->readStr(row, col);
-				wstring lec(lec_string);
-				string lec_str(lec.begin(), lec.end());
-
-				monday_lec3_btn->Visible = true;
-				monday_lec3_btn->Text = "";
-				monday_lec3_btn->Text = monday_lec3_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				// find_string(sheet, lec);
-				// const wchar_t *monday_lec3_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring monday_lec3_url_raw_2(monday_lec3_url_raw);
-				// string monday_lec3_url_raw_3(monday_lec3_url_raw_2.begin(), monday_lec3_url_raw_2.end());
-				// monday_lec3_url = monday_lec3_url + msclr::interop::marshal_as<System::String ^>(monday_lec3_url_raw_3);
+				button_modifier(monday_lec3_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				monday_lec3_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
+
 			//Monday Lec4
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string = sheet->readStr(row, col);
-				wstring lec(lec_string);
-				string lec_str(lec.begin(), lec.end());
-
-				monday_lec4_btn->Visible = true;
-				monday_lec4_btn->Text = "";
-				monday_lec4_btn->Text = monday_lec4_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				// find_string(sheet, lec);
-				// const wchar_t *monday_lec4_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring monday_lec4_url_raw_2(monday_lec4_url_raw);
-				// string monday_lec4_url_raw_3(monday_lec4_url_raw_2.begin(), monday_lec4_url_raw_2.end());
-				// monday_lec4_url = monday_lec4_url + msclr::interop::marshal_as<System::String ^>(monday_lec4_url_raw_3);
+				button_modifier(monday_lec4_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				monday_lec4_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//Monday Lec5
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string = sheet->readStr(row, col);
-				wstring lec(lec_string);
-				string lec_str(lec.begin(), lec.end());
-
-				monday_lec5_btn->Visible = true;
-				monday_lec5_btn->Text = "";
-				monday_lec5_btn->Text = monday_lec5_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				// find_string(sheet, lec);
-				// const wchar_t *monday_lec5_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring monday_lec5_url_raw_2(monday_lec5_url_raw);
-				// string monday_lec5_url_raw_3(monday_lec5_url_raw_2.begin(), monday_lec5_url_raw_2.end());
-				// monday_lec5_url = monday_lec5_url + msclr::interop::marshal_as<System::String ^>(monday_lec5_url_raw_3);
+				button_modifier(monday_lec5_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				monday_lec5_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//Monday Lec6
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string = sheet->readStr(row, col);
-				wstring lec(lec_string);
-				string lec_str(lec.begin(), lec.end());
-
-				monday_lec6_btn->Visible = true;
-				monday_lec6_btn->Text = "";
-				monday_lec6_btn->Text = monday_lec6_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				// find_string(sheet, lec);
-				// const wchar_t *monday_lec6_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring monday_lec6_url_raw_2(monday_lec6_url_raw);
-				// string monday_lec6_url_raw_3(monday_lec6_url_raw_2.begin(), monday_lec6_url_raw_2.end());
-				// monday_lec6_url = monday_lec6_url + msclr::interop::marshal_as<System::String ^>(monday_lec6_url_raw_3);
+				button_modifier(monday_lec6_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				monday_lec6_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//Monday Lec7
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string = sheet->readStr(row, col);
-				wstring lec(lec_string);
-				string lec_str(lec.begin(), lec.end());
-
-				monday_lec7_btn->Visible = true;
-				monday_lec7_btn->Text = "";
-				monday_lec7_btn->Text = monday_lec7_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				// find_string(sheet, lec);
-				// const wchar_t *monday_lec7_url_raw = sheet->readStr(17, 2);
-				// wstring monday_lec7_url_raw_2(monday_lec7_url_raw);
-				// string monday_lec7_url_raw_3(monday_lec7_url_raw_2.begin(), monday_lec7_url_raw_2.end());
-				// monday_lec7_url = monday_lec7_url + msclr::interop::marshal_as<System::String ^>(monday_lec7_url_raw_3);
+				button_modifier(monday_lec7_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				monday_lec7_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//Monday Lec8
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string = sheet->readStr(row, col);
-				wstring lec(lec_string);
-				string lec_str(lec.begin(), lec.end());
-
-				monday_lec8_btn->Visible = true;
-				monday_lec8_btn->Text = "";
-				monday_lec8_btn->Text = monday_lec8_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				// find_string(sheet, lec);
-				// const wchar_t *monday_lec8_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring monday_lec8_url_raw_2(monday_lec8_url_raw);
-				// string monday_lec8_url_raw_3(monday_lec8_url_raw_2.begin(), monday_lec8_url_raw_2.end());
-				// monday_lec8_url = monday_lec8_url + msclr::interop::marshal_as<System::String ^>(monday_lec8_url_raw_3);
+				button_modifier(monday_lec8_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				monday_lec8_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//Monday Lec9
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string = sheet->readStr(row, col);
-				wstring lec(lec_string);
-				string lec_str(lec.begin(), lec.end());
-
-				monday_lec9_btn->Visible = true;
-				monday_lec9_btn->Text = "";
-				monday_lec9_btn->Text = monday_lec9_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str);
-				// find_string(sheet, lec);
-				// const wchar_t *monday_lec9_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring monday_lec9_url_raw_2(monday_lec9_url_raw);
-				// string monday_lec9_url_raw_3(monday_lec9_url_raw_2.begin(), monday_lec9_url_raw_2.end());
-				// monday_lec9_url = monday_lec9_url + msclr::interop::marshal_as<System::String ^>(monday_lec9_url_raw_3);
+				button_modifier(monday_lec9_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				monday_lec9_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 		}
 
 		void tuesday_buttons_maker(Sheet *sheet)
 		{
 			int row, col;
-			//tuesday Lec1
 			row = monday_row + 1;
+			//tuesday Lec1
 			col = monday_col + 1;
 			cellType = sheet->cellType(row, col);
+
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *tuesday_lec1_lec_string = sheet->readStr(row, col);
-				wstring tuesday_lec1_lec(tuesday_lec1_lec_string);
-				string tuesday_lec1_lec_str(tuesday_lec1_lec.begin(), tuesday_lec1_lec.end());
-
-				tuesday_lec1_btn->Visible = true;
-				tuesday_lec1_btn->Text = "";
-				tuesday_lec1_btn->Text = tuesday_lec1_btn->Text + msclr::interop::marshal_as<System::String ^>(tuesday_lec1_lec_str);
-				find_string(sheet, tuesday_lec1_lec);
-				const wchar_t *tuesday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring tuesday_lec1_url_raw_2(tuesday_lec1_url_raw);
-				string tuesday_lec1_url_raw_3(tuesday_lec1_url_raw_2.begin(), tuesday_lec1_url_raw_2.end());
-				tuesday_lec1_url = tuesday_lec1_url + msclr::interop::marshal_as<System::String ^>(tuesday_lec1_url_raw_3);
+				button_modifier(tuesday_lec1_btn, sheet->readStr(row, col));
+				//find_string(sheet, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				tuesday_lec1_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
 			//tuesday Lec2
@@ -2642,19 +2566,10 @@ public
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-
-				const wchar_t *lec_string2 = sheet->readStr(row, col);
-				wstring lec2(lec_string2);
-				string lec_str2(lec2.begin(), lec2.end());
-
-				tuesday_lec2_btn->Visible = true;
-				tuesday_lec2_btn->Text = "";
-				tuesday_lec2_btn->Text = tuesday_lec2_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str2);
-				find_string(sheet, lec2);
-				const wchar_t *tuesday_lec2_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring tuesday_lec2_url_raw_2(tuesday_lec2_url_raw);
-				string tuesday_lec2_url_raw_3(tuesday_lec2_url_raw_2.begin(), tuesday_lec2_url_raw_2.end());
-				tuesday_lec2_url = tuesday_lec2_url + msclr::interop::marshal_as<System::String ^>(tuesday_lec2_url_raw_3);
+				button_modifier(tuesday_lec2_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				tuesday_lec2_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+				//textBox3->Text = tuesday_lec2_url;
 			}
 
 			//tuesday Lec3
@@ -2662,150 +2577,81 @@ public
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string3 = sheet->readStr(row, col);
-				wstring lec3(lec_string3);
-				string lec_str3(lec3.begin(), lec3.end());
-
-				tuesday_lec3_btn->Visible = true;
-				tuesday_lec3_btn->Text = "";
-				tuesday_lec3_btn->Text = tuesday_lec3_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str3);
-				find_string(sheet, lec3);
-				const wchar_t *tuesday_lec3_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring tuesday_lec3_url_raw_2(tuesday_lec3_url_raw);
-				string tuesday_lec3_url_raw_3(tuesday_lec3_url_raw_2.begin(), tuesday_lec3_url_raw_2.end());
-				tuesday_lec3_url = tuesday_lec3_url + msclr::interop::marshal_as<System::String ^>(tuesday_lec3_url_raw_3);
+				button_modifier(tuesday_lec3_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				tuesday_lec3_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
+
 			//tuesday Lec4
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string4 = sheet->readStr(row, col);
-				wstring lec4(lec_string4);
-				string lec_str4(lec4.begin(), lec4.end());
-
-				tuesday_lec4_btn->Visible = true;
-				tuesday_lec4_btn->Text = "";
-				tuesday_lec4_btn->Text = tuesday_lec4_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str4);
-				find_string(sheet, lec4);
-				const wchar_t *tuesday_lec4_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring tuesday_lec4_url_raw_2(tuesday_lec4_url_raw);
-				string tuesday_lec4_url_raw_3(tuesday_lec4_url_raw_2.begin(), tuesday_lec4_url_raw_2.end());
-				tuesday_lec4_url = tuesday_lec4_url + msclr::interop::marshal_as<System::String ^>(tuesday_lec4_url_raw_3);
+				button_modifier(tuesday_lec4_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				tuesday_lec4_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//tuesday Lec5
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string5 = sheet->readStr(row, col);
-				wstring lec5(lec_string5);
-				string lec_str5(lec5.begin(), lec5.end());
-
-				tuesday_lec5_btn->Visible = true;
-				tuesday_lec5_btn->Text = "";
-				tuesday_lec5_btn->Text = tuesday_lec5_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str5);
-				find_string(sheet, lec5);
-				const wchar_t *tuesday_lec5_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring tuesday_lec5_url_raw_2(tuesday_lec5_url_raw);
-				string tuesday_lec5_url_raw_3(tuesday_lec5_url_raw_2.begin(), tuesday_lec5_url_raw_2.end());
-				tuesday_lec5_url = tuesday_lec5_url + msclr::interop::marshal_as<System::String ^>(tuesday_lec5_url_raw_3);
+				button_modifier(tuesday_lec5_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				tuesday_lec5_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//tuesday Lec6
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string6 = sheet->readStr(row, col);
-				wstring lec6(lec_string6);
-				string lec_str6(lec6.begin(), lec6.end());
-
-				tuesday_lec6_btn->Visible = true;
-				tuesday_lec6_btn->Text = "";
-				tuesday_lec6_btn->Text = tuesday_lec6_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str6);
-				find_string(sheet, lec6);
-				const wchar_t *tuesday_lec6_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring tuesday_lec6_url_raw_2(tuesday_lec6_url_raw);
-				string tuesday_lec6_url_raw_3(tuesday_lec6_url_raw_2.begin(), tuesday_lec6_url_raw_2.end());
-				tuesday_lec6_url = tuesday_lec6_url + msclr::interop::marshal_as<System::String ^>(tuesday_lec6_url_raw_3);
+				button_modifier(tuesday_lec6_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				tuesday_lec6_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//tuesday Lec7
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string7 = sheet->readStr(row, col);
-				wstring lec7(lec_string7);
-				string lec_str7(lec7.begin(), lec7.end());
-
-				tuesday_lec7_btn->Visible = true;
-				tuesday_lec7_btn->Text = "";
-				tuesday_lec7_btn->Text = tuesday_lec7_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str7);
-				find_string(sheet, lec7);
-				const wchar_t *tuesday_lec7_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring tuesday_lec7_url_raw_2(tuesday_lec7_url_raw);
-				string tuesday_lec7_url_raw_3(tuesday_lec7_url_raw_2.begin(), tuesday_lec7_url_raw_2.end());
-				tuesday_lec7_url = tuesday_lec7_url + msclr::interop::marshal_as<System::String ^>(tuesday_lec7_url_raw_3);
+				button_modifier(tuesday_lec7_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				tuesday_lec7_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//tuesday Lec8
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string8 = sheet->readStr(row, col);
-				wstring lec8(lec_string8);
-				string lec_str8(lec8.begin(), lec8.end());
-
-				tuesday_lec8_btn->Visible = true;
-				tuesday_lec8_btn->Text = "";
-				tuesday_lec8_btn->Text = tuesday_lec8_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str8);
-				find_string(sheet, lec8);
-				const wchar_t *tuesday_lec8_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring tuesday_lec8_url_raw_2(tuesday_lec8_url_raw);
-				string tuesday_lec8_url_raw_3(tuesday_lec8_url_raw_2.begin(), tuesday_lec8_url_raw_2.end());
-				tuesday_lec8_url = tuesday_lec8_url + msclr::interop::marshal_as<System::String ^>(tuesday_lec8_url_raw_3);
+				button_modifier(tuesday_lec8_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				tuesday_lec8_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//tuesday Lec9
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string9 = sheet->readStr(row, col);
-				wstring lec9(lec_string9);
-				string lec_str9(lec9.begin(), lec9.end());
-
-				tuesday_lec9_btn->Visible = true;
-				tuesday_lec9_btn->Text = "";
-				tuesday_lec9_btn->Text = tuesday_lec9_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str9);
-				find_string(sheet, lec9);
-				const wchar_t *tuesday_lec9_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring tuesday_lec9_url_raw_2(tuesday_lec9_url_raw);
-				string tuesday_lec9_url_raw_3(tuesday_lec9_url_raw_2.begin(), tuesday_lec9_url_raw_2.end());
-				tuesday_lec9_url = tuesday_lec9_url + msclr::interop::marshal_as<System::String ^>(tuesday_lec9_url_raw_3);
+				button_modifier(tuesday_lec9_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				tuesday_lec9_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 		}
 
 		void wednesday_buttons_maker(Sheet *sheet)
 		{
 			int row, col;
-			//wednesday Lec1
 			row = monday_row + 2;
+			//wednesday Lec1
 			col = monday_col + 1;
 			cellType = sheet->cellType(row, col);
+
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *wednesday_lec1_lec_string = sheet->readStr(row, col);
-				wstring wednesday_lec1_lec(wednesday_lec1_lec_string);
-				string wednesday_lec1_lec_str(wednesday_lec1_lec.begin(), wednesday_lec1_lec.end());
-
-				wednesday_lec1_btn->Visible = true;
-				wednesday_lec1_btn->Text = "";
-				wednesday_lec1_btn->Text = wednesday_lec1_btn->Text + msclr::interop::marshal_as<System::String ^>(wednesday_lec1_lec_str);
-				find_string(sheet, wednesday_lec1_lec);
-				const wchar_t *wednesday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring wednesday_lec1_url_raw_2(wednesday_lec1_url_raw);
-				string wednesday_lec1_url_raw_3(wednesday_lec1_url_raw_2.begin(), wednesday_lec1_url_raw_2.end());
-				wednesday_lec1_url = wednesday_lec1_url + msclr::interop::marshal_as<System::String ^>(wednesday_lec1_url_raw_3);
+				button_modifier(wednesday_lec1_btn, sheet->readStr(row, col));
+				//find_string(sheet, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				wednesday_lec1_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
 			//wednesday Lec2
@@ -2813,19 +2659,10 @@ public
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-
-				const wchar_t *lec_string2 = sheet->readStr(row, col);
-				wstring lec2(lec_string2);
-				string lec_str2(lec2.begin(), lec2.end());
-
-				wednesday_lec2_btn->Visible = true;
-				wednesday_lec2_btn->Text = "";
-				wednesday_lec2_btn->Text = wednesday_lec2_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str2);
-				find_string(sheet, lec2);
-				const wchar_t *wednesday_lec2_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring wednesday_lec2_url_raw_2(wednesday_lec2_url_raw);
-				string wednesday_lec2_url_raw_3(wednesday_lec2_url_raw_2.begin(), wednesday_lec2_url_raw_2.end());
-				wednesday_lec2_url = wednesday_lec2_url + msclr::interop::marshal_as<System::String ^>(wednesday_lec2_url_raw_3);
+				button_modifier(wednesday_lec2_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				wednesday_lec2_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+				//textBox3->Text = wednesday_lec2_url;
 			}
 
 			//wednesday Lec3
@@ -2833,126 +2670,64 @@ public
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string3 = sheet->readStr(row, col);
-				wstring lec3(lec_string3);
-				string lec_str3(lec3.begin(), lec3.end());
-
-				wednesday_lec3_btn->Visible = true;
-				wednesday_lec3_btn->Text = "";
-				wednesday_lec3_btn->Text = wednesday_lec3_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str3);
-				find_string(sheet, lec3);
-				const wchar_t *wednesday_lec3_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring wednesday_lec3_url_raw_2(wednesday_lec3_url_raw);
-				string wednesday_lec3_url_raw_3(wednesday_lec3_url_raw_2.begin(), wednesday_lec3_url_raw_2.end());
-				wednesday_lec3_url = wednesday_lec3_url + msclr::interop::marshal_as<System::String ^>(wednesday_lec3_url_raw_3);
+				button_modifier(wednesday_lec3_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				wednesday_lec3_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
+
 			//wednesday Lec4
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string4 = sheet->readStr(row, col);
-				wstring lec4(lec_string4);
-				string lec_str4(lec4.begin(), lec4.end());
-
-				wednesday_lec4_btn->Visible = true;
-				wednesday_lec4_btn->Text = "";
-				wednesday_lec4_btn->Text = wednesday_lec4_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str4);
-				find_string(sheet, lec4);
-				const wchar_t *wednesday_lec4_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring wednesday_lec4_url_raw_2(wednesday_lec4_url_raw);
-				string wednesday_lec4_url_raw_3(wednesday_lec4_url_raw_2.begin(), wednesday_lec4_url_raw_2.end());
-				wednesday_lec4_url = wednesday_lec4_url + msclr::interop::marshal_as<System::String ^>(wednesday_lec4_url_raw_3);
+				button_modifier(wednesday_lec4_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				wednesday_lec4_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//wednesday Lec5
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string5 = sheet->readStr(row, col);
-				wstring lec5(lec_string5);
-				string lec_str5(lec5.begin(), lec5.end());
-
-				wednesday_lec5_btn->Visible = true;
-				wednesday_lec5_btn->Text = "";
-				wednesday_lec5_btn->Text = wednesday_lec5_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str5);
-				find_string(sheet, lec5);
-				const wchar_t *wednesday_lec5_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring wednesday_lec5_url_raw_2(wednesday_lec5_url_raw);
-				string wednesday_lec5_url_raw_3(wednesday_lec5_url_raw_2.begin(), wednesday_lec5_url_raw_2.end());
-				wednesday_lec5_url = wednesday_lec5_url + msclr::interop::marshal_as<System::String ^>(wednesday_lec5_url_raw_3);
+				button_modifier(wednesday_lec5_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				wednesday_lec5_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//wednesday Lec6
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string6 = sheet->readStr(row, col);
-				wstring lec6(lec_string6);
-				string lec_str6(lec6.begin(), lec6.end());
-
-				wednesday_lec6_btn->Visible = true;
-				wednesday_lec6_btn->Text = "";
-				wednesday_lec6_btn->Text = wednesday_lec6_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str6);
-				find_string(sheet, lec6);
-				const wchar_t *wednesday_lec6_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring wednesday_lec6_url_raw_2(wednesday_lec6_url_raw);
-				string wednesday_lec6_url_raw_3(wednesday_lec6_url_raw_2.begin(), wednesday_lec6_url_raw_2.end());
-				wednesday_lec6_url = wednesday_lec6_url + msclr::interop::marshal_as<System::String ^>(wednesday_lec6_url_raw_3);
+				button_modifier(wednesday_lec6_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				wednesday_lec6_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//wednesday Lec7
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string7 = sheet->readStr(row, col);
-				wstring lec7(lec_string7);
-				string lec_str7(lec7.begin(), lec7.end());
-
-				wednesday_lec7_btn->Visible = true;
-				wednesday_lec7_btn->Text = "";
-				wednesday_lec7_btn->Text = wednesday_lec7_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str7);
-				find_string(sheet, lec7);
-				const wchar_t *wednesday_lec7_url_raw = sheet->readStr(string_row, string_col + 1);
-				wstring wednesday_lec7_url_raw_2(wednesday_lec7_url_raw);
-				string wednesday_lec7_url_raw_3(wednesday_lec7_url_raw_2.begin(), wednesday_lec7_url_raw_2.end());
-				wednesday_lec7_url = wednesday_lec7_url + msclr::interop::marshal_as<System::String ^>(wednesday_lec7_url_raw_3);
+				button_modifier(wednesday_lec7_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				wednesday_lec7_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//wednesday Lec8
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string8 = sheet->readStr(row, col);
-				wstring lec8(lec_string8);
-				string lec_str8(lec8.begin(), lec8.end());
-
-				wednesday_lec8_btn->Visible = true;
-				wednesday_lec8_btn->Text = "";
-				wednesday_lec8_btn->Text = wednesday_lec8_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str8);
-				// find_string(sheet, lec8);
-				// const wchar_t *wednesday_lec8_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring wednesday_lec8_url_raw_2(wednesday_lec8_url_raw);
-				// string wednesday_lec8_url_raw_3(wednesday_lec8_url_raw_2.begin(), wednesday_lec8_url_raw_2.end());
-				// wednesday_lec8_url = wednesday_lec8_url + msclr::interop::marshal_as<System::String ^>(wednesday_lec8_url_raw_3);
+				button_modifier(wednesday_lec8_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				wednesday_lec8_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//wednesday Lec9
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string9 = sheet->readStr(row, col);
-				wstring lec9(lec_string9);
-				string lec_str9(lec9.begin(), lec9.end());
-
-				wednesday_lec9_btn->Visible = true;
-				wednesday_lec9_btn->Text = "";
-				wednesday_lec9_btn->Text = wednesday_lec9_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str9);
-				// find_string(sheet, lec9);
-				// const wchar_t *wednesday_lec9_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring wednesday_lec9_url_raw_2(wednesday_lec9_url_raw);
-				// string wednesday_lec9_url_raw_3(wednesday_lec9_url_raw_2.begin(), wednesday_lec9_url_raw_2.end());
-				// wednesday_lec9_url = wednesday_lec9_url + msclr::interop::marshal_as<System::String ^>(wednesday_lec9_url_raw_3);
+				button_modifier(wednesday_lec9_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				wednesday_lec9_url = links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 		}
 
@@ -3472,20 +3247,20 @@ public
 		void display_buttons(Sheet *sheet)
 		{
 			/*for (int row = monday_row; row < sheet->lastRow(); ++row)
-			{
-				for (int col = monday_col + 1; col < sheet->lastCol(); ++col)
-				{*/
+            {
+                for (int col = monday_col + 1; col < sheet->lastCol(); ++col)
+                {*/
 			timeline_buttons_maker(sheet);
 			find_links_table(sheet, L"Links");
 			monday_buttons_maker(sheet);
-			//tuesday_buttons_maker(sheet);
-			//wednesday_buttons_maker(sheet);
+			tuesday_buttons_maker(sheet);
+			wednesday_buttons_maker(sheet);
 			//thursday_buttons_maker(sheet);
 			//friday_buttons_maker(sheet);
 			//saturday_buttons_maker(sheet);
 
 			/*}
-			}*/
+            }*/
 		}
 
 		void read_file(System::String ^ file_path)
@@ -3707,6 +3482,78 @@ public
 			System::String ^ tuesday_lec9_url_secondary = "" + tuesday_lec9_url;
 			std::string tuesday_lec9_final_url = msclr::interop::marshal_as<std::string>(tuesday_lec9_url_secondary);
 			system(("start " + tuesday_lec9_final_url).c_str());
+		}
+
+	private:
+		System::Void wednesday_lec1_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ wednesday_lec1_url_secondary = "" + wednesday_lec1_url;
+			std::string wednesday_lec1_final_url = msclr::interop::marshal_as<std::string>(wednesday_lec1_url_secondary);
+			system(("start " + wednesday_lec1_final_url).c_str());
+		}
+
+	private:
+		System::Void wednesday_lec2_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ wednesday_lec2_url_secondary = "" + wednesday_lec2_url;
+			std::string wednesday_lec2_final_url = msclr::interop::marshal_as<std::string>(wednesday_lec2_url_secondary);
+			system(("start " + wednesday_lec2_final_url).c_str());
+		}
+
+	private:
+		System::Void wednesday_lec3_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ wednesday_lec3_url_secondary = "" + wednesday_lec3_url;
+			std::string wednesday_lec3_final_url = msclr::interop::marshal_as<std::string>(wednesday_lec3_url_secondary);
+			system(("start " + wednesday_lec3_final_url).c_str());
+		}
+
+	private:
+		System::Void wednesday_lec4_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ wednesday_lec4_url_secondary = "" + wednesday_lec4_url;
+			std::string wednesday_lec4_final_url = msclr::interop::marshal_as<std::string>(wednesday_lec4_url_secondary);
+			system(("start " + wednesday_lec4_final_url).c_str());
+		}
+
+	private:
+		System::Void wednesday_lec5_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ wednesday_lec5_url_secondary = "" + wednesday_lec5_url;
+			std::string wednesday_lec5_final_url = msclr::interop::marshal_as<std::string>(wednesday_lec5_url_secondary);
+			system(("start " + wednesday_lec5_final_url).c_str());
+		}
+
+	private:
+		System::Void wednesday_lec6_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ wednesday_lec6_url_secondary = "" + wednesday_lec6_url;
+			std::string wednesday_lec6_final_url = msclr::interop::marshal_as<std::string>(wednesday_lec6_url_secondary);
+			system(("start " + wednesday_lec6_final_url).c_str());
+		}
+
+	private:
+		System::Void wednesday_lec7_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ wednesday_lec7_url_secondary = "" + wednesday_lec7_url;
+			std::string wednesday_lec7_final_url = msclr::interop::marshal_as<std::string>(wednesday_lec7_url_secondary);
+			system(("start " + wednesday_lec7_final_url).c_str());
+		}
+
+	private:
+		System::Void wednesday_lec8_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ wednesday_lec8_url_secondary = "" + wednesday_lec8_url;
+			std::string wednesday_lec8_final_url = msclr::interop::marshal_as<std::string>(wednesday_lec8_url_secondary);
+			system(("start " + wednesday_lec8_final_url).c_str());
+		}
+
+	private:
+		System::Void wednesday_lec9_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ wednesday_lec9_url_secondary = "" + wednesday_lec9_url;
+			std::string wednesday_lec9_final_url = msclr::interop::marshal_as<std::string>(wednesday_lec9_url_secondary);
+			system(("start " + wednesday_lec9_final_url).c_str());
 		}
 
 	private:
