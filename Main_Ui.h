@@ -278,10 +278,10 @@ public
 		System::Windows::Forms::Button ^ friday_lec7_btn;
 
 	private:
-		System::Windows::Forms::Button ^ saturday_lec6_btn;
+
 
 	private:
-		System::Windows::Forms::Button ^ saturday_lec7_btn;
+
 
 	private:
 		System::Windows::Forms::Button ^ friday_lec6_btn;
@@ -296,31 +296,40 @@ public
 		System::Windows::Forms::Button ^ friday_lec4_btn;
 
 	private:
-		System::Windows::Forms::Button ^ saturday_lec3_btn;
+
 
 	private:
-		System::Windows::Forms::Button ^ saturday_lec4_btn;
+
 
 	private:
-		System::Windows::Forms::Button ^ saturday_lec1_btn;
+
 
 	private:
-		System::Windows::Forms::Button ^ saturday_lec2_btn;
+
 
 	private:
-		System::Windows::Forms::Button ^ saturday_lec5_btn;
+
 
 	private:
-		System::Windows::Forms::Button ^ saturday_lec8_btn;
+
 
 	private:
-		System::Windows::Forms::Button ^ saturday_lec9_btn;
+
 
 	private:
 		System::Windows::Forms::Button ^ friday_lec8_btn;
 
 	private:
 		System::Windows::Forms::TextBox ^ textBox3;
+private: System::Windows::Forms::Button^ saturday_lec3_btn;
+private: System::Windows::Forms::Button^ saturday_lec4_btn;
+private: System::Windows::Forms::Button^ saturday_lec1_btn;
+private: System::Windows::Forms::Button^ saturday_lec2_btn;
+private: System::Windows::Forms::Button^ saturday_lec5_btn;
+private: System::Windows::Forms::Button^ saturday_lec8_btn;
+private: System::Windows::Forms::Button^ saturday_lec9_btn;
+private: System::Windows::Forms::Button^ saturday_lec6_btn;
+private: System::Windows::Forms::Button^ saturday_lec7_btn;
 
 	private:
 	private:
@@ -338,7 +347,7 @@ public
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager ^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Main_Ui::typeid));
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Main_Ui::typeid));
 			this->create_quick_meet_btn = (gcnew System::Windows::Forms::Button());
 			this->choose_excel_file_btn = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
@@ -380,15 +389,6 @@ public
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->tableLayoutPanel2 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->saturday_lec3_btn = (gcnew System::Windows::Forms::Button());
-			this->saturday_lec4_btn = (gcnew System::Windows::Forms::Button());
-			this->saturday_lec1_btn = (gcnew System::Windows::Forms::Button());
-			this->saturday_lec2_btn = (gcnew System::Windows::Forms::Button());
-			this->saturday_lec5_btn = (gcnew System::Windows::Forms::Button());
-			this->saturday_lec8_btn = (gcnew System::Windows::Forms::Button());
-			this->saturday_lec9_btn = (gcnew System::Windows::Forms::Button());
-			this->saturday_lec6_btn = (gcnew System::Windows::Forms::Button());
-			this->saturday_lec7_btn = (gcnew System::Windows::Forms::Button());
 			this->wednesday_lec1_btn = (gcnew System::Windows::Forms::Button());
 			this->tuesday_lec3_btn = (gcnew System::Windows::Forms::Button());
 			this->tuesday_lec4_btn = (gcnew System::Windows::Forms::Button());
@@ -423,6 +423,15 @@ public
 			this->friday_lec8_btn = (gcnew System::Windows::Forms::Button());
 			this->friday_lec9_btn = (gcnew System::Windows::Forms::Button());
 			this->tableLayoutPanel4 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->saturday_lec9_btn = (gcnew System::Windows::Forms::Button());
+			this->saturday_lec8_btn = (gcnew System::Windows::Forms::Button());
+			this->saturday_lec7_btn = (gcnew System::Windows::Forms::Button());
+			this->saturday_lec6_btn = (gcnew System::Windows::Forms::Button());
+			this->saturday_lec5_btn = (gcnew System::Windows::Forms::Button());
+			this->saturday_lec4_btn = (gcnew System::Windows::Forms::Button());
+			this->saturday_lec3_btn = (gcnew System::Windows::Forms::Button());
+			this->saturday_lec2_btn = (gcnew System::Windows::Forms::Button());
+			this->saturday_lec1_btn = (gcnew System::Windows::Forms::Button());
 			this->tableLayoutPanel3->SuspendLayout();
 			this->tableLayoutPanel5->SuspendLayout();
 			this->tableLayoutPanel6->SuspendLayout();
@@ -430,19 +439,19 @@ public
 			this->tableLayoutPanel2->SuspendLayout();
 			this->tableLayoutPanel4->SuspendLayout();
 			this->SuspendLayout();
-			//
+			// 
 			// create_quick_meet_btn
-			//
+			// 
 			this->create_quick_meet_btn->BackColor = System::Drawing::Color::Transparent;
 			this->create_quick_meet_btn->FlatAppearance->BorderColor = System::Drawing::Color::Black;
 			this->create_quick_meet_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Gray;
 			this->create_quick_meet_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																											   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->create_quick_meet_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->create_quick_meet_btn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																			 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->create_quick_meet_btn->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->create_quick_meet_btn->Image = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"create_quick_meet_btn.Image")));
+			this->create_quick_meet_btn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"create_quick_meet_btn.Image")));
 			this->create_quick_meet_btn->Location = System::Drawing::Point(873, 4);
 			this->create_quick_meet_btn->Margin = System::Windows::Forms::Padding(4);
 			this->create_quick_meet_btn->Name = L"create_quick_meet_btn";
@@ -452,20 +461,20 @@ public
 			this->create_quick_meet_btn->TextImageRelation = System::Windows::Forms::TextImageRelation::TextBeforeImage;
 			this->create_quick_meet_btn->UseVisualStyleBackColor = false;
 			this->create_quick_meet_btn->Click += gcnew System::EventHandler(this, &Main_Ui::create_quick_meet_btn_Click);
-			//
+			// 
 			// choose_excel_file_btn
-			//
+			// 
 			this->choose_excel_file_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->choose_excel_file_btn->BackColor = System::Drawing::Color::Transparent;
 			this->choose_excel_file_btn->FlatAppearance->BorderColor = System::Drawing::Color::Black;
 			this->choose_excel_file_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Gray;
 			this->choose_excel_file_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																											   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->choose_excel_file_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->choose_excel_file_btn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																			 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->choose_excel_file_btn->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->choose_excel_file_btn->Image = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"choose_excel_file_btn.Image")));
+			this->choose_excel_file_btn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"choose_excel_file_btn.Image")));
 			this->choose_excel_file_btn->Location = System::Drawing::Point(384, 5);
 			this->choose_excel_file_btn->Margin = System::Windows::Forms::Padding(4);
 			this->choose_excel_file_btn->Name = L"choose_excel_file_btn";
@@ -475,13 +484,13 @@ public
 			this->choose_excel_file_btn->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
 			this->choose_excel_file_btn->UseVisualStyleBackColor = false;
 			this->choose_excel_file_btn->Click += gcnew System::EventHandler(this, &Main_Ui::choose_excel_file_btn_Click);
-			//
+			// 
 			// textBox1
-			//
+			// 
 			this->textBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->textBox1->BackColor = System::Drawing::Color::White;
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-																static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->textBox1->ForeColor = System::Drawing::Color::Black;
 			this->textBox1->Location = System::Drawing::Point(547, 18);
 			this->textBox1->Margin = System::Windows::Forms::Padding(4);
@@ -489,24 +498,24 @@ public
 			this->textBox1->Size = System::Drawing::Size(372, 32);
 			this->textBox1->TabIndex = 2;
 			this->textBox1->Text = L"File Path...";
-			//
+			// 
 			// openFileDialog1
-			//
+			// 
 			this->openFileDialog1->FileName = L"openFileDialog1";
-			//
+			// 
 			// read_file_btn
-			//
+			// 
 			this->read_file_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->read_file_btn->BackColor = System::Drawing::Color::Transparent;
 			this->read_file_btn->FlatAppearance->BorderColor = System::Drawing::Color::Black;
 			this->read_file_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::Gray;
 			this->read_file_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																									   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->read_file_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->read_file_btn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																	 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->read_file_btn->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->read_file_btn->Image = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"read_file_btn.Image")));
+			this->read_file_btn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"read_file_btn.Image")));
 			this->read_file_btn->ImageAlign = System::Drawing::ContentAlignment::MiddleRight;
 			this->read_file_btn->Location = System::Drawing::Point(927, 4);
 			this->read_file_btn->Margin = System::Windows::Forms::Padding(4);
@@ -517,13 +526,13 @@ public
 			this->read_file_btn->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
 			this->read_file_btn->UseVisualStyleBackColor = false;
 			this->read_file_btn->Click += gcnew System::EventHandler(this, &Main_Ui::read_file_btn_Click);
-			//
+			// 
 			// textBox2
-			//
+			// 
 			this->textBox2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->textBox2->BackColor = System::Drawing::Color::White;
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-																static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->textBox2->ForeColor = System::Drawing::Color::Black;
 			this->textBox2->Location = System::Drawing::Point(4, 18);
 			this->textBox2->Margin = System::Windows::Forms::Padding(4);
@@ -531,17 +540,17 @@ public
 			this->textBox2->Size = System::Drawing::Size(372, 32);
 			this->textBox2->TabIndex = 6;
 			this->textBox2->Text = L"Enter File Path...";
-			//
+			// 
 			// monday_lec1_btn
-			//
+			// 
 			this->monday_lec1_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->monday_lec1_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec1_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->monday_lec1_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																	   static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->monday_lec1_btn->ForeColor = System::Drawing::Color::White;
 			this->monday_lec1_btn->Location = System::Drawing::Point(4, 6);
 			this->monday_lec1_btn->Margin = System::Windows::Forms::Padding(4);
@@ -552,13 +561,13 @@ public
 			this->monday_lec1_btn->UseVisualStyleBackColor = false;
 			this->monday_lec1_btn->Visible = false;
 			this->monday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec1_btn_Click);
-			//
+			// 
 			// tuesday_lec1_btn
-			//
+			// 
 			this->tuesday_lec1_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->tuesday_lec1_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec1_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->tuesday_lec1_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -572,13 +581,13 @@ public
 			this->tuesday_lec1_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec1_btn->Visible = false;
 			this->tuesday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec1_btn_Click);
-			//
+			// 
 			// monday_lec2_btn
-			//
+			// 
 			this->monday_lec2_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->monday_lec2_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec2_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->monday_lec2_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -592,13 +601,13 @@ public
 			this->monday_lec2_btn->UseVisualStyleBackColor = false;
 			this->monday_lec2_btn->Visible = false;
 			this->monday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec2_btn_Click);
-			//
+			// 
 			// monday_lec3_btn
-			//
+			// 
 			this->monday_lec3_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->monday_lec3_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec3_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->monday_lec3_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -612,13 +621,13 @@ public
 			this->monday_lec3_btn->UseVisualStyleBackColor = false;
 			this->monday_lec3_btn->Visible = false;
 			this->monday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec3_btn_Click);
-			//
+			// 
 			// monday_lec4_btn
-			//
+			// 
 			this->monday_lec4_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->monday_lec4_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec4_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->monday_lec4_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -632,13 +641,13 @@ public
 			this->monday_lec4_btn->UseVisualStyleBackColor = false;
 			this->monday_lec4_btn->Visible = false;
 			this->monday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec4_btn_Click);
-			//
+			// 
 			// monday_lec5_btn
-			//
+			// 
 			this->monday_lec5_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->monday_lec5_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec5_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->monday_lec5_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -652,13 +661,13 @@ public
 			this->monday_lec5_btn->UseVisualStyleBackColor = false;
 			this->monday_lec5_btn->Visible = false;
 			this->monday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec5_btn_Click);
-			//
+			// 
 			// monday_lec6_btn
-			//
+			// 
 			this->monday_lec6_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->monday_lec6_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec6_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->monday_lec6_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -672,13 +681,13 @@ public
 			this->monday_lec6_btn->UseVisualStyleBackColor = false;
 			this->monday_lec6_btn->Visible = false;
 			this->monday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec6_btn_Click);
-			//
+			// 
 			// friday_lec1_btn
-			//
+			// 
 			this->friday_lec1_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->friday_lec1_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec1_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->friday_lec1_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -692,13 +701,13 @@ public
 			this->friday_lec1_btn->UseVisualStyleBackColor = true;
 			this->friday_lec1_btn->Visible = false;
 			this->friday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec1_btn_Click);
-			//
+			// 
 			// friday_lec2_btn
-			//
+			// 
 			this->friday_lec2_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->friday_lec2_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec2_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->friday_lec2_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -712,14 +721,14 @@ public
 			this->friday_lec2_btn->UseVisualStyleBackColor = true;
 			this->friday_lec2_btn->Visible = false;
 			this->friday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec2_btn_Click);
-			//
+			// 
 			// time_1_label
-			//
+			// 
 			this->time_1_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->time_1_label->AutoSize = true;
 			this->time_1_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_1_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-																	static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->time_1_label->Location = System::Drawing::Point(4, 2);
 			this->time_1_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_1_label->Name = L"time_1_label";
@@ -728,13 +737,13 @@ public
 			this->time_1_label->Text = L"Time Label 1";
 			this->time_1_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->time_1_label->Visible = false;
-			//
+			// 
 			// monday_lec7_btn
-			//
+			// 
 			this->monday_lec7_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->monday_lec7_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec7_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->monday_lec7_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -748,13 +757,13 @@ public
 			this->monday_lec7_btn->UseVisualStyleBackColor = false;
 			this->monday_lec7_btn->Visible = false;
 			this->monday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec7_btn_Click);
-			//
+			// 
 			// monday_lec8_btn
-			//
+			// 
 			this->monday_lec8_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->monday_lec8_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec8_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->monday_lec8_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -768,13 +777,13 @@ public
 			this->monday_lec8_btn->UseVisualStyleBackColor = false;
 			this->monday_lec8_btn->Visible = false;
 			this->monday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec8_btn_Click);
-			//
+			// 
 			// monday_lec9_btn
-			//
+			// 
 			this->monday_lec9_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->monday_lec9_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec9_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->monday_lec9_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -788,17 +797,18 @@ public
 			this->monday_lec9_btn->UseVisualStyleBackColor = false;
 			this->monday_lec9_btn->Visible = false;
 			this->monday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec9_btn_Click);
-			//
+			// 
 			// tableLayoutPanel3
-			//
-			this->tableLayoutPanel3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left) | System::Windows::Forms::AnchorStyles::Right));
+			// 
+			this->tableLayoutPanel3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->tableLayoutPanel3->AutoSize = true;
 			this->tableLayoutPanel3->BackColor = System::Drawing::Color::Transparent;
 			this->tableLayoutPanel3->ColumnCount = 2;
 			this->tableLayoutPanel3->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  80)));
+				80)));
 			this->tableLayoutPanel3->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  20)));
+				20)));
 			this->tableLayoutPanel3->Controls->Add(this->create_quick_meet_btn, 1, 0);
 			this->tableLayoutPanel3->Controls->Add(this->textBox3, 0, 0);
 			this->tableLayoutPanel3->Location = System::Drawing::Point(20, 32);
@@ -807,38 +817,40 @@ public
 			this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
 			this->tableLayoutPanel3->Size = System::Drawing::Size(1087, 60);
 			this->tableLayoutPanel3->TabIndex = 77;
-			//
+			// 
 			// textBox3
-			//
+			// 
 			this->textBox3->Location = System::Drawing::Point(3, 3);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(100, 22);
 			this->textBox3->TabIndex = 1;
-			//
+			// 
 			// tableLayoutPanel5
-			//
-			this->tableLayoutPanel5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom) | System::Windows::Forms::AnchorStyles::Left) | System::Windows::Forms::AnchorStyles::Right));
+			// 
+			this->tableLayoutPanel5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->tableLayoutPanel5->AutoSize = true;
 			this->tableLayoutPanel5->BackColor = System::Drawing::Color::Transparent;
 			this->tableLayoutPanel5->ColumnCount = 9;
 			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11111F)));
+				11.11111F)));
 			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11111F)));
+				11.11111F)));
 			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11111F)));
+				11.11111F)));
 			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11111F)));
+				11.11111F)));
 			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11111F)));
+				11.11111F)));
 			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  10.92077F)));
+				10.92077F)));
 			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.1349F)));
+				11.1349F)));
 			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11111F)));
+				11.11111F)));
 			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11111F)));
+				11.11111F)));
 			this->tableLayoutPanel5->Controls->Add(this->time_8_label, 7, 0);
 			this->tableLayoutPanel5->Controls->Add(this->time_7_label, 6, 0);
 			this->tableLayoutPanel5->Controls->Add(this->time_6_label, 5, 0);
@@ -855,14 +867,14 @@ public
 			this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
 			this->tableLayoutPanel5->Size = System::Drawing::Size(936, 45);
 			this->tableLayoutPanel5->TabIndex = 78;
-			//
+			// 
 			// time_8_label
-			//
+			// 
 			this->time_8_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->time_8_label->AutoSize = true;
 			this->time_8_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_8_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-																	static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->time_8_label->Location = System::Drawing::Point(730, 2);
 			this->time_8_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_8_label->Name = L"time_8_label";
@@ -871,14 +883,14 @@ public
 			this->time_8_label->Text = L"Time Label 8";
 			this->time_8_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->time_8_label->Visible = false;
-			//
+			// 
 			// time_7_label
-			//
+			// 
 			this->time_7_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->time_7_label->AutoSize = true;
 			this->time_7_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_7_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-																	static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->time_7_label->Location = System::Drawing::Point(626, 2);
 			this->time_7_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_7_label->Name = L"time_7_label";
@@ -887,14 +899,14 @@ public
 			this->time_7_label->Text = L"Time Label 7";
 			this->time_7_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->time_7_label->Visible = false;
-			//
+			// 
 			// time_6_label
-			//
+			// 
 			this->time_6_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->time_6_label->AutoSize = true;
 			this->time_6_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_6_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-																	static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->time_6_label->Location = System::Drawing::Point(524, 2);
 			this->time_6_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_6_label->Name = L"time_6_label";
@@ -903,14 +915,14 @@ public
 			this->time_6_label->Text = L"Time Label 6";
 			this->time_6_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->time_6_label->Visible = false;
-			//
+			// 
 			// time_5_label
-			//
+			// 
 			this->time_5_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->time_5_label->AutoSize = true;
 			this->time_5_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_5_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-																	static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->time_5_label->Location = System::Drawing::Point(420, 2);
 			this->time_5_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_5_label->Name = L"time_5_label";
@@ -919,14 +931,14 @@ public
 			this->time_5_label->Text = L"Time Label 5";
 			this->time_5_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->time_5_label->Visible = false;
-			//
+			// 
 			// time_4_label
-			//
+			// 
 			this->time_4_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->time_4_label->AutoSize = true;
 			this->time_4_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_4_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-																	static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->time_4_label->Location = System::Drawing::Point(316, 2);
 			this->time_4_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_4_label->Name = L"time_4_label";
@@ -935,14 +947,14 @@ public
 			this->time_4_label->Text = L"Time Label 4";
 			this->time_4_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->time_4_label->Visible = false;
-			//
+			// 
 			// time_3_label
-			//
+			// 
 			this->time_3_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->time_3_label->AutoSize = true;
 			this->time_3_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_3_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-																	static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->time_3_label->Location = System::Drawing::Point(212, 2);
 			this->time_3_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_3_label->Name = L"time_3_label";
@@ -951,14 +963,14 @@ public
 			this->time_3_label->Text = L"Time Label 3";
 			this->time_3_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->time_3_label->Visible = false;
-			//
+			// 
 			// time_2_label
-			//
+			// 
 			this->time_2_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->time_2_label->AutoSize = true;
 			this->time_2_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_2_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-																	static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->time_2_label->Location = System::Drawing::Point(108, 2);
 			this->time_2_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_2_label->Name = L"time_2_label";
@@ -967,14 +979,14 @@ public
 			this->time_2_label->Text = L"Time Label 2";
 			this->time_2_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->time_2_label->Visible = false;
-			//
+			// 
 			// time_9_label
-			//
+			// 
 			this->time_9_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->time_9_label->AutoSize = true;
 			this->time_9_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_9_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-																	static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->time_9_label->Location = System::Drawing::Point(834, 2);
 			this->time_9_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_9_label->Name = L"time_9_label";
@@ -983,9 +995,9 @@ public
 			this->time_9_label->Text = L"Time Label 9";
 			this->time_9_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->time_9_label->Visible = false;
-			//
+			// 
 			// label6
-			//
+			// 
 			this->label6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->label6->AutoSize = true;
 			this->label6->Location = System::Drawing::Point(212, -87);
@@ -994,9 +1006,9 @@ public
 			this->label6->TabIndex = 0;
 			this->label6->Text = L"09:00 : 10:00";
 			this->label6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			//
+			// 
 			// time_label
-			//
+			// 
 			this->time_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->time_label->AutoSize = true;
 			this->time_label->BackColor = System::Drawing::Color::Transparent;
@@ -1007,15 +1019,16 @@ public
 			this->time_label->Size = System::Drawing::Size(123, 25);
 			this->time_label->TabIndex = 16;
 			this->time_label->Text = L"Time";
-			//
+			// 
 			// tableLayoutPanel6
-			//
-			this->tableLayoutPanel6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom) | System::Windows::Forms::AnchorStyles::Left));
+			// 
+			this->tableLayoutPanel6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left));
 			this->tableLayoutPanel6->AutoSize = true;
 			this->tableLayoutPanel6->BackColor = System::Drawing::Color::Transparent;
 			this->tableLayoutPanel6->ColumnCount = 1;
 			this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  50)));
+				50)));
 			this->tableLayoutPanel6->Controls->Add(this->time_label, 0, 0);
 			this->tableLayoutPanel6->Location = System::Drawing::Point(20, 102);
 			this->tableLayoutPanel6->MaximumSize = System::Drawing::Size(131, 45);
@@ -1025,14 +1038,15 @@ public
 			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
 			this->tableLayoutPanel6->Size = System::Drawing::Size(131, 45);
 			this->tableLayoutPanel6->TabIndex = 79;
-			//
+			// 
 			// tableLayoutPanel1
-			//
-			this->tableLayoutPanel1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom) | System::Windows::Forms::AnchorStyles::Left));
+			// 
+			this->tableLayoutPanel1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left));
 			this->tableLayoutPanel1->BackColor = System::Drawing::Color::Transparent;
 			this->tableLayoutPanel1->ColumnCount = 1;
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  100)));
+				100)));
 			this->tableLayoutPanel1->Controls->Add(this->label5, 0, 5);
 			this->tableLayoutPanel1->Controls->Add(this->label1, 0, 0);
 			this->tableLayoutPanel1->Controls->Add(this->label2, 0, 1);
@@ -1052,14 +1066,14 @@ public
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 20)));
 			this->tableLayoutPanel1->Size = System::Drawing::Size(131, 407);
 			this->tableLayoutPanel1->TabIndex = 80;
-			//
+			// 
 			// label5
-			//
+			// 
 			this->label5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->label5->AutoSize = true;
 			this->label5->BackColor = System::Drawing::Color::Transparent;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->label5->Location = System::Drawing::Point(4, 357);
 			this->label5->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label5->Name = L"label5";
@@ -1067,14 +1081,14 @@ public
 			this->label5->TabIndex = 14;
 			this->label5->Text = L"Saturday";
 			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			//
+			// 
 			// label1
-			//
+			// 
 			this->label1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->label1->AutoSize = true;
 			this->label1->BackColor = System::Drawing::Color::Transparent;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->label1->Location = System::Drawing::Point(4, 19);
 			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
@@ -1082,14 +1096,14 @@ public
 			this->label1->TabIndex = 9;
 			this->label1->Text = L"Monday";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			//
+			// 
 			// label2
-			//
+			// 
 			this->label2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->label2->AutoSize = true;
 			this->label2->BackColor = System::Drawing::Color::Transparent;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->label2->Location = System::Drawing::Point(4, 86);
 			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
@@ -1097,14 +1111,14 @@ public
 			this->label2->TabIndex = 10;
 			this->label2->Text = L"Tuesday";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			//
+			// 
 			// label3
-			//
+			// 
 			this->label3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->label3->AutoSize = true;
 			this->label3->BackColor = System::Drawing::Color::Transparent;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->label3->Location = System::Drawing::Point(4, 153);
 			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
@@ -1112,14 +1126,14 @@ public
 			this->label3->TabIndex = 11;
 			this->label3->Text = L"Wednesday";
 			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			//
+			// 
 			// label4
-			//
+			// 
 			this->label4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->label4->AutoSize = true;
 			this->label4->BackColor = System::Drawing::Color::Transparent;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->label4->Location = System::Drawing::Point(4, 220);
 			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label4->Name = L"label4";
@@ -1127,14 +1141,14 @@ public
 			this->label4->TabIndex = 12;
 			this->label4->Text = L"Thursday";
 			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			//
+			// 
 			// label8
-			//
+			// 
 			this->label8->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->label8->AutoSize = true;
 			this->label8->BackColor = System::Drawing::Color::Transparent;
 			this->label8->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-															  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->label8->Location = System::Drawing::Point(4, 287);
 			this->label8->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label8->Name = L"label8";
@@ -1142,30 +1156,32 @@ public
 			this->label8->TabIndex = 13;
 			this->label8->Text = L"Friday";
 			this->label8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			//
+			// 
 			// tableLayoutPanel2
-			//
-			this->tableLayoutPanel2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom) | System::Windows::Forms::AnchorStyles::Left) | System::Windows::Forms::AnchorStyles::Right));
+			// 
+			this->tableLayoutPanel2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->tableLayoutPanel2->BackColor = System::Drawing::Color::Transparent;
 			this->tableLayoutPanel2->ColumnCount = 9;
 			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11F)));
+				11.11F)));
 			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11F)));
+				11.11F)));
 			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11F)));
+				11.11F)));
 			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11F)));
+				11.11F)));
 			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11F)));
+				11.11F)));
 			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11F)));
+				11.11F)));
 			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11F)));
+				11.11F)));
 			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.11F)));
+				11.11F)));
 			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  11.12F)));
+				11.12F)));
 			this->tableLayoutPanel2->Controls->Add(this->saturday_lec3_btn, 0, 5);
 			this->tableLayoutPanel2->Controls->Add(this->saturday_lec4_btn, 0, 5);
 			this->tableLayoutPanel2->Controls->Add(this->saturday_lec1_btn, 0, 5);
@@ -1233,188 +1249,17 @@ public
 			this->tableLayoutPanel2->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 20)));
 			this->tableLayoutPanel2->Size = System::Drawing::Size(936, 406);
 			this->tableLayoutPanel2->TabIndex = 81;
-			//
-			// saturday_lec3_btn
-			//
-			this->saturday_lec3_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->saturday_lec3_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
-			this->saturday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->saturday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->saturday_lec3_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->saturday_lec3_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
-			this->saturday_lec3_btn->ForeColor = System::Drawing::Color::White;
-			this->saturday_lec3_btn->Location = System::Drawing::Point(210, 341);
-			this->saturday_lec3_btn->Margin = System::Windows::Forms::Padding(4);
-			this->saturday_lec3_btn->Name = L"saturday_lec3_btn";
-			this->saturday_lec3_btn->Size = System::Drawing::Size(95, 58);
-			this->saturday_lec3_btn->TabIndex = 73;
-			this->saturday_lec3_btn->Text = L"Fri Lec 2";
-			this->saturday_lec3_btn->UseVisualStyleBackColor = true;
-			this->saturday_lec3_btn->Visible = false;
-			//
-			// saturday_lec4_btn
-			//
-			this->saturday_lec4_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->saturday_lec4_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
-			this->saturday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->saturday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->saturday_lec4_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->saturday_lec4_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
-			this->saturday_lec4_btn->ForeColor = System::Drawing::Color::White;
-			this->saturday_lec4_btn->Location = System::Drawing::Point(313, 341);
-			this->saturday_lec4_btn->Margin = System::Windows::Forms::Padding(4);
-			this->saturday_lec4_btn->Name = L"saturday_lec4_btn";
-			this->saturday_lec4_btn->Size = System::Drawing::Size(95, 58);
-			this->saturday_lec4_btn->TabIndex = 72;
-			this->saturday_lec4_btn->Text = L"Fri Lec 2";
-			this->saturday_lec4_btn->UseVisualStyleBackColor = true;
-			this->saturday_lec4_btn->Visible = false;
-			//
-			// saturday_lec1_btn
-			//
-			this->saturday_lec1_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->saturday_lec1_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
-			this->saturday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->saturday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->saturday_lec1_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->saturday_lec1_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
-			this->saturday_lec1_btn->ForeColor = System::Drawing::Color::White;
-			this->saturday_lec1_btn->Location = System::Drawing::Point(4, 341);
-			this->saturday_lec1_btn->Margin = System::Windows::Forms::Padding(4);
-			this->saturday_lec1_btn->Name = L"saturday_lec1_btn";
-			this->saturday_lec1_btn->Size = System::Drawing::Size(95, 58);
-			this->saturday_lec1_btn->TabIndex = 71;
-			this->saturday_lec1_btn->Text = L"Fri Lec 2";
-			this->saturday_lec1_btn->UseVisualStyleBackColor = true;
-			this->saturday_lec1_btn->Visible = false;
-			//
-			// saturday_lec2_btn
-			//
-			this->saturday_lec2_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->saturday_lec2_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
-			this->saturday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->saturday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->saturday_lec2_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->saturday_lec2_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
-			this->saturday_lec2_btn->ForeColor = System::Drawing::Color::White;
-			this->saturday_lec2_btn->Location = System::Drawing::Point(107, 341);
-			this->saturday_lec2_btn->Margin = System::Windows::Forms::Padding(4);
-			this->saturday_lec2_btn->Name = L"saturday_lec2_btn";
-			this->saturday_lec2_btn->Size = System::Drawing::Size(95, 58);
-			this->saturday_lec2_btn->TabIndex = 70;
-			this->saturday_lec2_btn->Text = L"Fri Lec 2";
-			this->saturday_lec2_btn->UseVisualStyleBackColor = true;
-			this->saturday_lec2_btn->Visible = false;
-			//
-			// saturday_lec5_btn
-			//
-			this->saturday_lec5_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->saturday_lec5_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
-			this->saturday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->saturday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->saturday_lec5_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->saturday_lec5_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
-			this->saturday_lec5_btn->ForeColor = System::Drawing::Color::White;
-			this->saturday_lec5_btn->Location = System::Drawing::Point(416, 341);
-			this->saturday_lec5_btn->Margin = System::Windows::Forms::Padding(4);
-			this->saturday_lec5_btn->Name = L"saturday_lec5_btn";
-			this->saturday_lec5_btn->Size = System::Drawing::Size(95, 58);
-			this->saturday_lec5_btn->TabIndex = 69;
-			this->saturday_lec5_btn->Text = L"Fri Lec 2";
-			this->saturday_lec5_btn->UseVisualStyleBackColor = true;
-			this->saturday_lec5_btn->Visible = false;
-			//
-			// saturday_lec8_btn
-			//
-			this->saturday_lec8_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->saturday_lec8_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
-			this->saturday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->saturday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->saturday_lec8_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->saturday_lec8_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
-			this->saturday_lec8_btn->ForeColor = System::Drawing::Color::White;
-			this->saturday_lec8_btn->Location = System::Drawing::Point(725, 341);
-			this->saturday_lec8_btn->Margin = System::Windows::Forms::Padding(4);
-			this->saturday_lec8_btn->Name = L"saturday_lec8_btn";
-			this->saturday_lec8_btn->Size = System::Drawing::Size(95, 58);
-			this->saturday_lec8_btn->TabIndex = 68;
-			this->saturday_lec8_btn->Text = L"Fri Lec 2";
-			this->saturday_lec8_btn->UseVisualStyleBackColor = true;
-			this->saturday_lec8_btn->Visible = false;
-			//
-			// saturday_lec9_btn
-			//
-			this->saturday_lec9_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->saturday_lec9_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
-			this->saturday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->saturday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->saturday_lec9_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->saturday_lec9_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
-			this->saturday_lec9_btn->ForeColor = System::Drawing::Color::White;
-			this->saturday_lec9_btn->Location = System::Drawing::Point(828, 341);
-			this->saturday_lec9_btn->Margin = System::Windows::Forms::Padding(4);
-			this->saturday_lec9_btn->Name = L"saturday_lec9_btn";
-			this->saturday_lec9_btn->Size = System::Drawing::Size(104, 58);
-			this->saturday_lec9_btn->TabIndex = 67;
-			this->saturday_lec9_btn->Text = L"Fri Lec 2";
-			this->saturday_lec9_btn->UseVisualStyleBackColor = true;
-			this->saturday_lec9_btn->Visible = false;
-			//
-			// saturday_lec6_btn
-			//
-			this->saturday_lec6_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->saturday_lec6_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
-			this->saturday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->saturday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->saturday_lec6_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->saturday_lec6_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
-			this->saturday_lec6_btn->ForeColor = System::Drawing::Color::White;
-			this->saturday_lec6_btn->Location = System::Drawing::Point(519, 341);
-			this->saturday_lec6_btn->Margin = System::Windows::Forms::Padding(4);
-			this->saturday_lec6_btn->Name = L"saturday_lec6_btn";
-			this->saturday_lec6_btn->Size = System::Drawing::Size(95, 58);
-			this->saturday_lec6_btn->TabIndex = 62;
-			this->saturday_lec6_btn->Text = L"Fri Lec 2";
-			this->saturday_lec6_btn->UseVisualStyleBackColor = true;
-			this->saturday_lec6_btn->Visible = false;
-			//
-			// saturday_lec7_btn
-			//
-			this->saturday_lec7_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->saturday_lec7_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
-			this->saturday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
-			this->saturday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->saturday_lec7_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->saturday_lec7_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
-			this->saturday_lec7_btn->ForeColor = System::Drawing::Color::White;
-			this->saturday_lec7_btn->Location = System::Drawing::Point(622, 341);
-			this->saturday_lec7_btn->Margin = System::Windows::Forms::Padding(4);
-			this->saturday_lec7_btn->Name = L"saturday_lec7_btn";
-			this->saturday_lec7_btn->Size = System::Drawing::Size(95, 58);
-			this->saturday_lec7_btn->TabIndex = 61;
-			this->saturday_lec7_btn->Text = L"Fri Lec 2";
-			this->saturday_lec7_btn->UseVisualStyleBackColor = true;
-			this->saturday_lec7_btn->Visible = false;
-			//
+			// 
 			// wednesday_lec1_btn
-			//
+			// 
 			this->wednesday_lec1_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->wednesday_lec1_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec1_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->wednesday_lec1_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->wednesday_lec1_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec1_btn->Location = System::Drawing::Point(4, 141);
 			this->wednesday_lec1_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1425,13 +1270,13 @@ public
 			this->wednesday_lec1_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec1_btn->Visible = false;
 			this->wednesday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec1_btn_Click);
-			//
+			// 
 			// tuesday_lec3_btn
-			//
+			// 
 			this->tuesday_lec3_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->tuesday_lec3_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec3_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->tuesday_lec3_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -1445,13 +1290,13 @@ public
 			this->tuesday_lec3_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec3_btn->Visible = false;
 			this->tuesday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec3_btn_Click);
-			//
+			// 
 			// tuesday_lec4_btn
-			//
+			// 
 			this->tuesday_lec4_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->tuesday_lec4_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec4_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->tuesday_lec4_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -1465,13 +1310,13 @@ public
 			this->tuesday_lec4_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec4_btn->Visible = false;
 			this->tuesday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec4_btn_Click);
-			//
+			// 
 			// tuesday_lec5_btn
-			//
+			// 
 			this->tuesday_lec5_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->tuesday_lec5_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec5_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->tuesday_lec5_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -1485,13 +1330,13 @@ public
 			this->tuesday_lec5_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec5_btn->Visible = false;
 			this->tuesday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec5_btn_Click);
-			//
+			// 
 			// tuesday_lec6_btn
-			//
+			// 
 			this->tuesday_lec6_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->tuesday_lec6_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec6_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->tuesday_lec6_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -1505,13 +1350,13 @@ public
 			this->tuesday_lec6_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec6_btn->Visible = false;
 			this->tuesday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec6_btn_Click);
-			//
+			// 
 			// tuesday_lec7_btn
-			//
+			// 
 			this->tuesday_lec7_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->tuesday_lec7_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec7_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->tuesday_lec7_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -1525,13 +1370,13 @@ public
 			this->tuesday_lec7_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec7_btn->Visible = false;
 			this->tuesday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec7_btn_Click);
-			//
+			// 
 			// tuesday_lec8_btn
-			//
+			// 
 			this->tuesday_lec8_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->tuesday_lec8_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec8_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->tuesday_lec8_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -1545,13 +1390,13 @@ public
 			this->tuesday_lec8_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec8_btn->Visible = false;
 			this->tuesday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec8_btn_Click);
-			//
+			// 
 			// tuesday_lec9_btn
-			//
+			// 
 			this->tuesday_lec9_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->tuesday_lec9_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec9_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->tuesday_lec9_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -1565,13 +1410,13 @@ public
 			this->tuesday_lec9_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec9_btn->Visible = false;
 			this->tuesday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec9_btn_Click);
-			//
+			// 
 			// tuesday_lec2_btn
-			//
+			// 
 			this->tuesday_lec2_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->tuesday_lec2_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec2_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->tuesday_lec2_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -1585,17 +1430,17 @@ public
 			this->tuesday_lec2_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec2_btn->Visible = false;
 			this->tuesday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec2_btn_Click);
-			//
+			// 
 			// wednesday_lec2_btn
-			//
+			// 
 			this->wednesday_lec2_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->wednesday_lec2_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec2_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->wednesday_lec2_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->wednesday_lec2_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec2_btn->Location = System::Drawing::Point(107, 141);
 			this->wednesday_lec2_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1606,17 +1451,17 @@ public
 			this->wednesday_lec2_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec2_btn->Visible = false;
 			this->wednesday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec2_btn_Click);
-			//
+			// 
 			// wednesday_lec3_btn
-			//
+			// 
 			this->wednesday_lec3_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->wednesday_lec3_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec3_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->wednesday_lec3_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->wednesday_lec3_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec3_btn->Location = System::Drawing::Point(210, 141);
 			this->wednesday_lec3_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1627,17 +1472,17 @@ public
 			this->wednesday_lec3_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec3_btn->Visible = false;
 			this->wednesday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec3_btn_Click);
-			//
+			// 
 			// wednesday_lec4_btn
-			//
+			// 
 			this->wednesday_lec4_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->wednesday_lec4_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec4_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->wednesday_lec4_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->wednesday_lec4_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec4_btn->Location = System::Drawing::Point(313, 141);
 			this->wednesday_lec4_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1648,17 +1493,17 @@ public
 			this->wednesday_lec4_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec4_btn->Visible = false;
 			this->wednesday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec4_btn_Click);
-			//
+			// 
 			// wednesday_lec5_btn
-			//
+			// 
 			this->wednesday_lec5_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->wednesday_lec5_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec5_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->wednesday_lec5_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->wednesday_lec5_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec5_btn->Location = System::Drawing::Point(416, 141);
 			this->wednesday_lec5_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1669,17 +1514,17 @@ public
 			this->wednesday_lec5_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec5_btn->Visible = false;
 			this->wednesday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec5_btn_Click);
-			//
+			// 
 			// wednesday_lec6_btn
-			//
+			// 
 			this->wednesday_lec6_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->wednesday_lec6_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec6_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->wednesday_lec6_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->wednesday_lec6_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec6_btn->Location = System::Drawing::Point(519, 141);
 			this->wednesday_lec6_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1690,17 +1535,17 @@ public
 			this->wednesday_lec6_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec6_btn->Visible = false;
 			this->wednesday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec6_btn_Click);
-			//
+			// 
 			// wednesday_lec7_btn
-			//
+			// 
 			this->wednesday_lec7_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->wednesday_lec7_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec7_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->wednesday_lec7_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->wednesday_lec7_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec7_btn->Location = System::Drawing::Point(622, 141);
 			this->wednesday_lec7_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1711,17 +1556,17 @@ public
 			this->wednesday_lec7_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec7_btn->Visible = false;
 			this->wednesday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec7_btn_Click);
-			//
+			// 
 			// wednesday_lec8_btn
-			//
+			// 
 			this->wednesday_lec8_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->wednesday_lec8_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec8_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->wednesday_lec8_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->wednesday_lec8_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec8_btn->Location = System::Drawing::Point(725, 141);
 			this->wednesday_lec8_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1732,17 +1577,17 @@ public
 			this->wednesday_lec8_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec8_btn->Visible = false;
 			this->wednesday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec8_btn_Click);
-			//
+			// 
 			// wednesday_lec9_btn
-			//
+			// 
 			this->wednesday_lec9_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->wednesday_lec9_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec9_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->wednesday_lec9_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->wednesday_lec9_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec9_btn->Location = System::Drawing::Point(828, 141);
 			this->wednesday_lec9_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1753,17 +1598,17 @@ public
 			this->wednesday_lec9_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec9_btn->Visible = false;
 			this->wednesday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec9_btn_Click);
-			//
+			// 
 			// thursday_lec1_btn
-			//
+			// 
 			this->thursday_lec1_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->thursday_lec1_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec1_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->thursday_lec1_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->thursday_lec1_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec1_btn->Location = System::Drawing::Point(4, 207);
 			this->thursday_lec1_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1773,17 +1618,18 @@ public
 			this->thursday_lec1_btn->Text = L"Wed Lec 1";
 			this->thursday_lec1_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec1_btn->Visible = false;
-			//
+			this->thursday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec1_btn_Click);
+			// 
 			// thursday_lec2_btn
-			//
+			// 
 			this->thursday_lec2_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->thursday_lec2_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec2_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->thursday_lec2_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->thursday_lec2_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec2_btn->Location = System::Drawing::Point(107, 207);
 			this->thursday_lec2_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1793,17 +1639,18 @@ public
 			this->thursday_lec2_btn->Text = L"Wed Lec 1";
 			this->thursday_lec2_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec2_btn->Visible = false;
-			//
+			this->thursday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec2_btn_Click);
+			// 
 			// thursday_lec3_btn
-			//
+			// 
 			this->thursday_lec3_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->thursday_lec3_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec3_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->thursday_lec3_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->thursday_lec3_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec3_btn->Location = System::Drawing::Point(210, 207);
 			this->thursday_lec3_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1813,17 +1660,18 @@ public
 			this->thursday_lec3_btn->Text = L"Wed Lec 1";
 			this->thursday_lec3_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec3_btn->Visible = false;
-			//
+			this->thursday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec3_btn_Click);
+			// 
 			// thursday_lec4_btn
-			//
+			// 
 			this->thursday_lec4_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->thursday_lec4_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec4_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->thursday_lec4_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->thursday_lec4_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec4_btn->Location = System::Drawing::Point(313, 207);
 			this->thursday_lec4_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1833,17 +1681,18 @@ public
 			this->thursday_lec4_btn->Text = L"Wed Lec 1";
 			this->thursday_lec4_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec4_btn->Visible = false;
-			//
+			this->thursday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec4_btn_Click);
+			// 
 			// thursday_lec5_btn
-			//
+			// 
 			this->thursday_lec5_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->thursday_lec5_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec5_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->thursday_lec5_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->thursday_lec5_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec5_btn->Location = System::Drawing::Point(416, 207);
 			this->thursday_lec5_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1853,17 +1702,18 @@ public
 			this->thursday_lec5_btn->Text = L"Wed Lec 1";
 			this->thursday_lec5_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec5_btn->Visible = false;
-			//
+			this->thursday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec5_btn_Click);
+			// 
 			// thursday_lec6_btn
-			//
+			// 
 			this->thursday_lec6_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->thursday_lec6_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec6_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->thursday_lec6_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->thursday_lec6_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec6_btn->Location = System::Drawing::Point(519, 207);
 			this->thursday_lec6_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1873,17 +1723,18 @@ public
 			this->thursday_lec6_btn->Text = L"Wed Lec 1";
 			this->thursday_lec6_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec6_btn->Visible = false;
-			//
+			this->thursday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec6_btn_Click);
+			// 
 			// thursday_lec7_btn
-			//
+			// 
 			this->thursday_lec7_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->thursday_lec7_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec7_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->thursday_lec7_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->thursday_lec7_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec7_btn->Location = System::Drawing::Point(622, 207);
 			this->thursday_lec7_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1893,17 +1744,18 @@ public
 			this->thursday_lec7_btn->Text = L"Wed Lec 1";
 			this->thursday_lec7_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec7_btn->Visible = false;
-			//
+			this->thursday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec7_btn_Click);
+			// 
 			// thursday_lec8_btn
-			//
+			// 
 			this->thursday_lec8_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->thursday_lec8_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec8_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->thursday_lec8_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->thursday_lec8_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec8_btn->Location = System::Drawing::Point(725, 207);
 			this->thursday_lec8_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1913,17 +1765,18 @@ public
 			this->thursday_lec8_btn->Text = L"Wed Lec 1";
 			this->thursday_lec8_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec8_btn->Visible = false;
-			//
+			this->thursday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec8_btn_Click);
+			// 
 			// thursday_lec9_btn
-			//
+			// 
 			this->thursday_lec9_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->thursday_lec9_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec9_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->thursday_lec9_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-																		 static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->thursday_lec9_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec9_btn->Location = System::Drawing::Point(828, 207);
 			this->thursday_lec9_btn->Margin = System::Windows::Forms::Padding(4);
@@ -1933,13 +1786,14 @@ public
 			this->thursday_lec9_btn->Text = L"Wed Lec 1";
 			this->thursday_lec9_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec9_btn->Visible = false;
-			//
+			this->thursday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec9_btn_Click);
+			// 
 			// friday_lec3_btn
-			//
+			// 
 			this->friday_lec3_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->friday_lec3_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec3_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->friday_lec3_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -1952,13 +1806,14 @@ public
 			this->friday_lec3_btn->Text = L"Fri Lec 2";
 			this->friday_lec3_btn->UseVisualStyleBackColor = true;
 			this->friday_lec3_btn->Visible = false;
-			//
+			this->friday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec3_btn_Click);
+			// 
 			// friday_lec4_btn
-			//
+			// 
 			this->friday_lec4_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->friday_lec4_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec4_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->friday_lec4_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -1971,13 +1826,14 @@ public
 			this->friday_lec4_btn->Text = L"Fri Lec 2";
 			this->friday_lec4_btn->UseVisualStyleBackColor = true;
 			this->friday_lec4_btn->Visible = false;
-			//
+			this->friday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec4_btn_Click);
+			// 
 			// friday_lec5_btn
-			//
+			// 
 			this->friday_lec5_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->friday_lec5_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec5_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->friday_lec5_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -1990,13 +1846,14 @@ public
 			this->friday_lec5_btn->Text = L"Fri Lec 2";
 			this->friday_lec5_btn->UseVisualStyleBackColor = true;
 			this->friday_lec5_btn->Visible = false;
-			//
+			this->friday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec5_btn_Click);
+			// 
 			// friday_lec6_btn
-			//
+			// 
 			this->friday_lec6_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->friday_lec6_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec6_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->friday_lec6_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -2009,13 +1866,14 @@ public
 			this->friday_lec6_btn->Text = L"Fri Lec 2";
 			this->friday_lec6_btn->UseVisualStyleBackColor = true;
 			this->friday_lec6_btn->Visible = false;
-			//
+			this->friday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec6_btn_Click);
+			// 
 			// friday_lec7_btn
-			//
+			// 
 			this->friday_lec7_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->friday_lec7_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec7_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->friday_lec7_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -2028,13 +1886,14 @@ public
 			this->friday_lec7_btn->Text = L"Fri Lec 2";
 			this->friday_lec7_btn->UseVisualStyleBackColor = true;
 			this->friday_lec7_btn->Visible = false;
-			//
+			this->friday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec7_btn_Click);
+			// 
 			// friday_lec8_btn
-			//
+			// 
 			this->friday_lec8_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->friday_lec8_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec8_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->friday_lec8_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -2047,13 +1906,14 @@ public
 			this->friday_lec8_btn->Text = L"Fri Lec 2";
 			this->friday_lec8_btn->UseVisualStyleBackColor = true;
 			this->friday_lec8_btn->Visible = false;
-			//
+			this->friday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec8_btn_Click);
+			// 
 			// friday_lec9_btn
-			//
+			// 
 			this->friday_lec9_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
 			this->friday_lec9_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec9_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->friday_lec9_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
@@ -2066,20 +1926,22 @@ public
 			this->friday_lec9_btn->Text = L"Fri Lec 2";
 			this->friday_lec9_btn->UseVisualStyleBackColor = true;
 			this->friday_lec9_btn->Visible = false;
-			//
+			this->friday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec9_btn_Click);
+			// 
 			// tableLayoutPanel4
-			//
-			this->tableLayoutPanel4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left) | System::Windows::Forms::AnchorStyles::Right));
+			// 
+			this->tableLayoutPanel4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->tableLayoutPanel4->BackColor = System::Drawing::Color::Transparent;
 			this->tableLayoutPanel4->ColumnCount = 4;
 			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  35)));
+				35)));
 			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  15)));
+				15)));
 			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  35)));
+				35)));
 			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-																								  15)));
+				15)));
 			this->tableLayoutPanel4->Controls->Add(this->textBox2, 0, 0);
 			this->tableLayoutPanel4->Controls->Add(this->read_file_btn, 3, 0);
 			this->tableLayoutPanel4->Controls->Add(this->choose_excel_file_btn, 1, 0);
@@ -2090,14 +1952,194 @@ public
 			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
 			this->tableLayoutPanel4->Size = System::Drawing::Size(1087, 69);
 			this->tableLayoutPanel4->TabIndex = 82;
-			//
+			// 
+			// saturday_lec9_btn
+			// 
+			this->saturday_lec9_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			this->saturday_lec9_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
+			this->saturday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->saturday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
+			this->saturday_lec9_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->saturday_lec9_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
+			this->saturday_lec9_btn->ForeColor = System::Drawing::Color::White;
+			this->saturday_lec9_btn->Location = System::Drawing::Point(828, 341);
+			this->saturday_lec9_btn->Margin = System::Windows::Forms::Padding(4);
+			this->saturday_lec9_btn->Name = L"saturday_lec9_btn";
+			this->saturday_lec9_btn->Size = System::Drawing::Size(104, 58);
+			this->saturday_lec9_btn->TabIndex = 67;
+			this->saturday_lec9_btn->Text = L"Fri Lec 2";
+			this->saturday_lec9_btn->UseVisualStyleBackColor = true;
+			this->saturday_lec9_btn->Visible = false;
+			this->saturday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::saturday_lec9_btn_Click);
+			// 
+			// saturday_lec8_btn
+			// 
+			this->saturday_lec8_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			this->saturday_lec8_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
+			this->saturday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->saturday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
+			this->saturday_lec8_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->saturday_lec8_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
+			this->saturday_lec8_btn->ForeColor = System::Drawing::Color::White;
+			this->saturday_lec8_btn->Location = System::Drawing::Point(725, 341);
+			this->saturday_lec8_btn->Margin = System::Windows::Forms::Padding(4);
+			this->saturday_lec8_btn->Name = L"saturday_lec8_btn";
+			this->saturday_lec8_btn->Size = System::Drawing::Size(95, 58);
+			this->saturday_lec8_btn->TabIndex = 68;
+			this->saturday_lec8_btn->Text = L"Fri Lec 2";
+			this->saturday_lec8_btn->UseVisualStyleBackColor = true;
+			this->saturday_lec8_btn->Visible = false;
+			this->saturday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::saturday_lec8_btn_Click);
+			// 
+			// saturday_lec7_btn
+			// 
+			this->saturday_lec7_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			this->saturday_lec7_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
+			this->saturday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->saturday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
+			this->saturday_lec7_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->saturday_lec7_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
+			this->saturday_lec7_btn->ForeColor = System::Drawing::Color::White;
+			this->saturday_lec7_btn->Location = System::Drawing::Point(622, 341);
+			this->saturday_lec7_btn->Margin = System::Windows::Forms::Padding(4);
+			this->saturday_lec7_btn->Name = L"saturday_lec7_btn";
+			this->saturday_lec7_btn->Size = System::Drawing::Size(95, 58);
+			this->saturday_lec7_btn->TabIndex = 61;
+			this->saturday_lec7_btn->Text = L"Fri Lec 2";
+			this->saturday_lec7_btn->UseVisualStyleBackColor = true;
+			this->saturday_lec7_btn->Visible = false;
+			this->saturday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::saturday_lec7_btn_Click);
+			// 
+			// saturday_lec6_btn
+			// 
+			this->saturday_lec6_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			this->saturday_lec6_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
+			this->saturday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->saturday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
+			this->saturday_lec6_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->saturday_lec6_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
+			this->saturday_lec6_btn->ForeColor = System::Drawing::Color::White;
+			this->saturday_lec6_btn->Location = System::Drawing::Point(519, 341);
+			this->saturday_lec6_btn->Margin = System::Windows::Forms::Padding(4);
+			this->saturday_lec6_btn->Name = L"saturday_lec6_btn";
+			this->saturday_lec6_btn->Size = System::Drawing::Size(95, 58);
+			this->saturday_lec6_btn->TabIndex = 62;
+			this->saturday_lec6_btn->Text = L"Fri Lec 2";
+			this->saturday_lec6_btn->UseVisualStyleBackColor = true;
+			this->saturday_lec6_btn->Visible = false;
+			this->saturday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::saturday_lec6_btn_Click);
+			// 
+			// saturday_lec5_btn
+			// 
+			this->saturday_lec5_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			this->saturday_lec5_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
+			this->saturday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->saturday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
+			this->saturday_lec5_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->saturday_lec5_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
+			this->saturday_lec5_btn->ForeColor = System::Drawing::Color::White;
+			this->saturday_lec5_btn->Location = System::Drawing::Point(416, 341);
+			this->saturday_lec5_btn->Margin = System::Windows::Forms::Padding(4);
+			this->saturday_lec5_btn->Name = L"saturday_lec5_btn";
+			this->saturday_lec5_btn->Size = System::Drawing::Size(95, 58);
+			this->saturday_lec5_btn->TabIndex = 69;
+			this->saturday_lec5_btn->Text = L"Fri Lec 2";
+			this->saturday_lec5_btn->UseVisualStyleBackColor = true;
+			this->saturday_lec5_btn->Visible = false;
+			this->saturday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::saturday_lec5_btn_Click);
+			// 
+			// saturday_lec4_btn
+			// 
+			this->saturday_lec4_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			this->saturday_lec4_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
+			this->saturday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->saturday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
+			this->saturday_lec4_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->saturday_lec4_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
+			this->saturday_lec4_btn->ForeColor = System::Drawing::Color::White;
+			this->saturday_lec4_btn->Location = System::Drawing::Point(313, 341);
+			this->saturday_lec4_btn->Margin = System::Windows::Forms::Padding(4);
+			this->saturday_lec4_btn->Name = L"saturday_lec4_btn";
+			this->saturday_lec4_btn->Size = System::Drawing::Size(95, 58);
+			this->saturday_lec4_btn->TabIndex = 72;
+			this->saturday_lec4_btn->Text = L"Fri Lec 2";
+			this->saturday_lec4_btn->UseVisualStyleBackColor = true;
+			this->saturday_lec4_btn->Visible = false;
+			this->saturday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::saturday_lec4_btn_Click);
+			// 
+			// saturday_lec3_btn
+			// 
+			this->saturday_lec3_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			this->saturday_lec3_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
+			this->saturday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->saturday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
+			this->saturday_lec3_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->saturday_lec3_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
+			this->saturday_lec3_btn->ForeColor = System::Drawing::Color::White;
+			this->saturday_lec3_btn->Location = System::Drawing::Point(210, 341);
+			this->saturday_lec3_btn->Margin = System::Windows::Forms::Padding(4);
+			this->saturday_lec3_btn->Name = L"saturday_lec3_btn";
+			this->saturday_lec3_btn->Size = System::Drawing::Size(95, 58);
+			this->saturday_lec3_btn->TabIndex = 73;
+			this->saturday_lec3_btn->Text = L"Fri Lec 2";
+			this->saturday_lec3_btn->UseVisualStyleBackColor = true;
+			this->saturday_lec3_btn->Visible = false;
+			this->saturday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::saturday_lec3_btn_Click);
+			// 
+			// saturday_lec2_btn
+			// 
+			this->saturday_lec2_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			this->saturday_lec2_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
+			this->saturday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->saturday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
+			this->saturday_lec2_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->saturday_lec2_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
+			this->saturday_lec2_btn->ForeColor = System::Drawing::Color::White;
+			this->saturday_lec2_btn->Location = System::Drawing::Point(107, 341);
+			this->saturday_lec2_btn->Margin = System::Windows::Forms::Padding(4);
+			this->saturday_lec2_btn->Name = L"saturday_lec2_btn";
+			this->saturday_lec2_btn->Size = System::Drawing::Size(95, 58);
+			this->saturday_lec2_btn->TabIndex = 70;
+			this->saturday_lec2_btn->Text = L"Fri Lec 2";
+			this->saturday_lec2_btn->UseVisualStyleBackColor = true;
+			this->saturday_lec2_btn->Visible = false;
+			this->saturday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::saturday_lec2_btn_Click);
+			// 
+			// saturday_lec1_btn
+			// 
+			this->saturday_lec1_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			this->saturday_lec1_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
+			this->saturday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
+				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+			this->saturday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
+			this->saturday_lec1_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+			this->saturday_lec1_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
+			this->saturday_lec1_btn->ForeColor = System::Drawing::Color::White;
+			this->saturday_lec1_btn->Location = System::Drawing::Point(4, 341);
+			this->saturday_lec1_btn->Margin = System::Windows::Forms::Padding(4);
+			this->saturday_lec1_btn->Name = L"saturday_lec1_btn";
+			this->saturday_lec1_btn->Size = System::Drawing::Size(95, 58);
+			this->saturday_lec1_btn->TabIndex = 71;
+			this->saturday_lec1_btn->Text = L"Fri Lec 2";
+			this->saturday_lec1_btn->UseVisualStyleBackColor = true;
+			this->saturday_lec1_btn->Visible = false;
+			this->saturday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::saturday_lec1_btn_Click);
+			// 
 			// Main_Ui
-			//
+			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(34)), static_cast<System::Int32>(static_cast<System::Byte>(36)),
-															   static_cast<System::Int32>(static_cast<System::Byte>(49)));
-			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image ^>(resources->GetObject(L"$this.BackgroundImage")));
+				static_cast<System::Int32>(static_cast<System::Byte>(49)));
+			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
 			this->ClientSize = System::Drawing::Size(1134, 657);
 			this->Controls->Add(this->tableLayoutPanel4);
 			this->Controls->Add(this->tableLayoutPanel2);
@@ -2107,7 +2149,7 @@ public
 			this->Controls->Add(this->tableLayoutPanel5);
 			this->Controls->Add(this->tableLayoutPanel3);
 			this->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-													  static_cast<System::Byte>(0)));
+				static_cast<System::Byte>(0)));
 			this->ForeColor = System::Drawing::SystemColors::ButtonFace;
 			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"Main_Ui";
@@ -2126,10 +2168,12 @@ public
 			this->tableLayoutPanel4->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
+
 		}
 #pragma endregion
 		//Initializations
 	private:
+		int weekDay = 6;
 		System::String ^ global_file_path = L"";
 		int monday_row;
 		int monday_col;
@@ -2463,9 +2507,10 @@ public
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(monday_lec1_btn, sheet->readStr(row, col));
+
 				//find_string(sheet, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				monday_lec1_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+				monday_lec1_url = monday_lec1_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
 			//Monday Lec2
@@ -2475,8 +2520,8 @@ public
 			{
 				button_modifier(monday_lec2_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				monday_lec2_url = links_modifier(sheet->readStr(string_row, string_col + 1));
-				//textBox3->Text = monday_lec2_url;
+
+				monday_lec2_url = monday_lec2_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
 			//Monday Lec3
@@ -2486,7 +2531,8 @@ public
 			{
 				button_modifier(monday_lec3_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				monday_lec3_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				monday_lec3_url = monday_lec3_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
 			//Monday Lec4
@@ -2496,7 +2542,8 @@ public
 			{
 				button_modifier(monday_lec4_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				monday_lec4_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				monday_lec4_url = monday_lec4_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//Monday Lec5
 			col = col + 1;
@@ -2505,7 +2552,8 @@ public
 			{
 				button_modifier(monday_lec5_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				monday_lec5_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				monday_lec5_url = monday_lec5_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//Monday Lec6
 			col = col + 1;
@@ -2514,7 +2562,8 @@ public
 			{
 				button_modifier(monday_lec6_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				monday_lec6_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				monday_lec6_url = monday_lec6_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//Monday Lec7
 			col = col + 1;
@@ -2523,7 +2572,8 @@ public
 			{
 				button_modifier(monday_lec7_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				monday_lec7_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				monday_lec7_url = monday_lec7_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//Monday Lec8
 			col = col + 1;
@@ -2532,7 +2582,8 @@ public
 			{
 				button_modifier(monday_lec8_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				monday_lec8_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				monday_lec8_url = monday_lec8_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 			//Monday Lec9
 			col = col + 1;
@@ -2541,7 +2592,8 @@ public
 			{
 				button_modifier(monday_lec9_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				monday_lec9_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				monday_lec9_url = monday_lec9_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 		}
 
@@ -2549,92 +2601,100 @@ public
 		{
 			int row, col;
 			row = monday_row + 1;
-			//tuesday Lec1
+			//Tuesday Lec1
 			col = monday_col + 1;
 			cellType = sheet->cellType(row, col);
 
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(tuesday_lec1_btn, sheet->readStr(row, col));
+
 				//find_string(sheet, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				tuesday_lec1_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+				tuesday_lec1_url = tuesday_lec1_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
-			//tuesday Lec2
+			//Tuesday Lec2
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(tuesday_lec2_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				tuesday_lec2_url = links_modifier(sheet->readStr(string_row, string_col + 1));
-				//textBox3->Text = tuesday_lec2_url;
+
+				tuesday_lec2_url = tuesday_lec2_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
-			//tuesday Lec3
+			//Tuesday Lec3
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(tuesday_lec3_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				tuesday_lec3_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				tuesday_lec3_url = tuesday_lec3_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
-			//tuesday Lec4
+			//Tuesday Lec4
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(tuesday_lec4_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				tuesday_lec4_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				tuesday_lec4_url = tuesday_lec4_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//tuesday Lec5
+			//Tuesday Lec5
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(tuesday_lec5_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				tuesday_lec5_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				tuesday_lec5_url = tuesday_lec5_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//tuesday Lec6
+			//Tuesday Lec6
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(tuesday_lec6_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				tuesday_lec6_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				tuesday_lec6_url = tuesday_lec6_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//tuesday Lec7
+			//Tuesday Lec7
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(tuesday_lec7_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				tuesday_lec7_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				tuesday_lec7_url = tuesday_lec7_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//tuesday Lec8
+			//Tuesday Lec8
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(tuesday_lec8_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				tuesday_lec8_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				tuesday_lec8_url = tuesday_lec8_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//tuesday Lec9
+			//Tuesday Lec9
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(tuesday_lec9_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				tuesday_lec9_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				tuesday_lec9_url = tuesday_lec9_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 		}
 
@@ -2642,625 +2702,442 @@ public
 		{
 			int row, col;
 			row = monday_row + 2;
-			//wednesday Lec1
+			//Wednesday Lec1
 			col = monday_col + 1;
 			cellType = sheet->cellType(row, col);
 
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(wednesday_lec1_btn, sheet->readStr(row, col));
+
 				//find_string(sheet, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				wednesday_lec1_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+				wednesday_lec1_url = wednesday_lec1_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
-			//wednesday Lec2
+			//Wednesday Lec2
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(wednesday_lec2_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				wednesday_lec2_url = links_modifier(sheet->readStr(string_row, string_col + 1));
-				//textBox3->Text = wednesday_lec2_url;
+
+				wednesday_lec2_url = wednesday_lec2_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
-			//wednesday Lec3
+			//Wednesday Lec3
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(wednesday_lec3_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				wednesday_lec3_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				wednesday_lec3_url = wednesday_lec3_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
-			//wednesday Lec4
+			//Wednesday Lec4
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(wednesday_lec4_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				wednesday_lec4_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				wednesday_lec4_url = wednesday_lec4_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//wednesday Lec5
+			//Wednesday Lec5
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(wednesday_lec5_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				wednesday_lec5_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				wednesday_lec5_url = wednesday_lec5_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//wednesday Lec6
+			//Wednesday Lec6
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(wednesday_lec6_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				wednesday_lec6_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				wednesday_lec6_url = wednesday_lec6_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//wednesday Lec7
+			//Wednesday Lec7
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(wednesday_lec7_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				wednesday_lec7_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				wednesday_lec7_url = wednesday_lec7_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//wednesday Lec8
+			//Wednesday Lec8
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(wednesday_lec8_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				wednesday_lec8_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				wednesday_lec8_url = wednesday_lec8_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//wednesday Lec9
+			//Wednesday Lec9
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
 				button_modifier(wednesday_lec9_btn, sheet->readStr(row, col));
 				find_strings_in_links_table(sheet, sheet->readStr(row, col));
-				wednesday_lec9_url = links_modifier(sheet->readStr(string_row, string_col + 1));
+
+				wednesday_lec9_url = wednesday_lec9_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 		}
 
 		void thursday_buttons_maker(Sheet *sheet)
 		{
 			int row, col;
-			//thursday Lec1
 			row = monday_row + 3;
+			//Thursday Lec1
 			col = monday_col + 1;
 			cellType = sheet->cellType(row, col);
+
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *thursday_lec1_lec_string = sheet->readStr(row, col);
-				wstring thursday_lec1_lec(thursday_lec1_lec_string);
-				string thursday_lec1_lec_str(thursday_lec1_lec.begin(), thursday_lec1_lec.end());
+				button_modifier(thursday_lec1_btn, sheet->readStr(row, col));
 
-				thursday_lec1_btn->Visible = true;
-				thursday_lec1_btn->Text = "";
-				thursday_lec1_btn->Text = thursday_lec1_btn->Text + msclr::interop::marshal_as<System::String ^>(thursday_lec1_lec_str);
-				// find_string(sheet, thursday_lec1_lec);
-				// const wchar_t *thursday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring thursday_lec1_url_raw_2(thursday_lec1_url_raw);
-				// string thursday_lec1_url_raw_3(thursday_lec1_url_raw_2.begin(), thursday_lec1_url_raw_2.end());
-				// thursday_lec1_url = thursday_lec1_url + msclr::interop::marshal_as<System::String ^>(thursday_lec1_url_raw_3);
+				//find_string(sheet, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				thursday_lec1_url = thursday_lec1_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
-			//thursday Lec2
+			//Thursday Lec2
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
+				button_modifier(thursday_lec2_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				const wchar_t *lec_string2 = sheet->readStr(row, col);
-				wstring lec2(lec_string2);
-				string lec_str2(lec2.begin(), lec2.end());
-
-				thursday_lec2_btn->Visible = true;
-				thursday_lec2_btn->Text = "";
-				thursday_lec2_btn->Text = thursday_lec2_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str2);
-				// find_string(sheet, lec2);
-				// const wchar_t *thursday_lec2_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring thursday_lec2_url_raw_2(thursday_lec2_url_raw);
-				// string thursday_lec2_url_raw_3(thursday_lec2_url_raw_2.begin(), thursday_lec2_url_raw_2.end());
-				// thursday_lec2_url = thursday_lec2_url + msclr::interop::marshal_as<System::String ^>(thursday_lec2_url_raw_3);
+				thursday_lec2_url = thursday_lec2_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
-			//thursday Lec3
+			//Thursday Lec3
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string3 = sheet->readStr(row, col);
-				wstring lec3(lec_string3);
-				string lec_str3(lec3.begin(), lec3.end());
+				button_modifier(thursday_lec3_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				thursday_lec3_btn->Visible = true;
-				thursday_lec3_btn->Text = "";
-				thursday_lec3_btn->Text = thursday_lec3_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str3);
-				// find_string(sheet, lec3);
-				// const wchar_t *thursday_lec3_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring thursday_lec3_url_raw_2(thursday_lec3_url_raw);
-				// string thursday_lec3_url_raw_3(thursday_lec3_url_raw_2.begin(), thursday_lec3_url_raw_2.end());
-				// thursday_lec3_url = thursday_lec3_url + msclr::interop::marshal_as<System::String ^>(thursday_lec3_url_raw_3);
+				thursday_lec3_url = thursday_lec3_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//thursday Lec4
+
+			//Thursday Lec4
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string4 = sheet->readStr(row, col);
-				wstring lec4(lec_string4);
-				string lec_str4(lec4.begin(), lec4.end());
+				button_modifier(thursday_lec4_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				thursday_lec4_btn->Visible = true;
-				thursday_lec4_btn->Text = "";
-				thursday_lec4_btn->Text = thursday_lec4_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str4);
-				// find_string(sheet, lec4);
-				// const wchar_t *thursday_lec4_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring thursday_lec4_url_raw_2(thursday_lec4_url_raw);
-				// string thursday_lec4_url_raw_3(thursday_lec4_url_raw_2.begin(), thursday_lec4_url_raw_2.end());
-				// thursday_lec4_url = thursday_lec4_url + msclr::interop::marshal_as<System::String ^>(thursday_lec4_url_raw_3);
+				thursday_lec4_url = thursday_lec4_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//thursday Lec5
+			//Thursday Lec5
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string5 = sheet->readStr(row, col);
-				wstring lec5(lec_string5);
-				string lec_str5(lec5.begin(), lec5.end());
+				button_modifier(thursday_lec5_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				thursday_lec5_btn->Visible = true;
-				thursday_lec5_btn->Text = "";
-				thursday_lec5_btn->Text = thursday_lec5_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str5);
-				// find_string(sheet, lec5);
-				// const wchar_t *thursday_lec5_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring thursday_lec5_url_raw_2(thursday_lec5_url_raw);
-				// string thursday_lec5_url_raw_3(thursday_lec5_url_raw_2.begin(), thursday_lec5_url_raw_2.end());
-				// thursday_lec5_url = thursday_lec5_url + msclr::interop::marshal_as<System::String ^>(thursday_lec5_url_raw_3);
+				thursday_lec5_url = thursday_lec5_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//thursday Lec6
+			//Thursday Lec6
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string6 = sheet->readStr(row, col);
-				wstring lec6(lec_string6);
-				string lec_str6(lec6.begin(), lec6.end());
+				button_modifier(thursday_lec6_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				thursday_lec6_btn->Visible = true;
-				thursday_lec6_btn->Text = "";
-				thursday_lec6_btn->Text = thursday_lec6_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str6);
-				// find_string(sheet, lec6);
-				// const wchar_t *thursday_lec6_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring thursday_lec6_url_raw_2(thursday_lec6_url_raw);
-				// string thursday_lec6_url_raw_3(thursday_lec6_url_raw_2.begin(), thursday_lec6_url_raw_2.end());
-				// thursday_lec6_url = thursday_lec6_url + msclr::interop::marshal_as<System::String ^>(thursday_lec6_url_raw_3);
+				thursday_lec6_url = thursday_lec6_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//thursday Lec7
+			//Thursday Lec7
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string7 = sheet->readStr(row, col);
-				wstring lec7(lec_string7);
-				string lec_str7(lec7.begin(), lec7.end());
+				button_modifier(thursday_lec7_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				thursday_lec7_btn->Visible = true;
-				thursday_lec7_btn->Text = "";
-				thursday_lec7_btn->Text = thursday_lec7_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str7);
-				// find_string(sheet, lec7);
-				// const wchar_t *thursday_lec7_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring thursday_lec7_url_raw_2(thursday_lec7_url_raw);
-				// string thursday_lec7_url_raw_3(thursday_lec7_url_raw_2.begin(), thursday_lec7_url_raw_2.end());
-				// thursday_lec7_url = thursday_lec7_url + msclr::interop::marshal_as<System::String ^>(thursday_lec7_url_raw_3);
+				thursday_lec7_url = thursday_lec7_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//thursday Lec8
+			//Thursday Lec8
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string8 = sheet->readStr(row, col);
-				wstring lec8(lec_string8);
-				string lec_str8(lec8.begin(), lec8.end());
+				button_modifier(thursday_lec8_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				thursday_lec8_btn->Visible = true;
-				thursday_lec8_btn->Text = "";
-				thursday_lec8_btn->Text = thursday_lec8_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str8);
-				// find_string(sheet, lec8);
-				// const wchar_t *thursday_lec8_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring thursday_lec8_url_raw_2(thursday_lec8_url_raw);
-				// string thursday_lec8_url_raw_3(thursday_lec8_url_raw_2.begin(), thursday_lec8_url_raw_2.end());
-				// thursday_lec8_url = thursday_lec8_url + msclr::interop::marshal_as<System::String ^>(thursday_lec8_url_raw_3);
+				thursday_lec8_url = thursday_lec8_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//thursday Lec9
+			//Thursday Lec9
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string9 = sheet->readStr(row, col);
-				wstring lec9(lec_string9);
-				string lec_str9(lec9.begin(), lec9.end());
+				button_modifier(thursday_lec9_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				thursday_lec9_btn->Visible = true;
-				thursday_lec9_btn->Text = "";
-				thursday_lec9_btn->Text = thursday_lec9_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str9);
-				// find_string(sheet, lec9);
-				// const wchar_t *thursday_lec9_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring thursday_lec9_url_raw_2(thursday_lec9_url_raw);
-				// string thursday_lec9_url_raw_3(thursday_lec9_url_raw_2.begin(), thursday_lec9_url_raw_2.end());
-				// thursday_lec9_url = thursday_lec9_url + msclr::interop::marshal_as<System::String ^>(thursday_lec9_url_raw_3);
+				thursday_lec9_url = thursday_lec9_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 		}
 
 		void friday_buttons_maker(Sheet *sheet)
 		{
 			int row, col;
-			//friday Lec1
 			row = monday_row + 4;
+			//Friday Lec1
 			col = monday_col + 1;
 			cellType = sheet->cellType(row, col);
+
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *friday_lec1_lec_string = sheet->readStr(row, col);
-				wstring friday_lec1_lec(friday_lec1_lec_string);
-				string friday_lec1_lec_str(friday_lec1_lec.begin(), friday_lec1_lec.end());
+				button_modifier(friday_lec1_btn, sheet->readStr(row, col));
 
-				friday_lec1_btn->Visible = true;
-				friday_lec1_btn->Text = "";
-				friday_lec1_btn->Text = friday_lec1_btn->Text + msclr::interop::marshal_as<System::String ^>(friday_lec1_lec_str);
-				// find_string(sheet, friday_lec1_lec);
-				// const wchar_t *friday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring friday_lec1_url_raw_2(friday_lec1_url_raw);
-				// string friday_lec1_url_raw_3(friday_lec1_url_raw_2.begin(), friday_lec1_url_raw_2.end());
-				// friday_lec1_url = friday_lec1_url + msclr::interop::marshal_as<System::String ^>(friday_lec1_url_raw_3);
+				//find_string(sheet, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				friday_lec1_url = friday_lec1_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
-			//friday Lec2
+			//Friday Lec2
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
+				button_modifier(friday_lec2_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				const wchar_t *lec_string2 = sheet->readStr(row, col);
-				wstring lec2(lec_string2);
-				string lec_str2(lec2.begin(), lec2.end());
-
-				friday_lec2_btn->Visible = true;
-				friday_lec2_btn->Text = "";
-				friday_lec2_btn->Text = friday_lec2_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str2);
-				// find_string(sheet, lec2);
-				// const wchar_t *friday_lec2_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring friday_lec2_url_raw_2(friday_lec2_url_raw);
-				// string friday_lec2_url_raw_3(friday_lec2_url_raw_2.begin(), friday_lec2_url_raw_2.end());
-				// friday_lec2_url = friday_lec2_url + msclr::interop::marshal_as<System::String ^>(friday_lec2_url_raw_3);
+				friday_lec2_url = friday_lec2_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
-			//friday Lec3
+			//Friday Lec3
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string3 = sheet->readStr(row, col);
-				wstring lec3(lec_string3);
-				string lec_str3(lec3.begin(), lec3.end());
+				button_modifier(friday_lec3_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				friday_lec3_btn->Visible = true;
-				friday_lec3_btn->Text = "";
-				friday_lec3_btn->Text = friday_lec3_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str3);
-				// find_string(sheet, lec3);
-				// const wchar_t *friday_lec3_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring friday_lec3_url_raw_2(friday_lec3_url_raw);
-				// string friday_lec3_url_raw_3(friday_lec3_url_raw_2.begin(), friday_lec3_url_raw_2.end());
-				// friday_lec3_url = friday_lec3_url + msclr::interop::marshal_as<System::String ^>(friday_lec3_url_raw_3);
+				friday_lec3_url = friday_lec3_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//friday Lec4
+
+			//Friday Lec4
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string4 = sheet->readStr(row, col);
-				wstring lec4(lec_string4);
-				string lec_str4(lec4.begin(), lec4.end());
+				button_modifier(friday_lec4_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				friday_lec4_btn->Visible = true;
-				friday_lec4_btn->Text = "";
-				friday_lec4_btn->Text = friday_lec4_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str4);
-				// find_string(sheet, lec4);
-				// const wchar_t *friday_lec4_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring friday_lec4_url_raw_2(friday_lec4_url_raw);
-				// string friday_lec4_url_raw_3(friday_lec4_url_raw_2.begin(), friday_lec4_url_raw_2.end());
-				// friday_lec4_url = friday_lec4_url + msclr::interop::marshal_as<System::String ^>(friday_lec4_url_raw_3);
+				friday_lec4_url = friday_lec4_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//friday Lec5
+			//Friday Lec5
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string5 = sheet->readStr(row, col);
-				wstring lec5(lec_string5);
-				string lec_str5(lec5.begin(), lec5.end());
+				button_modifier(friday_lec5_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				friday_lec5_btn->Visible = true;
-				friday_lec5_btn->Text = "";
-				friday_lec5_btn->Text = friday_lec5_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str5);
-				// find_string(sheet, lec5);
-				// const wchar_t *friday_lec5_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring friday_lec5_url_raw_2(friday_lec5_url_raw);
-				// string friday_lec5_url_raw_3(friday_lec5_url_raw_2.begin(), friday_lec5_url_raw_2.end());
-				// friday_lec5_url = friday_lec5_url + msclr::interop::marshal_as<System::String ^>(friday_lec5_url_raw_3);
+				friday_lec5_url = friday_lec5_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//friday Lec6
+			//Friday Lec6
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string6 = sheet->readStr(row, col);
-				wstring lec6(lec_string6);
-				string lec_str6(lec6.begin(), lec6.end());
+				button_modifier(friday_lec6_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				friday_lec6_btn->Visible = true;
-				friday_lec6_btn->Text = "";
-				friday_lec6_btn->Text = friday_lec6_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str6);
-				// find_string(sheet, lec6);
-				// const wchar_t *friday_lec6_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring friday_lec6_url_raw_2(friday_lec6_url_raw);
-				// string friday_lec6_url_raw_3(friday_lec6_url_raw_2.begin(), friday_lec6_url_raw_2.end());
-				// friday_lec6_url = friday_lec6_url + msclr::interop::marshal_as<System::String ^>(friday_lec6_url_raw_3);
+				friday_lec6_url = friday_lec6_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//friday Lec7
+			//Friday Lec7
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string7 = sheet->readStr(row, col);
-				wstring lec7(lec_string7);
-				string lec_str7(lec7.begin(), lec7.end());
+				button_modifier(friday_lec7_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				friday_lec7_btn->Visible = true;
-				friday_lec7_btn->Text = "";
-				friday_lec7_btn->Text = friday_lec7_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str7);
-				// find_string(sheet, lec7);
-				// const wchar_t *friday_lec7_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring friday_lec7_url_raw_2(friday_lec7_url_raw);
-				// string friday_lec7_url_raw_3(friday_lec7_url_raw_2.begin(), friday_lec7_url_raw_2.end());
-				// friday_lec7_url = friday_lec7_url + msclr::interop::marshal_as<System::String ^>(friday_lec7_url_raw_3);
+				friday_lec7_url = friday_lec7_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//friday Lec8
+			//Friday Lec8
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string8 = sheet->readStr(row, col);
-				wstring lec8(lec_string8);
-				string lec_str8(lec8.begin(), lec8.end());
+				button_modifier(friday_lec8_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				friday_lec8_btn->Visible = true;
-				friday_lec8_btn->Text = "";
-				friday_lec8_btn->Text = friday_lec8_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str8);
-				// find_string(sheet, lec8);
-				// const wchar_t *friday_lec8_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring friday_lec8_url_raw_2(friday_lec8_url_raw);
-				// string friday_lec8_url_raw_3(friday_lec8_url_raw_2.begin(), friday_lec8_url_raw_2.end());
-				// friday_lec8_url = friday_lec8_url + msclr::interop::marshal_as<System::String ^>(friday_lec8_url_raw_3);
+				friday_lec8_url = friday_lec8_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//friday Lec9
+			//Friday Lec9
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string9 = sheet->readStr(row, col);
-				wstring lec9(lec_string9);
-				string lec_str9(lec9.begin(), lec9.end());
+				button_modifier(friday_lec9_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				friday_lec9_btn->Visible = true;
-				friday_lec9_btn->Text = "";
-				friday_lec9_btn->Text = friday_lec9_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str9);
-				// find_string(sheet, lec9);
-				// const wchar_t *friday_lec9_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring friday_lec9_url_raw_2(friday_lec9_url_raw);
-				// string friday_lec9_url_raw_3(friday_lec9_url_raw_2.begin(), friday_lec9_url_raw_2.end());
-				// friday_lec9_url = friday_lec9_url + msclr::interop::marshal_as<System::String ^>(friday_lec9_url_raw_3);
+				friday_lec9_url = friday_lec9_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 		}
 
 		void saturday_buttons_maker(Sheet *sheet)
 		{
 			int row, col;
-			//saturday Lec1
 			row = monday_row + 5;
+			//Saturday Lec1
 			col = monday_col + 1;
 			cellType = sheet->cellType(row, col);
+
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *saturday_lec1_lec_string = sheet->readStr(row, col);
-				wstring saturday_lec1_lec(saturday_lec1_lec_string);
-				string saturday_lec1_lec_str(saturday_lec1_lec.begin(), saturday_lec1_lec.end());
+				button_modifier(saturday_lec1_btn, sheet->readStr(row, col));
 
-				saturday_lec1_btn->Visible = true;
-				saturday_lec1_btn->Text = "";
-				saturday_lec1_btn->Text = saturday_lec1_btn->Text + msclr::interop::marshal_as<System::String ^>(saturday_lec1_lec_str);
-				// find_string(sheet, saturday_lec1_lec);
-				// const wchar_t *saturday_lec1_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring saturday_lec1_url_raw_2(saturday_lec1_url_raw);
-				// string saturday_lec1_url_raw_3(saturday_lec1_url_raw_2.begin(), saturday_lec1_url_raw_2.end());
-				// saturday_lec1_url = saturday_lec1_url + msclr::interop::marshal_as<System::String ^>(saturday_lec1_url_raw_3);
+				//find_string(sheet, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
+				saturday_lec1_url = saturday_lec1_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
-			//saturday Lec2
+			//Saturday Lec2
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
+				button_modifier(saturday_lec2_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				const wchar_t *lec_string2 = sheet->readStr(row, col);
-				wstring lec2(lec_string2);
-				string lec_str2(lec2.begin(), lec2.end());
-
-				saturday_lec2_btn->Visible = true;
-				saturday_lec2_btn->Text = "";
-				saturday_lec2_btn->Text = saturday_lec2_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str2);
-				// find_string(sheet, lec2);
-				// const wchar_t *saturday_lec2_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring saturday_lec2_url_raw_2(saturday_lec2_url_raw);
-				// string saturday_lec2_url_raw_3(saturday_lec2_url_raw_2.begin(), saturday_lec2_url_raw_2.end());
-				// saturday_lec2_url = saturday_lec2_url + msclr::interop::marshal_as<System::String ^>(saturday_lec2_url_raw_3);
+				saturday_lec2_url = saturday_lec2_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 
-			//saturday Lec3
+			//Saturday Lec3
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string3 = sheet->readStr(row, col);
-				wstring lec3(lec_string3);
-				string lec_str3(lec3.begin(), lec3.end());
+				button_modifier(saturday_lec3_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				saturday_lec3_btn->Visible = true;
-				saturday_lec3_btn->Text = "";
-				saturday_lec3_btn->Text = saturday_lec3_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str3);
-				// find_string(sheet, lec3);
-				// const wchar_t *saturday_lec3_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring saturday_lec3_url_raw_2(saturday_lec3_url_raw);
-				// string saturday_lec3_url_raw_3(saturday_lec3_url_raw_2.begin(), saturday_lec3_url_raw_2.end());
-				// saturday_lec3_url = saturday_lec3_url + msclr::interop::marshal_as<System::String ^>(saturday_lec3_url_raw_3);
+				saturday_lec3_url = saturday_lec3_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//saturday Lec4
+
+			//Saturday Lec4
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string4 = sheet->readStr(row, col);
-				wstring lec4(lec_string4);
-				string lec_str4(lec4.begin(), lec4.end());
+				button_modifier(saturday_lec4_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				saturday_lec4_btn->Visible = true;
-				saturday_lec4_btn->Text = "";
-				saturday_lec4_btn->Text = saturday_lec4_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str4);
-				// find_string(sheet, lec4);
-				// const wchar_t *saturday_lec4_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring saturday_lec4_url_raw_2(saturday_lec4_url_raw);
-				// string saturday_lec4_url_raw_3(saturday_lec4_url_raw_2.begin(), saturday_lec4_url_raw_2.end());
-				// saturday_lec4_url = saturday_lec4_url + msclr::interop::marshal_as<System::String ^>(saturday_lec4_url_raw_3);
+				saturday_lec4_url = saturday_lec4_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//saturday Lec5
+			//Saturday Lec5
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string5 = sheet->readStr(row, col);
-				wstring lec5(lec_string5);
-				string lec_str5(lec5.begin(), lec5.end());
+				button_modifier(saturday_lec5_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				saturday_lec5_btn->Visible = true;
-				saturday_lec5_btn->Text = "";
-				saturday_lec5_btn->Text = saturday_lec5_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str5);
-				// find_string(sheet, lec5);
-				// const wchar_t *saturday_lec5_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring saturday_lec5_url_raw_2(saturday_lec5_url_raw);
-				// string saturday_lec5_url_raw_3(saturday_lec5_url_raw_2.begin(), saturday_lec5_url_raw_2.end());
-				// saturday_lec5_url = saturday_lec5_url + msclr::interop::marshal_as<System::String ^>(saturday_lec5_url_raw_3);
+				saturday_lec5_url = saturday_lec5_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//saturday Lec6
+			//Saturday Lec6
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string6 = sheet->readStr(row, col);
-				wstring lec6(lec_string6);
-				string lec_str6(lec6.begin(), lec6.end());
+				button_modifier(saturday_lec6_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				saturday_lec6_btn->Visible = true;
-				saturday_lec6_btn->Text = "";
-				saturday_lec6_btn->Text = saturday_lec6_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str6);
-				// find_string(sheet, lec6);
-				// const wchar_t *saturday_lec6_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring saturday_lec6_url_raw_2(saturday_lec6_url_raw);
-				// string saturday_lec6_url_raw_3(saturday_lec6_url_raw_2.begin(), saturday_lec6_url_raw_2.end());
-				// saturday_lec6_url = saturday_lec6_url + msclr::interop::marshal_as<System::String ^>(saturday_lec6_url_raw_3);
+				saturday_lec6_url = saturday_lec6_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//saturday Lec7
+			//Saturday Lec7
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string7 = sheet->readStr(row, col);
-				wstring lec7(lec_string7);
-				string lec_str7(lec7.begin(), lec7.end());
+				button_modifier(saturday_lec7_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				saturday_lec7_btn->Visible = true;
-				saturday_lec7_btn->Text = "";
-				saturday_lec7_btn->Text = saturday_lec7_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str7);
-				// find_string(sheet, lec7);
-				// const wchar_t *saturday_lec7_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring saturday_lec7_url_raw_2(saturday_lec7_url_raw);
-				// string saturday_lec7_url_raw_3(saturday_lec7_url_raw_2.begin(), saturday_lec7_url_raw_2.end());
-				// saturday_lec7_url = saturday_lec7_url + msclr::interop::marshal_as<System::String ^>(saturday_lec7_url_raw_3);
+				saturday_lec7_url = saturday_lec7_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//saturday Lec8
+			//Saturday Lec8
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string8 = sheet->readStr(row, col);
-				wstring lec8(lec_string8);
-				string lec_str8(lec8.begin(), lec8.end());
+				button_modifier(saturday_lec8_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				saturday_lec8_btn->Visible = true;
-				saturday_lec8_btn->Text = "";
-				saturday_lec8_btn->Text = saturday_lec8_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str8);
-				// find_string(sheet, lec8);
-				// const wchar_t *saturday_lec8_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring saturday_lec8_url_raw_2(saturday_lec8_url_raw);
-				// string saturday_lec8_url_raw_3(saturday_lec8_url_raw_2.begin(), saturday_lec8_url_raw_2.end());
-				// saturday_lec8_url = saturday_lec8_url + msclr::interop::marshal_as<System::String ^>(saturday_lec8_url_raw_3);
+				saturday_lec8_url = saturday_lec8_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
-			//saturday Lec9
+			//Saturday Lec9
 			col = col + 1;
 			cellType = sheet->cellType(row, col);
 			if (cellType != CELLTYPE_BLANK)
 			{
-				const wchar_t *lec_string9 = sheet->readStr(row, col);
-				wstring lec9(lec_string9);
-				string lec_str9(lec9.begin(), lec9.end());
+				button_modifier(saturday_lec9_btn, sheet->readStr(row, col));
+				find_strings_in_links_table(sheet, sheet->readStr(row, col));
 
-				saturday_lec9_btn->Visible = true;
-				saturday_lec9_btn->Text = "";
-				saturday_lec9_btn->Text = saturday_lec9_btn->Text + msclr::interop::marshal_as<System::String ^>(lec_str9);
-				// find_string(sheet, lec9);
-				// const wchar_t *saturday_lec9_url_raw = sheet->readStr(string_row, string_col + 1);
-				// wstring saturday_lec9_url_raw_2(saturday_lec9_url_raw);
-				// string saturday_lec9_url_raw_3(saturday_lec9_url_raw_2.begin(), saturday_lec9_url_raw_2.end());
-				// saturday_lec9_url = saturday_lec9_url + msclr::interop::marshal_as<System::String ^>(saturday_lec9_url_raw_3);
+				saturday_lec9_url = saturday_lec9_url + links_modifier(sheet->readStr(string_row, string_col + 1));
 			}
 		}
 
 		void display_buttons(Sheet *sheet)
 		{
 			/*for (int row = monday_row; row < sheet->lastRow(); ++row)
-            {
-                for (int col = monday_col + 1; col < sheet->lastCol(); ++col)
-                {*/
+			{
+				for (int col = monday_col + 1; col < sheet->lastCol(); ++col)
+				{*/
+
 			timeline_buttons_maker(sheet);
 			find_links_table(sheet, L"Links");
-			monday_buttons_maker(sheet);
-			tuesday_buttons_maker(sheet);
-			wednesday_buttons_maker(sheet);
-			//thursday_buttons_maker(sheet);
-			//friday_buttons_maker(sheet);
-			//saturday_buttons_maker(sheet);
+			if (weekDay == 1)
+			{
+				monday_buttons_maker(sheet);
+			}
+			else if (weekDay == 2)
+			{
+				tuesday_buttons_maker(sheet);
+			}
+			else if (weekDay == 3)
+			{
+				wednesday_buttons_maker(sheet);
+			}
+			else if (weekDay == 4)
+			{
+				thursday_buttons_maker(sheet);
+			}
+			else if (weekDay == 5)
+			{
+				friday_buttons_maker(sheet);
+			}
+			else if (weekDay == 6)
+			{
+				saturday_buttons_maker(sheet);
+			}
 
 			/*}
-            }*/
+			}*/
 		}
 
 		void read_file(System::String ^ file_path)
@@ -3557,6 +3434,78 @@ public
 		}
 
 	private:
+		System::Void thursday_lec1_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ thursday_lec1_url_secondary = "" + thursday_lec1_url;
+			std::string thursday_lec1_final_url = msclr::interop::marshal_as<std::string>(thursday_lec1_url_secondary);
+			system(("start " + thursday_lec1_final_url).c_str());
+		}
+
+	private:
+		System::Void thursday_lec2_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ thursday_lec2_url_secondary = "" + thursday_lec2_url;
+			std::string thursday_lec2_final_url = msclr::interop::marshal_as<std::string>(thursday_lec2_url_secondary);
+			system(("start " + thursday_lec2_final_url).c_str());
+		}
+
+	private:
+		System::Void thursday_lec3_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ thursday_lec3_url_secondary = "" + thursday_lec3_url;
+			std::string thursday_lec3_final_url = msclr::interop::marshal_as<std::string>(thursday_lec3_url_secondary);
+			system(("start " + thursday_lec3_final_url).c_str());
+		}
+
+	private:
+		System::Void thursday_lec4_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ thursday_lec4_url_secondary = "" + thursday_lec4_url;
+			std::string thursday_lec4_final_url = msclr::interop::marshal_as<std::string>(thursday_lec4_url_secondary);
+			system(("start " + thursday_lec4_final_url).c_str());
+		}
+
+	private:
+		System::Void thursday_lec5_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ thursday_lec5_url_secondary = "" + thursday_lec5_url;
+			std::string thursday_lec5_final_url = msclr::interop::marshal_as<std::string>(thursday_lec5_url_secondary);
+			system(("start " + thursday_lec5_final_url).c_str());
+		}
+
+	private:
+		System::Void thursday_lec6_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ thursday_lec6_url_secondary = "" + thursday_lec6_url;
+			std::string thursday_lec6_final_url = msclr::interop::marshal_as<std::string>(thursday_lec6_url_secondary);
+			system(("start " + thursday_lec6_final_url).c_str());
+		}
+
+	private:
+		System::Void thursday_lec7_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ thursday_lec7_url_secondary = "" + thursday_lec7_url;
+			std::string thursday_lec7_final_url = msclr::interop::marshal_as<std::string>(thursday_lec7_url_secondary);
+			system(("start " + thursday_lec7_final_url).c_str());
+		}
+
+	private:
+		System::Void thursday_lec8_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ thursday_lec8_url_secondary = "" + thursday_lec8_url;
+			std::string thursday_lec8_final_url = msclr::interop::marshal_as<std::string>(thursday_lec8_url_secondary);
+			system(("start " + thursday_lec8_final_url).c_str());
+		}
+
+	private:
+		System::Void thursday_lec9_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ thursday_lec9_url_secondary = "" + thursday_lec9_url;
+			std::string thursday_lec9_final_url = msclr::interop::marshal_as<std::string>(thursday_lec9_url_secondary);
+			system(("start " + thursday_lec9_final_url).c_str());
+		}
+
+	private:
 		System::Void friday_lec1_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
 		{
 			System::String ^ friday_lec1_url_secondary = "" + friday_lec1_url;
@@ -3570,6 +3519,134 @@ public
 			System::String ^ friday_lec2_url_secondary = "" + friday_lec2_url;
 			std::string friday_lec2_final_url = msclr::interop::marshal_as<std::string>(friday_lec2_url_secondary);
 			system(("start " + friday_lec2_final_url).c_str());
+		}
+
+	private:
+		System::Void friday_lec3_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ friday_lec3_url_secondary = "" + friday_lec3_url;
+			std::string friday_lec3_final_url = msclr::interop::marshal_as<std::string>(friday_lec3_url_secondary);
+			system(("start " + friday_lec3_final_url).c_str());
+		}
+
+	private:
+		System::Void friday_lec4_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ friday_lec4_url_secondary = "" + friday_lec4_url;
+			std::string friday_lec4_final_url = msclr::interop::marshal_as<std::string>(friday_lec4_url_secondary);
+			system(("start " + friday_lec4_final_url).c_str());
+		}
+
+	private:
+		System::Void friday_lec5_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ friday_lec5_url_secondary = "" + friday_lec5_url;
+			std::string friday_lec5_final_url = msclr::interop::marshal_as<std::string>(friday_lec5_url_secondary);
+			system(("start " + friday_lec5_final_url).c_str());
+		}
+
+	private:
+		System::Void friday_lec6_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ friday_lec6_url_secondary = "" + friday_lec6_url;
+			std::string friday_lec6_final_url = msclr::interop::marshal_as<std::string>(friday_lec6_url_secondary);
+			system(("start " + friday_lec6_final_url).c_str());
+		}
+
+	private:
+		System::Void friday_lec7_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ friday_lec7_url_secondary = "" + friday_lec7_url;
+			std::string friday_lec7_final_url = msclr::interop::marshal_as<std::string>(friday_lec7_url_secondary);
+			system(("start " + friday_lec7_final_url).c_str());
+		}
+
+	private:
+		System::Void friday_lec8_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ friday_lec8_url_secondary = "" + friday_lec8_url;
+			std::string friday_lec8_final_url = msclr::interop::marshal_as<std::string>(friday_lec8_url_secondary);
+			system(("start " + friday_lec8_final_url).c_str());
+		}
+
+	private:
+		System::Void friday_lec9_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ friday_lec9_url_secondary = "" + friday_lec9_url;
+			std::string friday_lec9_final_url = msclr::interop::marshal_as<std::string>(friday_lec9_url_secondary);
+			system(("start " + friday_lec9_final_url).c_str());
+		}
+
+	private:
+		System::Void saturday_lec1_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ saturday_lec1_url_secondary = "" + saturday_lec1_url;
+			std::string saturday_lec1_final_url = msclr::interop::marshal_as<std::string>(saturday_lec1_url_secondary);
+			system(("start " + saturday_lec1_final_url).c_str());
+		}
+
+	private:
+		System::Void saturday_lec2_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ saturday_lec2_url_secondary = "" + saturday_lec2_url;
+			std::string saturday_lec2_final_url = msclr::interop::marshal_as<std::string>(saturday_lec2_url_secondary);
+			system(("start " + saturday_lec2_final_url).c_str());
+		}
+
+	private:
+		System::Void saturday_lec3_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ saturday_lec3_url_secondary = "" + saturday_lec3_url;
+			std::string saturday_lec3_final_url = msclr::interop::marshal_as<std::string>(saturday_lec3_url_secondary);
+			system(("start " + saturday_lec3_final_url).c_str());
+		}
+
+	private:
+		System::Void saturday_lec4_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ saturday_lec4_url_secondary = "" + saturday_lec4_url;
+			std::string saturday_lec4_final_url = msclr::interop::marshal_as<std::string>(saturday_lec4_url_secondary);
+			system(("start " + saturday_lec4_final_url).c_str());
+		}
+
+	private:
+		System::Void saturday_lec5_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ saturday_lec5_url_secondary = "" + saturday_lec5_url;
+			std::string saturday_lec5_final_url = msclr::interop::marshal_as<std::string>(saturday_lec5_url_secondary);
+			system(("start " + saturday_lec5_final_url).c_str());
+		}
+
+	private:
+		System::Void saturday_lec6_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ saturday_lec6_url_secondary = "" + saturday_lec6_url;
+			std::string saturday_lec6_final_url = msclr::interop::marshal_as<std::string>(saturday_lec6_url_secondary);
+			system(("start " + saturday_lec6_final_url).c_str());
+		}
+
+	private:
+		System::Void saturday_lec7_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ saturday_lec7_url_secondary = "" + saturday_lec7_url;
+			std::string saturday_lec7_final_url = msclr::interop::marshal_as<std::string>(saturday_lec7_url_secondary);
+			system(("start " + saturday_lec7_final_url).c_str());
+		}
+
+	private:
+		System::Void saturday_lec8_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ saturday_lec8_url_secondary = "" + saturday_lec8_url;
+			std::string saturday_lec8_final_url = msclr::interop::marshal_as<std::string>(saturday_lec8_url_secondary);
+			system(("start " + saturday_lec8_final_url).c_str());
+		}
+
+	private:
+		System::Void saturday_lec9_btn_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			System::String ^ saturday_lec9_url_secondary = "" + saturday_lec9_url;
+			std::string saturday_lec9_final_url = msclr::interop::marshal_as<std::string>(saturday_lec9_url_secondary);
+			system(("start " + saturday_lec9_final_url).c_str());
 		}
 
 	private:
