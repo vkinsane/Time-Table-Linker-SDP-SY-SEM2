@@ -16,6 +16,9 @@
 # Mono auto generated files
 mono_crash.*
 
+# My Folders
+Mini_Backups/
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/

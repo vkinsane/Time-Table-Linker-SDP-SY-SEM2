@@ -52,8 +52,6 @@ public
 		}
 
 	private:
-
-
 	protected:
 	private:
 		System::Windows::Forms::Button ^ choose_excel_file_btn;
@@ -126,9 +124,6 @@ public
 
 	private:
 		System::Windows::Forms::TableLayoutPanel ^ tableLayoutPanel5;
-
-	private:
-		System::Windows::Forms::Label ^ label6;
 
 	private:
 		System::Windows::Forms::Label ^ time_label;
@@ -304,11 +299,14 @@ public
 		System::Windows::Forms::Button ^ friday_lec8_btn;
 
 	private:
+	private:
+		System::Windows::Forms::Button ^ create_quick_meet_btn;
+
+	private:
+		System::Windows::Forms::Label ^ github_link_label;
+
+	private:
 		System::Windows::Forms::TextBox ^ textBox3;
-
-private: System::Windows::Forms::Button^ create_quick_meet_btn;
-private: System::Windows::Forms::Label^ github_link_label;
-
 
 	private:
 	private:
@@ -366,7 +364,6 @@ private: System::Windows::Forms::Label^ github_link_label;
 			this->time_3_label = (gcnew System::Windows::Forms::Label());
 			this->time_2_label = (gcnew System::Windows::Forms::Label());
 			this->time_9_label = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->time_label = (gcnew System::Windows::Forms::Label());
 			this->tableLayoutPanel6 = (gcnew System::Windows::Forms::TableLayoutPanel());
 			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
@@ -421,40 +418,23 @@ private: System::Windows::Forms::Label^ github_link_label;
 			// 
 			// choose_excel_file_btn
 			// 
-			this->choose_excel_file_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->choose_excel_file_btn, L"choose_excel_file_btn");
 			this->choose_excel_file_btn->BackColor = System::Drawing::Color::Transparent;
 			this->choose_excel_file_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->choose_excel_file_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->choose_excel_file_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->choose_excel_file_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->choose_excel_file_btn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->choose_excel_file_btn->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->choose_excel_file_btn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"choose_excel_file_btn.Image")));
-			this->choose_excel_file_btn->Location = System::Drawing::Point(384, 5);
-			this->choose_excel_file_btn->Margin = System::Windows::Forms::Padding(4);
 			this->choose_excel_file_btn->Name = L"choose_excel_file_btn";
-			this->choose_excel_file_btn->Size = System::Drawing::Size(155, 58);
-			this->choose_excel_file_btn->TabIndex = 1;
-			this->choose_excel_file_btn->Text = L"Choose Excel File";
-			this->choose_excel_file_btn->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
 			this->choose_excel_file_btn->UseVisualStyleBackColor = false;
 			this->choose_excel_file_btn->Click += gcnew System::EventHandler(this, &Main_Ui::choose_excel_file_btn_Click);
 			// 
 			// textBox1
 			// 
-			this->textBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->textBox1, L"textBox1");
 			this->textBox1->BackColor = System::Drawing::Color::White;
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->textBox1->ForeColor = System::Drawing::Color::Black;
-			this->textBox1->Location = System::Drawing::Point(547, 18);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(372, 32);
-			this->textBox1->TabIndex = 2;
-			this->textBox1->Text = L"File Path...";
 			// 
 			// openFileDialog1
 			// 
@@ -462,378 +442,204 @@ private: System::Windows::Forms::Label^ github_link_label;
 			// 
 			// read_file_btn
 			// 
-			this->read_file_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->read_file_btn, L"read_file_btn");
 			this->read_file_btn->BackColor = System::Drawing::Color::Transparent;
 			this->read_file_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->read_file_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->read_file_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->read_file_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->read_file_btn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->read_file_btn->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->read_file_btn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"read_file_btn.Image")));
-			this->read_file_btn->ImageAlign = System::Drawing::ContentAlignment::MiddleRight;
-			this->read_file_btn->Location = System::Drawing::Point(927, 4);
-			this->read_file_btn->Margin = System::Windows::Forms::Padding(4);
 			this->read_file_btn->Name = L"read_file_btn";
-			this->read_file_btn->Size = System::Drawing::Size(156, 61);
-			this->read_file_btn->TabIndex = 3;
-			this->read_file_btn->Text = L"Read File";
-			this->read_file_btn->TextImageRelation = System::Windows::Forms::TextImageRelation::ImageBeforeText;
 			this->read_file_btn->UseVisualStyleBackColor = false;
 			this->read_file_btn->Click += gcnew System::EventHandler(this, &Main_Ui::read_file_btn_Click);
 			// 
 			// textBox2
 			// 
-			this->textBox2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->textBox2, L"textBox2");
 			this->textBox2->BackColor = System::Drawing::Color::White;
-			this->textBox2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->textBox2->ForeColor = System::Drawing::Color::Black;
-			this->textBox2->Location = System::Drawing::Point(4, 18);
-			this->textBox2->Margin = System::Windows::Forms::Padding(4);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(372, 32);
-			this->textBox2->TabIndex = 6;
-			this->textBox2->Text = L"Enter File Path...";
 			// 
 			// monday_lec1_btn
 			// 
-			this->monday_lec1_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->monday_lec1_btn, L"monday_lec1_btn");
 			this->monday_lec1_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->monday_lec1_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->monday_lec1_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->monday_lec1_btn->ForeColor = System::Drawing::Color::White;
-			this->monday_lec1_btn->Location = System::Drawing::Point(4, 13);
-			this->monday_lec1_btn->Margin = System::Windows::Forms::Padding(4);
 			this->monday_lec1_btn->Name = L"monday_lec1_btn";
-			this->monday_lec1_btn->Size = System::Drawing::Size(95, 59);
-			this->monday_lec1_btn->TabIndex = 10;
-			this->monday_lec1_btn->Text = L"Mon Lec 1";
 			this->monday_lec1_btn->UseVisualStyleBackColor = false;
-			this->monday_lec1_btn->Visible = false;
 			this->monday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec1_btn_Click);
 			// 
 			// tuesday_lec1_btn
 			// 
-			this->tuesday_lec1_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->tuesday_lec1_btn, L"tuesday_lec1_btn");
 			this->tuesday_lec1_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->tuesday_lec1_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->tuesday_lec1_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->tuesday_lec1_btn->ForeColor = System::Drawing::Color::White;
-			this->tuesday_lec1_btn->Location = System::Drawing::Point(4, 96);
-			this->tuesday_lec1_btn->Margin = System::Windows::Forms::Padding(4);
 			this->tuesday_lec1_btn->Name = L"tuesday_lec1_btn";
-			this->tuesday_lec1_btn->Size = System::Drawing::Size(95, 57);
-			this->tuesday_lec1_btn->TabIndex = 11;
-			this->tuesday_lec1_btn->Text = L"Tue Lec 1";
 			this->tuesday_lec1_btn->UseVisualStyleBackColor = false;
-			this->tuesday_lec1_btn->Visible = false;
 			this->tuesday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec1_btn_Click);
 			// 
 			// monday_lec2_btn
 			// 
-			this->monday_lec2_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->monday_lec2_btn, L"monday_lec2_btn");
 			this->monday_lec2_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->monday_lec2_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->monday_lec2_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->monday_lec2_btn->ForeColor = System::Drawing::Color::White;
-			this->monday_lec2_btn->Location = System::Drawing::Point(107, 13);
-			this->monday_lec2_btn->Margin = System::Windows::Forms::Padding(4);
 			this->monday_lec2_btn->Name = L"monday_lec2_btn";
-			this->monday_lec2_btn->Size = System::Drawing::Size(95, 59);
-			this->monday_lec2_btn->TabIndex = 18;
-			this->monday_lec2_btn->Text = L"Mon Lec 2";
 			this->monday_lec2_btn->UseVisualStyleBackColor = false;
-			this->monday_lec2_btn->Visible = false;
 			this->monday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec2_btn_Click);
 			// 
 			// monday_lec3_btn
 			// 
-			this->monday_lec3_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->monday_lec3_btn, L"monday_lec3_btn");
 			this->monday_lec3_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->monday_lec3_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->monday_lec3_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->monday_lec3_btn->ForeColor = System::Drawing::Color::White;
-			this->monday_lec3_btn->Location = System::Drawing::Point(210, 13);
-			this->monday_lec3_btn->Margin = System::Windows::Forms::Padding(4);
 			this->monday_lec3_btn->Name = L"monday_lec3_btn";
-			this->monday_lec3_btn->Size = System::Drawing::Size(95, 59);
-			this->monday_lec3_btn->TabIndex = 19;
-			this->monday_lec3_btn->Text = L"Mon Lec 3";
 			this->monday_lec3_btn->UseVisualStyleBackColor = false;
-			this->monday_lec3_btn->Visible = false;
 			this->monday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec3_btn_Click);
 			// 
 			// monday_lec4_btn
 			// 
-			this->monday_lec4_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->monday_lec4_btn, L"monday_lec4_btn");
 			this->monday_lec4_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->monday_lec4_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->monday_lec4_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->monday_lec4_btn->ForeColor = System::Drawing::Color::White;
-			this->monday_lec4_btn->Location = System::Drawing::Point(313, 13);
-			this->monday_lec4_btn->Margin = System::Windows::Forms::Padding(4);
 			this->monday_lec4_btn->Name = L"monday_lec4_btn";
-			this->monday_lec4_btn->Size = System::Drawing::Size(95, 59);
-			this->monday_lec4_btn->TabIndex = 20;
-			this->monday_lec4_btn->Text = L"Mon Lec 4";
 			this->monday_lec4_btn->UseVisualStyleBackColor = false;
-			this->monday_lec4_btn->Visible = false;
 			this->monday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec4_btn_Click);
 			// 
 			// monday_lec5_btn
 			// 
-			this->monday_lec5_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->monday_lec5_btn, L"monday_lec5_btn");
 			this->monday_lec5_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->monday_lec5_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->monday_lec5_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->monday_lec5_btn->ForeColor = System::Drawing::Color::White;
-			this->monday_lec5_btn->Location = System::Drawing::Point(416, 13);
-			this->monday_lec5_btn->Margin = System::Windows::Forms::Padding(4);
 			this->monday_lec5_btn->Name = L"monday_lec5_btn";
-			this->monday_lec5_btn->Size = System::Drawing::Size(95, 59);
-			this->monday_lec5_btn->TabIndex = 21;
-			this->monday_lec5_btn->Text = L"Mon Lec 5";
 			this->monday_lec5_btn->UseVisualStyleBackColor = false;
-			this->monday_lec5_btn->Visible = false;
 			this->monday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec5_btn_Click);
 			// 
 			// monday_lec6_btn
 			// 
-			this->monday_lec6_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->monday_lec6_btn, L"monday_lec6_btn");
 			this->monday_lec6_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->monday_lec6_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->monday_lec6_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->monday_lec6_btn->ForeColor = System::Drawing::Color::White;
-			this->monday_lec6_btn->Location = System::Drawing::Point(519, 13);
-			this->monday_lec6_btn->Margin = System::Windows::Forms::Padding(4);
 			this->monday_lec6_btn->Name = L"monday_lec6_btn";
-			this->monday_lec6_btn->Size = System::Drawing::Size(95, 59);
-			this->monday_lec6_btn->TabIndex = 22;
-			this->monday_lec6_btn->Text = L"Mon Lec 6";
 			this->monday_lec6_btn->UseVisualStyleBackColor = false;
-			this->monday_lec6_btn->Visible = false;
 			this->monday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec6_btn_Click);
 			// 
 			// friday_lec1_btn
 			// 
-			this->friday_lec1_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->friday_lec1_btn, L"friday_lec1_btn");
 			this->friday_lec1_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->friday_lec1_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->friday_lec1_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->friday_lec1_btn->ForeColor = System::Drawing::Color::White;
-			this->friday_lec1_btn->Location = System::Drawing::Point(4, 336);
-			this->friday_lec1_btn->Margin = System::Windows::Forms::Padding(4);
 			this->friday_lec1_btn->Name = L"friday_lec1_btn";
-			this->friday_lec1_btn->Size = System::Drawing::Size(95, 58);
-			this->friday_lec1_btn->TabIndex = 23;
-			this->friday_lec1_btn->Text = L"Fri Lec 1";
 			this->friday_lec1_btn->UseVisualStyleBackColor = true;
-			this->friday_lec1_btn->Visible = false;
 			this->friday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec1_btn_Click);
 			// 
 			// friday_lec2_btn
 			// 
-			this->friday_lec2_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->friday_lec2_btn, L"friday_lec2_btn");
 			this->friday_lec2_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->friday_lec2_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->friday_lec2_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->friday_lec2_btn->ForeColor = System::Drawing::Color::White;
-			this->friday_lec2_btn->Location = System::Drawing::Point(107, 336);
-			this->friday_lec2_btn->Margin = System::Windows::Forms::Padding(4);
 			this->friday_lec2_btn->Name = L"friday_lec2_btn";
-			this->friday_lec2_btn->Size = System::Drawing::Size(95, 58);
-			this->friday_lec2_btn->TabIndex = 24;
-			this->friday_lec2_btn->Text = L"Fri Lec 2";
 			this->friday_lec2_btn->UseVisualStyleBackColor = true;
-			this->friday_lec2_btn->Visible = false;
 			this->friday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec2_btn_Click);
 			// 
 			// time_1_label
 			// 
-			this->time_1_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->time_1_label->AutoSize = true;
+			resources->ApplyResources(this->time_1_label, L"time_1_label");
 			this->time_1_label->BackColor = System::Drawing::Color::Transparent;
-			this->time_1_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->time_1_label->Location = System::Drawing::Point(4, 2);
-			this->time_1_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_1_label->Name = L"time_1_label";
-			this->time_1_label->Size = System::Drawing::Size(96, 40);
-			this->time_1_label->TabIndex = 27;
-			this->time_1_label->Text = L"Time Label 1";
-			this->time_1_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->time_1_label->Visible = false;
 			// 
 			// monday_lec7_btn
 			// 
-			this->monday_lec7_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->monday_lec7_btn, L"monday_lec7_btn");
 			this->monday_lec7_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->monday_lec7_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->monday_lec7_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->monday_lec7_btn->ForeColor = System::Drawing::Color::White;
-			this->monday_lec7_btn->Location = System::Drawing::Point(622, 13);
-			this->monday_lec7_btn->Margin = System::Windows::Forms::Padding(4);
 			this->monday_lec7_btn->Name = L"monday_lec7_btn";
-			this->monday_lec7_btn->Size = System::Drawing::Size(95, 59);
-			this->monday_lec7_btn->TabIndex = 28;
-			this->monday_lec7_btn->Text = L"Mon Lec 7";
 			this->monday_lec7_btn->UseVisualStyleBackColor = false;
-			this->monday_lec7_btn->Visible = false;
 			this->monday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec7_btn_Click);
 			// 
 			// monday_lec8_btn
 			// 
-			this->monday_lec8_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->monday_lec8_btn, L"monday_lec8_btn");
 			this->monday_lec8_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->monday_lec8_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->monday_lec8_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->monday_lec8_btn->ForeColor = System::Drawing::Color::White;
-			this->monday_lec8_btn->Location = System::Drawing::Point(725, 13);
-			this->monday_lec8_btn->Margin = System::Windows::Forms::Padding(4);
 			this->monday_lec8_btn->Name = L"monday_lec8_btn";
-			this->monday_lec8_btn->Size = System::Drawing::Size(95, 59);
-			this->monday_lec8_btn->TabIndex = 29;
-			this->monday_lec8_btn->Text = L"Mon Lec 8";
 			this->monday_lec8_btn->UseVisualStyleBackColor = false;
-			this->monday_lec8_btn->Visible = false;
 			this->monday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec8_btn_Click);
 			// 
 			// monday_lec9_btn
 			// 
-			this->monday_lec9_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->monday_lec9_btn, L"monday_lec9_btn");
 			this->monday_lec9_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->monday_lec9_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->monday_lec9_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->monday_lec9_btn->ForeColor = System::Drawing::Color::White;
-			this->monday_lec9_btn->Location = System::Drawing::Point(828, 13);
-			this->monday_lec9_btn->Margin = System::Windows::Forms::Padding(4);
 			this->monday_lec9_btn->Name = L"monday_lec9_btn";
-			this->monday_lec9_btn->Size = System::Drawing::Size(104, 59);
-			this->monday_lec9_btn->TabIndex = 30;
-			this->monday_lec9_btn->Text = L"Mon Lec 9";
 			this->monday_lec9_btn->UseVisualStyleBackColor = false;
-			this->monday_lec9_btn->Visible = false;
 			this->monday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec9_btn_Click);
 			// 
 			// tableLayoutPanel3
 			// 
-			this->tableLayoutPanel3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->tableLayoutPanel3->AutoSize = true;
+			resources->ApplyResources(this->tableLayoutPanel3, L"tableLayoutPanel3");
 			this->tableLayoutPanel3->BackColor = System::Drawing::Color::Transparent;
-			this->tableLayoutPanel3->ColumnCount = 2;
-			this->tableLayoutPanel3->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				84.21053F)));
-			this->tableLayoutPanel3->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				15.78947F)));
 			this->tableLayoutPanel3->Controls->Add(this->create_quick_meet_btn, 1, 0);
 			this->tableLayoutPanel3->Controls->Add(this->textBox3, 0, 0);
-			this->tableLayoutPanel3->Location = System::Drawing::Point(20, 35);
 			this->tableLayoutPanel3->Name = L"tableLayoutPanel3";
-			this->tableLayoutPanel3->RowCount = 2;
-			this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel3->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 20)));
-			this->tableLayoutPanel3->Size = System::Drawing::Size(1087, 80);
-			this->tableLayoutPanel3->TabIndex = 77;
 			// 
 			// create_quick_meet_btn
 			// 
-			this->create_quick_meet_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->create_quick_meet_btn, L"create_quick_meet_btn");
 			this->create_quick_meet_btn->BackColor = System::Drawing::Color::Transparent;
 			this->create_quick_meet_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->create_quick_meet_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->create_quick_meet_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->create_quick_meet_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->create_quick_meet_btn->Font = (gcnew System::Drawing::Font(L"Segoe UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->create_quick_meet_btn->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
-			this->create_quick_meet_btn->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"create_quick_meet_btn.Image")));
-			this->create_quick_meet_btn->Location = System::Drawing::Point(919, 4);
-			this->create_quick_meet_btn->Margin = System::Windows::Forms::Padding(4);
 			this->create_quick_meet_btn->Name = L"create_quick_meet_btn";
-			this->create_quick_meet_btn->Size = System::Drawing::Size(164, 52);
-			this->create_quick_meet_btn->TabIndex = 0;
-			this->create_quick_meet_btn->Text = L"Create Quick Meet";
-			this->create_quick_meet_btn->TextImageRelation = System::Windows::Forms::TextImageRelation::TextBeforeImage;
 			this->create_quick_meet_btn->UseVisualStyleBackColor = false;
 			this->create_quick_meet_btn->Click += gcnew System::EventHandler(this, &Main_Ui::create_quick_meet_btn_Click);
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(3, 3);
+			resources->ApplyResources(this->textBox3, L"textBox3");
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(100, 22);
-			this->textBox3->TabIndex = 1;
-			this->textBox3->Visible = false;
 			// 
 			// tableLayoutPanel5
 			// 
-			this->tableLayoutPanel5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->tableLayoutPanel5->AutoSize = true;
+			resources->ApplyResources(this->tableLayoutPanel5, L"tableLayoutPanel5");
 			this->tableLayoutPanel5->BackColor = System::Drawing::Color::Transparent;
-			this->tableLayoutPanel5->ColumnCount = 9;
-			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11111F)));
-			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11111F)));
-			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11111F)));
-			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11111F)));
-			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11111F)));
-			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				10.92077F)));
-			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.1349F)));
-			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11111F)));
-			this->tableLayoutPanel5->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11111F)));
 			this->tableLayoutPanel5->Controls->Add(this->time_8_label, 7, 0);
 			this->tableLayoutPanel5->Controls->Add(this->time_7_label, 6, 0);
 			this->tableLayoutPanel5->Controls->Add(this->time_6_label, 5, 0);
@@ -843,311 +649,114 @@ private: System::Windows::Forms::Label^ github_link_label;
 			this->tableLayoutPanel5->Controls->Add(this->time_2_label, 1, 0);
 			this->tableLayoutPanel5->Controls->Add(this->time_9_label, 8, 0);
 			this->tableLayoutPanel5->Controls->Add(this->time_1_label, 0, 0);
-			this->tableLayoutPanel5->Location = System::Drawing::Point(170, 105);
-			this->tableLayoutPanel5->MaximumSize = System::Drawing::Size(1980, 45);
 			this->tableLayoutPanel5->Name = L"tableLayoutPanel5";
-			this->tableLayoutPanel5->RowCount = 1;
-			this->tableLayoutPanel5->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
-			this->tableLayoutPanel5->Size = System::Drawing::Size(936, 45);
-			this->tableLayoutPanel5->TabIndex = 78;
 			// 
 			// time_8_label
 			// 
-			this->time_8_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->time_8_label->AutoSize = true;
+			resources->ApplyResources(this->time_8_label, L"time_8_label");
 			this->time_8_label->BackColor = System::Drawing::Color::Transparent;
-			this->time_8_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->time_8_label->Location = System::Drawing::Point(730, 2);
-			this->time_8_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_8_label->Name = L"time_8_label";
-			this->time_8_label->Size = System::Drawing::Size(96, 40);
-			this->time_8_label->TabIndex = 37;
-			this->time_8_label->Text = L"Time Label 8";
-			this->time_8_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->time_8_label->Visible = false;
 			// 
 			// time_7_label
 			// 
-			this->time_7_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->time_7_label->AutoSize = true;
+			resources->ApplyResources(this->time_7_label, L"time_7_label");
 			this->time_7_label->BackColor = System::Drawing::Color::Transparent;
-			this->time_7_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->time_7_label->Location = System::Drawing::Point(626, 2);
-			this->time_7_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_7_label->Name = L"time_7_label";
-			this->time_7_label->Size = System::Drawing::Size(96, 40);
-			this->time_7_label->TabIndex = 36;
-			this->time_7_label->Text = L"Time Label 7";
-			this->time_7_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->time_7_label->Visible = false;
 			// 
 			// time_6_label
 			// 
-			this->time_6_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->time_6_label->AutoSize = true;
+			resources->ApplyResources(this->time_6_label, L"time_6_label");
 			this->time_6_label->BackColor = System::Drawing::Color::Transparent;
-			this->time_6_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->time_6_label->Location = System::Drawing::Point(524, 2);
-			this->time_6_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_6_label->Name = L"time_6_label";
-			this->time_6_label->Size = System::Drawing::Size(94, 40);
-			this->time_6_label->TabIndex = 35;
-			this->time_6_label->Text = L"Time Label 6";
-			this->time_6_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->time_6_label->Visible = false;
 			// 
 			// time_5_label
 			// 
-			this->time_5_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->time_5_label->AutoSize = true;
+			resources->ApplyResources(this->time_5_label, L"time_5_label");
 			this->time_5_label->BackColor = System::Drawing::Color::Transparent;
-			this->time_5_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->time_5_label->Location = System::Drawing::Point(420, 2);
-			this->time_5_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_5_label->Name = L"time_5_label";
-			this->time_5_label->Size = System::Drawing::Size(96, 40);
-			this->time_5_label->TabIndex = 34;
-			this->time_5_label->Text = L"Time Label 5";
-			this->time_5_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->time_5_label->Visible = false;
 			// 
 			// time_4_label
 			// 
-			this->time_4_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->time_4_label->AutoSize = true;
+			resources->ApplyResources(this->time_4_label, L"time_4_label");
 			this->time_4_label->BackColor = System::Drawing::Color::Transparent;
-			this->time_4_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->time_4_label->Location = System::Drawing::Point(316, 2);
-			this->time_4_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_4_label->Name = L"time_4_label";
-			this->time_4_label->Size = System::Drawing::Size(96, 40);
-			this->time_4_label->TabIndex = 33;
-			this->time_4_label->Text = L"Time Label 4";
-			this->time_4_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->time_4_label->Visible = false;
 			// 
 			// time_3_label
 			// 
-			this->time_3_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->time_3_label->AutoSize = true;
+			resources->ApplyResources(this->time_3_label, L"time_3_label");
 			this->time_3_label->BackColor = System::Drawing::Color::Transparent;
-			this->time_3_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->time_3_label->Location = System::Drawing::Point(212, 2);
-			this->time_3_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_3_label->Name = L"time_3_label";
-			this->time_3_label->Size = System::Drawing::Size(96, 40);
-			this->time_3_label->TabIndex = 32;
-			this->time_3_label->Text = L"Time Label 3";
-			this->time_3_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->time_3_label->Visible = false;
 			// 
 			// time_2_label
 			// 
-			this->time_2_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->time_2_label->AutoSize = true;
+			resources->ApplyResources(this->time_2_label, L"time_2_label");
 			this->time_2_label->BackColor = System::Drawing::Color::Transparent;
-			this->time_2_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->time_2_label->Location = System::Drawing::Point(108, 2);
-			this->time_2_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_2_label->Name = L"time_2_label";
-			this->time_2_label->Size = System::Drawing::Size(96, 40);
-			this->time_2_label->TabIndex = 31;
-			this->time_2_label->Text = L"Time Label 2";
-			this->time_2_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->time_2_label->Visible = false;
 			// 
 			// time_9_label
 			// 
-			this->time_9_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->time_9_label->AutoSize = true;
+			resources->ApplyResources(this->time_9_label, L"time_9_label");
 			this->time_9_label->BackColor = System::Drawing::Color::Transparent;
-			this->time_9_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10.2F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->time_9_label->Location = System::Drawing::Point(834, 2);
-			this->time_9_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_9_label->Name = L"time_9_label";
-			this->time_9_label->Size = System::Drawing::Size(98, 40);
-			this->time_9_label->TabIndex = 30;
-			this->time_9_label->Text = L"Time Label 9";
-			this->time_9_label->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			this->time_9_label->Visible = false;
-			// 
-			// label6
-			// 
-			this->label6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(212, -87);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(92, 17);
-			this->label6->TabIndex = 0;
-			this->label6->Text = L"09:00 : 10:00";
-			this->label6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// time_label
 			// 
-			this->time_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->time_label->AutoSize = true;
+			resources->ApplyResources(this->time_label, L"time_label");
 			this->time_label->BackColor = System::Drawing::Color::Transparent;
-			this->time_label->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11));
-			this->time_label->Location = System::Drawing::Point(4, 10);
-			this->time_label->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->time_label->Name = L"time_label";
-			this->time_label->Size = System::Drawing::Size(123, 25);
-			this->time_label->TabIndex = 16;
-			this->time_label->Text = L"Time";
 			// 
 			// tableLayoutPanel6
 			// 
-			this->tableLayoutPanel6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left));
-			this->tableLayoutPanel6->AutoSize = true;
+			resources->ApplyResources(this->tableLayoutPanel6, L"tableLayoutPanel6");
 			this->tableLayoutPanel6->BackColor = System::Drawing::Color::Transparent;
-			this->tableLayoutPanel6->ColumnCount = 1;
-			this->tableLayoutPanel6->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				50)));
 			this->tableLayoutPanel6->Controls->Add(this->time_label, 0, 0);
-			this->tableLayoutPanel6->Location = System::Drawing::Point(20, 105);
-			this->tableLayoutPanel6->MaximumSize = System::Drawing::Size(131, 45);
-			this->tableLayoutPanel6->MinimumSize = System::Drawing::Size(131, 0);
 			this->tableLayoutPanel6->Name = L"tableLayoutPanel6";
-			this->tableLayoutPanel6->RowCount = 1;
-			this->tableLayoutPanel6->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
-			this->tableLayoutPanel6->Size = System::Drawing::Size(131, 45);
-			this->tableLayoutPanel6->TabIndex = 79;
 			// 
 			// tableLayoutPanel1
 			// 
-			this->tableLayoutPanel1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left));
+			resources->ApplyResources(this->tableLayoutPanel1, L"tableLayoutPanel1");
 			this->tableLayoutPanel1->BackColor = System::Drawing::Color::Transparent;
-			this->tableLayoutPanel1->ColumnCount = 1;
-			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				100)));
 			this->tableLayoutPanel1->Controls->Add(this->label1, 0, 0);
 			this->tableLayoutPanel1->Controls->Add(this->label2, 0, 1);
 			this->tableLayoutPanel1->Controls->Add(this->label3, 0, 2);
 			this->tableLayoutPanel1->Controls->Add(this->label4, 0, 3);
 			this->tableLayoutPanel1->Controls->Add(this->label8, 0, 4);
-			this->tableLayoutPanel1->Location = System::Drawing::Point(20, 156);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
-			this->tableLayoutPanel1->RowCount = 5;
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.66667F)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.66667F)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.66667F)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.66667F)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.66667F)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 20)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 20)));
-			this->tableLayoutPanel1->Size = System::Drawing::Size(131, 407);
-			this->tableLayoutPanel1->TabIndex = 80;
 			// 
 			// label1
 			// 
-			this->label1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->label1->AutoSize = true;
+			resources->ApplyResources(this->label1, L"label1");
 			this->label1->BackColor = System::Drawing::Color::Transparent;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(4, 26);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(123, 28);
-			this->label1->TabIndex = 9;
-			this->label1->Text = L"Monday";
-			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// label2
 			// 
-			this->label2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->label2->AutoSize = true;
+			resources->ApplyResources(this->label2, L"label2");
 			this->label2->BackColor = System::Drawing::Color::Transparent;
-			this->label2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(4, 107);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(123, 28);
-			this->label2->TabIndex = 10;
-			this->label2->Text = L"Tuesday";
-			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// label3
 			// 
-			this->label3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->label3->AutoSize = true;
+			resources->ApplyResources(this->label3, L"label3");
 			this->label3->BackColor = System::Drawing::Color::Transparent;
-			this->label3->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(4, 188);
-			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(123, 28);
-			this->label3->TabIndex = 11;
-			this->label3->Text = L"Wednesday";
-			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// label4
 			// 
-			this->label4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->label4->AutoSize = true;
+			resources->ApplyResources(this->label4, L"label4");
 			this->label4->BackColor = System::Drawing::Color::Transparent;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label4->Location = System::Drawing::Point(4, 269);
-			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(123, 28);
-			this->label4->TabIndex = 12;
-			this->label4->Text = L"Thursday";
-			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// label8
 			// 
-			this->label8->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-			this->label8->AutoSize = true;
+			resources->ApplyResources(this->label8, L"label8");
 			this->label8->BackColor = System::Drawing::Color::Transparent;
-			this->label8->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label8->Location = System::Drawing::Point(4, 351);
-			this->label8->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
 			this->label8->Name = L"label8";
-			this->label8->Size = System::Drawing::Size(123, 28);
-			this->label8->TabIndex = 13;
-			this->label8->Text = L"Friday";
-			this->label8->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
 			// 
 			// tableLayoutPanel2
 			// 
-			this->tableLayoutPanel2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
-				| System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->tableLayoutPanel2, L"tableLayoutPanel2");
 			this->tableLayoutPanel2->BackColor = System::Drawing::Color::Transparent;
-			this->tableLayoutPanel2->ColumnCount = 9;
-			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11F)));
-			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11F)));
-			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11F)));
-			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11F)));
-			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11F)));
-			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11F)));
-			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11F)));
-			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.11F)));
-			this->tableLayoutPanel2->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				11.12F)));
 			this->tableLayoutPanel2->Controls->Add(this->monday_lec1_btn, 0, 0);
 			this->tableLayoutPanel2->Controls->Add(this->monday_lec2_btn, 1, 0);
 			this->tableLayoutPanel2->Controls->Add(this->monday_lec3_btn, 2, 0);
@@ -1194,762 +803,440 @@ private: System::Windows::Forms::Label^ github_link_label;
 			this->tableLayoutPanel2->Controls->Add(this->friday_lec8_btn, 7, 4);
 			this->tableLayoutPanel2->Controls->Add(this->friday_lec9_btn, 8, 4);
 			this->tableLayoutPanel2->ForeColor = System::Drawing::SystemColors::ActiveCaption;
-			this->tableLayoutPanel2->Location = System::Drawing::Point(170, 156);
 			this->tableLayoutPanel2->Name = L"tableLayoutPanel2";
-			this->tableLayoutPanel2->RowCount = 5;
-			this->tableLayoutPanel2->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 17.56757F)));
-			this->tableLayoutPanel2->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.48649F)));
-			this->tableLayoutPanel2->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.48649F)));
-			this->tableLayoutPanel2->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.48649F)));
-			this->tableLayoutPanel2->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 16.48649F)));
-			this->tableLayoutPanel2->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 20)));
-			this->tableLayoutPanel2->Size = System::Drawing::Size(936, 406);
-			this->tableLayoutPanel2->TabIndex = 81;
 			// 
 			// wednesday_lec1_btn
 			// 
-			this->wednesday_lec1_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->wednesday_lec1_btn, L"wednesday_lec1_btn");
 			this->wednesday_lec1_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->wednesday_lec1_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->wednesday_lec1_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->wednesday_lec1_btn->ForeColor = System::Drawing::Color::White;
-			this->wednesday_lec1_btn->Location = System::Drawing::Point(4, 176);
-			this->wednesday_lec1_btn->Margin = System::Windows::Forms::Padding(4);
 			this->wednesday_lec1_btn->Name = L"wednesday_lec1_btn";
-			this->wednesday_lec1_btn->Size = System::Drawing::Size(95, 58);
-			this->wednesday_lec1_btn->TabIndex = 11;
-			this->wednesday_lec1_btn->Text = L"Wed Lec 1";
 			this->wednesday_lec1_btn->UseVisualStyleBackColor = false;
-			this->wednesday_lec1_btn->Visible = false;
 			this->wednesday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec1_btn_Click);
 			// 
 			// tuesday_lec3_btn
 			// 
-			this->tuesday_lec3_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->tuesday_lec3_btn, L"tuesday_lec3_btn");
 			this->tuesday_lec3_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->tuesday_lec3_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->tuesday_lec3_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->tuesday_lec3_btn->ForeColor = System::Drawing::Color::White;
-			this->tuesday_lec3_btn->Location = System::Drawing::Point(210, 96);
-			this->tuesday_lec3_btn->Margin = System::Windows::Forms::Padding(4);
 			this->tuesday_lec3_btn->Name = L"tuesday_lec3_btn";
-			this->tuesday_lec3_btn->Size = System::Drawing::Size(95, 57);
-			this->tuesday_lec3_btn->TabIndex = 37;
-			this->tuesday_lec3_btn->Text = L"Tue Lec 3";
 			this->tuesday_lec3_btn->UseVisualStyleBackColor = false;
-			this->tuesday_lec3_btn->Visible = false;
 			this->tuesday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec3_btn_Click);
 			// 
 			// tuesday_lec4_btn
 			// 
-			this->tuesday_lec4_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->tuesday_lec4_btn, L"tuesday_lec4_btn");
 			this->tuesday_lec4_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->tuesday_lec4_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->tuesday_lec4_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->tuesday_lec4_btn->ForeColor = System::Drawing::Color::White;
-			this->tuesday_lec4_btn->Location = System::Drawing::Point(313, 96);
-			this->tuesday_lec4_btn->Margin = System::Windows::Forms::Padding(4);
 			this->tuesday_lec4_btn->Name = L"tuesday_lec4_btn";
-			this->tuesday_lec4_btn->Size = System::Drawing::Size(95, 57);
-			this->tuesday_lec4_btn->TabIndex = 38;
-			this->tuesday_lec4_btn->Text = L"Tue Lec 4";
 			this->tuesday_lec4_btn->UseVisualStyleBackColor = false;
-			this->tuesday_lec4_btn->Visible = false;
 			this->tuesday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec4_btn_Click);
 			// 
 			// tuesday_lec5_btn
 			// 
-			this->tuesday_lec5_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->tuesday_lec5_btn, L"tuesday_lec5_btn");
 			this->tuesday_lec5_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->tuesday_lec5_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->tuesday_lec5_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->tuesday_lec5_btn->ForeColor = System::Drawing::Color::White;
-			this->tuesday_lec5_btn->Location = System::Drawing::Point(416, 96);
-			this->tuesday_lec5_btn->Margin = System::Windows::Forms::Padding(4);
 			this->tuesday_lec5_btn->Name = L"tuesday_lec5_btn";
-			this->tuesday_lec5_btn->Size = System::Drawing::Size(95, 57);
-			this->tuesday_lec5_btn->TabIndex = 35;
-			this->tuesday_lec5_btn->Text = L"Tue Lec 5";
 			this->tuesday_lec5_btn->UseVisualStyleBackColor = false;
-			this->tuesday_lec5_btn->Visible = false;
 			this->tuesday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec5_btn_Click);
 			// 
 			// tuesday_lec6_btn
 			// 
-			this->tuesday_lec6_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->tuesday_lec6_btn, L"tuesday_lec6_btn");
 			this->tuesday_lec6_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->tuesday_lec6_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->tuesday_lec6_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->tuesday_lec6_btn->ForeColor = System::Drawing::Color::White;
-			this->tuesday_lec6_btn->Location = System::Drawing::Point(519, 96);
-			this->tuesday_lec6_btn->Margin = System::Windows::Forms::Padding(4);
 			this->tuesday_lec6_btn->Name = L"tuesday_lec6_btn";
-			this->tuesday_lec6_btn->Size = System::Drawing::Size(95, 57);
-			this->tuesday_lec6_btn->TabIndex = 34;
-			this->tuesday_lec6_btn->Text = L"Tue Lec 6";
 			this->tuesday_lec6_btn->UseVisualStyleBackColor = false;
-			this->tuesday_lec6_btn->Visible = false;
 			this->tuesday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec6_btn_Click);
 			// 
 			// tuesday_lec7_btn
 			// 
-			this->tuesday_lec7_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->tuesday_lec7_btn, L"tuesday_lec7_btn");
 			this->tuesday_lec7_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->tuesday_lec7_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->tuesday_lec7_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->tuesday_lec7_btn->ForeColor = System::Drawing::Color::White;
-			this->tuesday_lec7_btn->Location = System::Drawing::Point(622, 96);
-			this->tuesday_lec7_btn->Margin = System::Windows::Forms::Padding(4);
 			this->tuesday_lec7_btn->Name = L"tuesday_lec7_btn";
-			this->tuesday_lec7_btn->Size = System::Drawing::Size(95, 57);
-			this->tuesday_lec7_btn->TabIndex = 33;
-			this->tuesday_lec7_btn->Text = L"Tue Lec 7";
 			this->tuesday_lec7_btn->UseVisualStyleBackColor = false;
-			this->tuesday_lec7_btn->Visible = false;
 			this->tuesday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec7_btn_Click);
 			// 
 			// tuesday_lec8_btn
 			// 
-			this->tuesday_lec8_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->tuesday_lec8_btn, L"tuesday_lec8_btn");
 			this->tuesday_lec8_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->tuesday_lec8_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->tuesday_lec8_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->tuesday_lec8_btn->ForeColor = System::Drawing::Color::White;
-			this->tuesday_lec8_btn->Location = System::Drawing::Point(725, 96);
-			this->tuesday_lec8_btn->Margin = System::Windows::Forms::Padding(4);
 			this->tuesday_lec8_btn->Name = L"tuesday_lec8_btn";
-			this->tuesday_lec8_btn->Size = System::Drawing::Size(95, 57);
-			this->tuesday_lec8_btn->TabIndex = 36;
-			this->tuesday_lec8_btn->Text = L"Tue Lec 8";
 			this->tuesday_lec8_btn->UseVisualStyleBackColor = false;
-			this->tuesday_lec8_btn->Visible = false;
 			this->tuesday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec8_btn_Click);
 			// 
 			// tuesday_lec9_btn
 			// 
-			this->tuesday_lec9_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->tuesday_lec9_btn, L"tuesday_lec9_btn");
 			this->tuesday_lec9_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->tuesday_lec9_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->tuesday_lec9_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->tuesday_lec9_btn->ForeColor = System::Drawing::Color::White;
-			this->tuesday_lec9_btn->Location = System::Drawing::Point(828, 96);
-			this->tuesday_lec9_btn->Margin = System::Windows::Forms::Padding(4);
 			this->tuesday_lec9_btn->Name = L"tuesday_lec9_btn";
-			this->tuesday_lec9_btn->Size = System::Drawing::Size(104, 57);
-			this->tuesday_lec9_btn->TabIndex = 32;
-			this->tuesday_lec9_btn->Text = L"Tue Lec 9";
 			this->tuesday_lec9_btn->UseVisualStyleBackColor = false;
-			this->tuesday_lec9_btn->Visible = false;
 			this->tuesday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec9_btn_Click);
 			// 
 			// tuesday_lec2_btn
 			// 
-			this->tuesday_lec2_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->tuesday_lec2_btn, L"tuesday_lec2_btn");
 			this->tuesday_lec2_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->tuesday_lec2_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->tuesday_lec2_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->tuesday_lec2_btn->ForeColor = System::Drawing::Color::White;
-			this->tuesday_lec2_btn->Location = System::Drawing::Point(107, 96);
-			this->tuesday_lec2_btn->Margin = System::Windows::Forms::Padding(4);
 			this->tuesday_lec2_btn->Name = L"tuesday_lec2_btn";
-			this->tuesday_lec2_btn->Size = System::Drawing::Size(95, 57);
-			this->tuesday_lec2_btn->TabIndex = 39;
-			this->tuesday_lec2_btn->Text = L"Tue Lec 2";
 			this->tuesday_lec2_btn->UseVisualStyleBackColor = false;
-			this->tuesday_lec2_btn->Visible = false;
 			this->tuesday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec2_btn_Click);
 			// 
 			// wednesday_lec2_btn
 			// 
-			this->wednesday_lec2_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->wednesday_lec2_btn, L"wednesday_lec2_btn");
 			this->wednesday_lec2_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->wednesday_lec2_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->wednesday_lec2_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->wednesday_lec2_btn->ForeColor = System::Drawing::Color::White;
-			this->wednesday_lec2_btn->Location = System::Drawing::Point(107, 176);
-			this->wednesday_lec2_btn->Margin = System::Windows::Forms::Padding(4);
 			this->wednesday_lec2_btn->Name = L"wednesday_lec2_btn";
-			this->wednesday_lec2_btn->Size = System::Drawing::Size(95, 58);
-			this->wednesday_lec2_btn->TabIndex = 44;
-			this->wednesday_lec2_btn->Text = L"Wed Lec 2";
 			this->wednesday_lec2_btn->UseVisualStyleBackColor = false;
-			this->wednesday_lec2_btn->Visible = false;
 			this->wednesday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec2_btn_Click);
 			// 
 			// wednesday_lec3_btn
 			// 
-			this->wednesday_lec3_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->wednesday_lec3_btn, L"wednesday_lec3_btn");
 			this->wednesday_lec3_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->wednesday_lec3_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->wednesday_lec3_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->wednesday_lec3_btn->ForeColor = System::Drawing::Color::White;
-			this->wednesday_lec3_btn->Location = System::Drawing::Point(210, 176);
-			this->wednesday_lec3_btn->Margin = System::Windows::Forms::Padding(4);
 			this->wednesday_lec3_btn->Name = L"wednesday_lec3_btn";
-			this->wednesday_lec3_btn->Size = System::Drawing::Size(95, 58);
-			this->wednesday_lec3_btn->TabIndex = 46;
-			this->wednesday_lec3_btn->Text = L"Wed Lec 3";
 			this->wednesday_lec3_btn->UseVisualStyleBackColor = false;
-			this->wednesday_lec3_btn->Visible = false;
 			this->wednesday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec3_btn_Click);
 			// 
 			// wednesday_lec4_btn
 			// 
-			this->wednesday_lec4_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->wednesday_lec4_btn, L"wednesday_lec4_btn");
 			this->wednesday_lec4_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->wednesday_lec4_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->wednesday_lec4_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->wednesday_lec4_btn->ForeColor = System::Drawing::Color::White;
-			this->wednesday_lec4_btn->Location = System::Drawing::Point(313, 176);
-			this->wednesday_lec4_btn->Margin = System::Windows::Forms::Padding(4);
 			this->wednesday_lec4_btn->Name = L"wednesday_lec4_btn";
-			this->wednesday_lec4_btn->Size = System::Drawing::Size(95, 58);
-			this->wednesday_lec4_btn->TabIndex = 45;
-			this->wednesday_lec4_btn->Text = L"Wed Lec 4";
 			this->wednesday_lec4_btn->UseVisualStyleBackColor = false;
-			this->wednesday_lec4_btn->Visible = false;
 			this->wednesday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec4_btn_Click);
 			// 
 			// wednesday_lec5_btn
 			// 
-			this->wednesday_lec5_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->wednesday_lec5_btn, L"wednesday_lec5_btn");
 			this->wednesday_lec5_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->wednesday_lec5_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->wednesday_lec5_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->wednesday_lec5_btn->ForeColor = System::Drawing::Color::White;
-			this->wednesday_lec5_btn->Location = System::Drawing::Point(416, 176);
-			this->wednesday_lec5_btn->Margin = System::Windows::Forms::Padding(4);
 			this->wednesday_lec5_btn->Name = L"wednesday_lec5_btn";
-			this->wednesday_lec5_btn->Size = System::Drawing::Size(95, 58);
-			this->wednesday_lec5_btn->TabIndex = 42;
-			this->wednesday_lec5_btn->Text = L"Wed Lec 5";
 			this->wednesday_lec5_btn->UseVisualStyleBackColor = false;
-			this->wednesday_lec5_btn->Visible = false;
 			this->wednesday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec5_btn_Click);
 			// 
 			// wednesday_lec6_btn
 			// 
-			this->wednesday_lec6_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->wednesday_lec6_btn, L"wednesday_lec6_btn");
 			this->wednesday_lec6_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->wednesday_lec6_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->wednesday_lec6_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->wednesday_lec6_btn->ForeColor = System::Drawing::Color::White;
-			this->wednesday_lec6_btn->Location = System::Drawing::Point(519, 176);
-			this->wednesday_lec6_btn->Margin = System::Windows::Forms::Padding(4);
 			this->wednesday_lec6_btn->Name = L"wednesday_lec6_btn";
-			this->wednesday_lec6_btn->Size = System::Drawing::Size(95, 58);
-			this->wednesday_lec6_btn->TabIndex = 43;
-			this->wednesday_lec6_btn->Text = L"Wed Lec 6";
 			this->wednesday_lec6_btn->UseVisualStyleBackColor = false;
-			this->wednesday_lec6_btn->Visible = false;
 			this->wednesday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec6_btn_Click);
 			// 
 			// wednesday_lec7_btn
 			// 
-			this->wednesday_lec7_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->wednesday_lec7_btn, L"wednesday_lec7_btn");
 			this->wednesday_lec7_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->wednesday_lec7_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->wednesday_lec7_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->wednesday_lec7_btn->ForeColor = System::Drawing::Color::White;
-			this->wednesday_lec7_btn->Location = System::Drawing::Point(622, 176);
-			this->wednesday_lec7_btn->Margin = System::Windows::Forms::Padding(4);
 			this->wednesday_lec7_btn->Name = L"wednesday_lec7_btn";
-			this->wednesday_lec7_btn->Size = System::Drawing::Size(95, 58);
-			this->wednesday_lec7_btn->TabIndex = 41;
-			this->wednesday_lec7_btn->Text = L"Wed Lec 7";
 			this->wednesday_lec7_btn->UseVisualStyleBackColor = false;
-			this->wednesday_lec7_btn->Visible = false;
 			this->wednesday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec7_btn_Click);
 			// 
 			// wednesday_lec8_btn
 			// 
-			this->wednesday_lec8_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->wednesday_lec8_btn, L"wednesday_lec8_btn");
 			this->wednesday_lec8_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->wednesday_lec8_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->wednesday_lec8_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->wednesday_lec8_btn->ForeColor = System::Drawing::Color::White;
-			this->wednesday_lec8_btn->Location = System::Drawing::Point(725, 176);
-			this->wednesday_lec8_btn->Margin = System::Windows::Forms::Padding(4);
 			this->wednesday_lec8_btn->Name = L"wednesday_lec8_btn";
-			this->wednesday_lec8_btn->Size = System::Drawing::Size(95, 58);
-			this->wednesday_lec8_btn->TabIndex = 40;
-			this->wednesday_lec8_btn->Text = L"Wed Lec 8";
 			this->wednesday_lec8_btn->UseVisualStyleBackColor = false;
-			this->wednesday_lec8_btn->Visible = false;
 			this->wednesday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec8_btn_Click);
 			// 
 			// wednesday_lec9_btn
 			// 
-			this->wednesday_lec9_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->wednesday_lec9_btn, L"wednesday_lec9_btn");
 			this->wednesday_lec9_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->wednesday_lec9_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->wednesday_lec9_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->wednesday_lec9_btn->ForeColor = System::Drawing::Color::White;
-			this->wednesday_lec9_btn->Location = System::Drawing::Point(828, 176);
-			this->wednesday_lec9_btn->Margin = System::Windows::Forms::Padding(4);
 			this->wednesday_lec9_btn->Name = L"wednesday_lec9_btn";
-			this->wednesday_lec9_btn->Size = System::Drawing::Size(104, 58);
-			this->wednesday_lec9_btn->TabIndex = 47;
-			this->wednesday_lec9_btn->Text = L"Wed Lec 9";
 			this->wednesday_lec9_btn->UseVisualStyleBackColor = false;
-			this->wednesday_lec9_btn->Visible = false;
 			this->wednesday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec9_btn_Click);
 			// 
 			// thursday_lec1_btn
 			// 
-			this->thursday_lec1_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->thursday_lec1_btn, L"thursday_lec1_btn");
 			this->thursday_lec1_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->thursday_lec1_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->thursday_lec1_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->thursday_lec1_btn->ForeColor = System::Drawing::Color::White;
-			this->thursday_lec1_btn->Location = System::Drawing::Point(4, 256);
-			this->thursday_lec1_btn->Margin = System::Windows::Forms::Padding(4);
 			this->thursday_lec1_btn->Name = L"thursday_lec1_btn";
-			this->thursday_lec1_btn->Size = System::Drawing::Size(95, 58);
-			this->thursday_lec1_btn->TabIndex = 53;
-			this->thursday_lec1_btn->Text = L"Thursday Lec 1";
 			this->thursday_lec1_btn->UseVisualStyleBackColor = false;
-			this->thursday_lec1_btn->Visible = false;
 			this->thursday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec1_btn_Click);
 			// 
 			// thursday_lec2_btn
 			// 
-			this->thursday_lec2_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->thursday_lec2_btn, L"thursday_lec2_btn");
 			this->thursday_lec2_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->thursday_lec2_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->thursday_lec2_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->thursday_lec2_btn->ForeColor = System::Drawing::Color::White;
-			this->thursday_lec2_btn->Location = System::Drawing::Point(107, 256);
-			this->thursday_lec2_btn->Margin = System::Windows::Forms::Padding(4);
 			this->thursday_lec2_btn->Name = L"thursday_lec2_btn";
-			this->thursday_lec2_btn->Size = System::Drawing::Size(95, 58);
-			this->thursday_lec2_btn->TabIndex = 56;
-			this->thursday_lec2_btn->Text = L"Thursday Lec 2";
 			this->thursday_lec2_btn->UseVisualStyleBackColor = false;
-			this->thursday_lec2_btn->Visible = false;
 			this->thursday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec2_btn_Click);
 			// 
 			// thursday_lec3_btn
 			// 
-			this->thursday_lec3_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->thursday_lec3_btn, L"thursday_lec3_btn");
 			this->thursday_lec3_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->thursday_lec3_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->thursday_lec3_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->thursday_lec3_btn->ForeColor = System::Drawing::Color::White;
-			this->thursday_lec3_btn->Location = System::Drawing::Point(210, 256);
-			this->thursday_lec3_btn->Margin = System::Windows::Forms::Padding(4);
 			this->thursday_lec3_btn->Name = L"thursday_lec3_btn";
-			this->thursday_lec3_btn->Size = System::Drawing::Size(95, 58);
-			this->thursday_lec3_btn->TabIndex = 48;
-			this->thursday_lec3_btn->Text = L"Thursday Lec 3";
 			this->thursday_lec3_btn->UseVisualStyleBackColor = false;
-			this->thursday_lec3_btn->Visible = false;
 			this->thursday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec3_btn_Click);
 			// 
 			// thursday_lec4_btn
 			// 
-			this->thursday_lec4_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->thursday_lec4_btn, L"thursday_lec4_btn");
 			this->thursday_lec4_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->thursday_lec4_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->thursday_lec4_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->thursday_lec4_btn->ForeColor = System::Drawing::Color::White;
-			this->thursday_lec4_btn->Location = System::Drawing::Point(313, 256);
-			this->thursday_lec4_btn->Margin = System::Windows::Forms::Padding(4);
 			this->thursday_lec4_btn->Name = L"thursday_lec4_btn";
-			this->thursday_lec4_btn->Size = System::Drawing::Size(95, 58);
-			this->thursday_lec4_btn->TabIndex = 50;
-			this->thursday_lec4_btn->Text = L"Thursday Lec 4";
 			this->thursday_lec4_btn->UseVisualStyleBackColor = false;
-			this->thursday_lec4_btn->Visible = false;
 			this->thursday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec4_btn_Click);
 			// 
 			// thursday_lec5_btn
 			// 
-			this->thursday_lec5_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->thursday_lec5_btn, L"thursday_lec5_btn");
 			this->thursday_lec5_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->thursday_lec5_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->thursday_lec5_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->thursday_lec5_btn->ForeColor = System::Drawing::Color::White;
-			this->thursday_lec5_btn->Location = System::Drawing::Point(416, 256);
-			this->thursday_lec5_btn->Margin = System::Windows::Forms::Padding(4);
 			this->thursday_lec5_btn->Name = L"thursday_lec5_btn";
-			this->thursday_lec5_btn->Size = System::Drawing::Size(95, 58);
-			this->thursday_lec5_btn->TabIndex = 54;
-			this->thursday_lec5_btn->Text = L"Thursday Lec 5";
 			this->thursday_lec5_btn->UseVisualStyleBackColor = false;
-			this->thursday_lec5_btn->Visible = false;
 			this->thursday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec5_btn_Click);
 			// 
 			// thursday_lec6_btn
 			// 
-			this->thursday_lec6_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->thursday_lec6_btn, L"thursday_lec6_btn");
 			this->thursday_lec6_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->thursday_lec6_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->thursday_lec6_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->thursday_lec6_btn->ForeColor = System::Drawing::Color::White;
-			this->thursday_lec6_btn->Location = System::Drawing::Point(519, 256);
-			this->thursday_lec6_btn->Margin = System::Windows::Forms::Padding(4);
 			this->thursday_lec6_btn->Name = L"thursday_lec6_btn";
-			this->thursday_lec6_btn->Size = System::Drawing::Size(95, 58);
-			this->thursday_lec6_btn->TabIndex = 52;
-			this->thursday_lec6_btn->Text = L"Thursday Lec 6";
 			this->thursday_lec6_btn->UseVisualStyleBackColor = false;
-			this->thursday_lec6_btn->Visible = false;
 			this->thursday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec6_btn_Click);
 			// 
 			// thursday_lec7_btn
 			// 
-			this->thursday_lec7_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->thursday_lec7_btn, L"thursday_lec7_btn");
 			this->thursday_lec7_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->thursday_lec7_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->thursday_lec7_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->thursday_lec7_btn->ForeColor = System::Drawing::Color::White;
-			this->thursday_lec7_btn->Location = System::Drawing::Point(622, 256);
-			this->thursday_lec7_btn->Margin = System::Windows::Forms::Padding(4);
 			this->thursday_lec7_btn->Name = L"thursday_lec7_btn";
-			this->thursday_lec7_btn->Size = System::Drawing::Size(95, 58);
-			this->thursday_lec7_btn->TabIndex = 55;
-			this->thursday_lec7_btn->Text = L"Thursday Lec 7";
 			this->thursday_lec7_btn->UseVisualStyleBackColor = false;
-			this->thursday_lec7_btn->Visible = false;
 			this->thursday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec7_btn_Click);
 			// 
 			// thursday_lec8_btn
 			// 
-			this->thursday_lec8_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->thursday_lec8_btn, L"thursday_lec8_btn");
 			this->thursday_lec8_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->thursday_lec8_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->thursday_lec8_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->thursday_lec8_btn->ForeColor = System::Drawing::Color::White;
-			this->thursday_lec8_btn->Location = System::Drawing::Point(725, 256);
-			this->thursday_lec8_btn->Margin = System::Windows::Forms::Padding(4);
 			this->thursday_lec8_btn->Name = L"thursday_lec8_btn";
-			this->thursday_lec8_btn->Size = System::Drawing::Size(95, 58);
-			this->thursday_lec8_btn->TabIndex = 51;
-			this->thursday_lec8_btn->Text = L"Thursday Lec 8";
 			this->thursday_lec8_btn->UseVisualStyleBackColor = false;
-			this->thursday_lec8_btn->Visible = false;
 			this->thursday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec8_btn_Click);
 			// 
 			// thursday_lec9_btn
 			// 
-			this->thursday_lec9_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->thursday_lec9_btn, L"thursday_lec9_btn");
 			this->thursday_lec9_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->thursday_lec9_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->thursday_lec9_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->thursday_lec9_btn->ForeColor = System::Drawing::Color::White;
-			this->thursday_lec9_btn->Location = System::Drawing::Point(828, 256);
-			this->thursday_lec9_btn->Margin = System::Windows::Forms::Padding(4);
 			this->thursday_lec9_btn->Name = L"thursday_lec9_btn";
-			this->thursday_lec9_btn->Size = System::Drawing::Size(104, 58);
-			this->thursday_lec9_btn->TabIndex = 49;
-			this->thursday_lec9_btn->Text = L"Thursday Lec 9";
 			this->thursday_lec9_btn->UseVisualStyleBackColor = false;
-			this->thursday_lec9_btn->Visible = false;
 			this->thursday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec9_btn_Click);
 			// 
 			// friday_lec3_btn
 			// 
-			this->friday_lec3_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->friday_lec3_btn, L"friday_lec3_btn");
 			this->friday_lec3_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->friday_lec3_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->friday_lec3_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->friday_lec3_btn->ForeColor = System::Drawing::Color::White;
-			this->friday_lec3_btn->Location = System::Drawing::Point(210, 336);
-			this->friday_lec3_btn->Margin = System::Windows::Forms::Padding(4);
 			this->friday_lec3_btn->Name = L"friday_lec3_btn";
-			this->friday_lec3_btn->Size = System::Drawing::Size(95, 58);
-			this->friday_lec3_btn->TabIndex = 57;
-			this->friday_lec3_btn->Text = L"Fri Lec 3";
 			this->friday_lec3_btn->UseVisualStyleBackColor = true;
-			this->friday_lec3_btn->Visible = false;
 			this->friday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec3_btn_Click);
 			// 
 			// friday_lec4_btn
 			// 
-			this->friday_lec4_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->friday_lec4_btn, L"friday_lec4_btn");
 			this->friday_lec4_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->friday_lec4_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->friday_lec4_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->friday_lec4_btn->ForeColor = System::Drawing::Color::White;
-			this->friday_lec4_btn->Location = System::Drawing::Point(313, 336);
-			this->friday_lec4_btn->Margin = System::Windows::Forms::Padding(4);
 			this->friday_lec4_btn->Name = L"friday_lec4_btn";
-			this->friday_lec4_btn->Size = System::Drawing::Size(95, 58);
-			this->friday_lec4_btn->TabIndex = 65;
-			this->friday_lec4_btn->Text = L"Fri Lec 4";
 			this->friday_lec4_btn->UseVisualStyleBackColor = true;
-			this->friday_lec4_btn->Visible = false;
 			this->friday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec4_btn_Click);
 			// 
 			// friday_lec5_btn
 			// 
-			this->friday_lec5_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->friday_lec5_btn, L"friday_lec5_btn");
 			this->friday_lec5_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->friday_lec5_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->friday_lec5_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->friday_lec5_btn->ForeColor = System::Drawing::Color::White;
-			this->friday_lec5_btn->Location = System::Drawing::Point(416, 336);
-			this->friday_lec5_btn->Margin = System::Windows::Forms::Padding(4);
 			this->friday_lec5_btn->Name = L"friday_lec5_btn";
-			this->friday_lec5_btn->Size = System::Drawing::Size(95, 58);
-			this->friday_lec5_btn->TabIndex = 58;
-			this->friday_lec5_btn->Text = L"Fri Lec 5";
 			this->friday_lec5_btn->UseVisualStyleBackColor = true;
-			this->friday_lec5_btn->Visible = false;
 			this->friday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec5_btn_Click);
 			// 
 			// friday_lec6_btn
 			// 
-			this->friday_lec6_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->friday_lec6_btn, L"friday_lec6_btn");
 			this->friday_lec6_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->friday_lec6_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->friday_lec6_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->friday_lec6_btn->ForeColor = System::Drawing::Color::White;
-			this->friday_lec6_btn->Location = System::Drawing::Point(519, 336);
-			this->friday_lec6_btn->Margin = System::Windows::Forms::Padding(4);
 			this->friday_lec6_btn->Name = L"friday_lec6_btn";
-			this->friday_lec6_btn->Size = System::Drawing::Size(95, 58);
-			this->friday_lec6_btn->TabIndex = 60;
-			this->friday_lec6_btn->Text = L"Fri Lec 6";
 			this->friday_lec6_btn->UseVisualStyleBackColor = true;
-			this->friday_lec6_btn->Visible = false;
 			this->friday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec6_btn_Click);
 			// 
 			// friday_lec7_btn
 			// 
-			this->friday_lec7_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->friday_lec7_btn, L"friday_lec7_btn");
 			this->friday_lec7_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->friday_lec7_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->friday_lec7_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->friday_lec7_btn->ForeColor = System::Drawing::Color::White;
-			this->friday_lec7_btn->Location = System::Drawing::Point(622, 336);
-			this->friday_lec7_btn->Margin = System::Windows::Forms::Padding(4);
 			this->friday_lec7_btn->Name = L"friday_lec7_btn";
-			this->friday_lec7_btn->Size = System::Drawing::Size(95, 58);
-			this->friday_lec7_btn->TabIndex = 63;
-			this->friday_lec7_btn->Text = L"Fri Lec 7";
 			this->friday_lec7_btn->UseVisualStyleBackColor = true;
-			this->friday_lec7_btn->Visible = false;
 			this->friday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec7_btn_Click);
 			// 
 			// friday_lec8_btn
 			// 
-			this->friday_lec8_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->friday_lec8_btn, L"friday_lec8_btn");
 			this->friday_lec8_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->friday_lec8_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->friday_lec8_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->friday_lec8_btn->ForeColor = System::Drawing::Color::White;
-			this->friday_lec8_btn->Location = System::Drawing::Point(725, 336);
-			this->friday_lec8_btn->Margin = System::Windows::Forms::Padding(4);
 			this->friday_lec8_btn->Name = L"friday_lec8_btn";
-			this->friday_lec8_btn->Size = System::Drawing::Size(95, 58);
-			this->friday_lec8_btn->TabIndex = 66;
-			this->friday_lec8_btn->Text = L"Fri Lec 8";
 			this->friday_lec8_btn->UseVisualStyleBackColor = true;
-			this->friday_lec8_btn->Visible = false;
 			this->friday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec8_btn_Click);
 			// 
 			// friday_lec9_btn
 			// 
-			this->friday_lec9_btn->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->friday_lec9_btn, L"friday_lec9_btn");
 			this->friday_lec9_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
 				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
-			this->friday_lec9_btn->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->friday_lec9_btn->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold));
 			this->friday_lec9_btn->ForeColor = System::Drawing::Color::White;
-			this->friday_lec9_btn->Location = System::Drawing::Point(828, 336);
-			this->friday_lec9_btn->Margin = System::Windows::Forms::Padding(4);
 			this->friday_lec9_btn->Name = L"friday_lec9_btn";
-			this->friday_lec9_btn->Size = System::Drawing::Size(104, 58);
-			this->friday_lec9_btn->TabIndex = 64;
-			this->friday_lec9_btn->Text = L"Fri Lec 9";
 			this->friday_lec9_btn->UseVisualStyleBackColor = true;
-			this->friday_lec9_btn->Visible = false;
 			this->friday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec9_btn_Click);
 			// 
 			// tableLayoutPanel4
 			// 
-			this->tableLayoutPanel4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
+			resources->ApplyResources(this->tableLayoutPanel4, L"tableLayoutPanel4");
 			this->tableLayoutPanel4->BackColor = System::Drawing::Color::Transparent;
-			this->tableLayoutPanel4->ColumnCount = 4;
-			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				35)));
-			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				15)));
-			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				35)));
-			this->tableLayoutPanel4->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				15)));
 			this->tableLayoutPanel4->Controls->Add(this->textBox2, 0, 0);
 			this->tableLayoutPanel4->Controls->Add(this->read_file_btn, 3, 0);
 			this->tableLayoutPanel4->Controls->Add(this->choose_excel_file_btn, 1, 0);
 			this->tableLayoutPanel4->Controls->Add(this->textBox1, 2, 0);
-			this->tableLayoutPanel4->Location = System::Drawing::Point(20, 576);
 			this->tableLayoutPanel4->Name = L"tableLayoutPanel4";
-			this->tableLayoutPanel4->RowCount = 1;
-			this->tableLayoutPanel4->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 100)));
-			this->tableLayoutPanel4->Size = System::Drawing::Size(1087, 69);
-			this->tableLayoutPanel4->TabIndex = 82;
 			// 
 			// github_link_label
 			// 
-			this->github_link_label->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-			this->github_link_label->AutoSize = true;
+			resources->ApplyResources(this->github_link_label, L"github_link_label");
 			this->github_link_label->BackColor = System::Drawing::Color::Transparent;
 			this->github_link_label->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->github_link_label->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-			this->github_link_label->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 19.8F, System::Drawing::FontStyle::Regular,
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->github_link_label->ForeColor = System::Drawing::Color::Transparent;
-			this->github_link_label->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"github_link_label.Image")));
-			this->github_link_label->Location = System::Drawing::Point(1092, 3);
 			this->github_link_label->Name = L"github_link_label";
-			this->github_link_label->Size = System::Drawing::Size(44, 38);
-			this->github_link_label->TabIndex = 83;
-			this->github_link_label->Text = L"   ";
 			this->github_link_label->Click += gcnew System::EventHandler(this, &Main_Ui::github_link_label_Click);
 			// 
 			// Main_Ui
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(34)), static_cast<System::Int32>(static_cast<System::Byte>(36)),
 				static_cast<System::Int32>(static_cast<System::Byte>(49)));
-			this->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"$this.BackgroundImage")));
-			this->ClientSize = System::Drawing::Size(1134, 657);
 			this->Controls->Add(this->github_link_label);
 			this->Controls->Add(this->tableLayoutPanel4);
 			this->Controls->Add(this->tableLayoutPanel2);
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Controls->Add(this->tableLayoutPanel6);
-			this->Controls->Add(this->label6);
 			this->Controls->Add(this->tableLayoutPanel5);
 			this->Controls->Add(this->tableLayoutPanel3);
-			this->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 7.8F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
 			this->ForeColor = System::Drawing::SystemColors::ButtonFace;
-			this->Icon = (cli::safe_cast<System::Drawing::Icon^>(resources->GetObject(L"$this.Icon")));
-			this->Margin = System::Windows::Forms::Padding(4);
+			this->HelpButton = true;
 			this->Name = L"Main_Ui";
-			this->Text = L"Time Table Linker";
 			this->Load += gcnew System::EventHandler(this, &Main_Ui::Main_Ui_Load);
 			this->tableLayoutPanel3->ResumeLayout(false);
 			this->tableLayoutPanel3->PerformLayout();
@@ -3296,9 +2583,12 @@ private: System::Windows::Forms::Label^ github_link_label;
 		System::Void Main_Ui_Load(System::Object ^ sender, System::EventArgs ^ e)
 		{
 		}
-private: System::Void github_link_label_Click(System::Object^ sender, System::EventArgs^ e) {
-	std::string githublink = "https://github.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/tree/master";
-	system(("start " + githublink).c_str());
-}
-};
+
+	private:
+		System::Void github_link_label_Click(System::Object ^ sender, System::EventArgs ^ e)
+		{
+			std::string githublink = "https://github.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/tree/master";
+			system(("start " + githublink).c_str());
+		}
+	};
 }

@@ -78,9 +78,12 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\libxl-3.9.4.3\include_cpp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>libxl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <EntryPointSymbol>main</EntryPointSymbol>
+      <AdditionalLibraryDirectories>C:\libxl-3.9.4.3\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -130,6 +133,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Main_Ui.en.resx">
+      <DependentUpon>Main_Ui.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Ui.prs.resx">
+      <DependentUpon>Main_Ui.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main_Ui.resx">
       <DependentUpon>Main_Ui.h</DependentUpon>
     </EmbeddedResource>

@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Time_Table_Linker_Project", "Time_Table_Linker_Project.vcxproj", "{BE556118-F220-4235-A581-BAF427696F78}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Time Table Linker", "..\Time Table Linker\Time Table Linker.vdproj", "{87D6048F-8A08-4572-B109-6604E74B50F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,10 @@ Global
 		{BE556118-F220-4235-A581-BAF427696F78}.Release|x64.Build.0 = Release|x64
 		{BE556118-F220-4235-A581-BAF427696F78}.Release|x86.ActiveCfg = Release|Win32
 		{BE556118-F220-4235-A581-BAF427696F78}.Release|x86.Build.0 = Release|Win32
+		{87D6048F-8A08-4572-B109-6604E74B50F2}.Debug|x64.ActiveCfg = Debug
+		{87D6048F-8A08-4572-B109-6604E74B50F2}.Debug|x86.ActiveCfg = Debug
+		{87D6048F-8A08-4572-B109-6604E74B50F2}.Release|x64.ActiveCfg = Release
+		{87D6048F-8A08-4572-B109-6604E74B50F2}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
