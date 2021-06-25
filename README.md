@@ -24,9 +24,10 @@ and then user simply have to click on that lecture's button and he will be redir
 ## Screenshots
 
 ![Main Screen]()
-![Upload File]()
+![Choose File]()
 ![Read File]()
-![Join Lecture]()
+![Choose Lecture]()
+![Redirects to Lecture's Link]()
 
 ## Demo
 
