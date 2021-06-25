@@ -1,4 +1,4 @@
-![Logo](https://raw.githubusercontent.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/master/Assets/timetable_512px.png)
+![Logo](https://raw.githubusercontent.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/master/Assets/timetable_64px.png)
 
 # Time Table Linker
 
