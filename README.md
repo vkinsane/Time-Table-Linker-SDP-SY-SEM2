@@ -40,7 +40,8 @@ _5.It will take you to the lecture's link_
 
 ## Demo
 
-![GIF from my site]()
+_Working of the application_
+![Working of the Application](https://github.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/blob/master/Assets/AppWorking/TimeTableLinker1.5x.gif)
 
 ## Installation
 
