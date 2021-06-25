@@ -23,6 +23,7 @@ and then user simply have to click on that lecture's button and he will be redir
 
 ## Screenshots
 
+_Main Screen_
 ![Main Screen](https://raw.githubusercontent.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/master/Assets/AppWorking/MainScreen.PNG)
 ![Choose File](https://raw.githubusercontent.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/master/Assets/AppWorking/ChooseFile.PNG)
 ![Read File](https://raw.githubusercontent.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/master/Assets/AppWorking/ReadFile.PNG)
