@@ -23,11 +23,11 @@ and then user simply have to click on that lecture's button and he will be redir
 
 ## Screenshots
 
-![Main Screen]()
-![Choose File]()
-![Read File]()
-![Choose Lecture]()
-![Redirects to Lecture's Link]()
+![Main Screen](https://raw.githubusercontent.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/master/Assets/AppWorking/MainScreen.PNG)
+![Choose File](https://raw.githubusercontent.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/master/Assets/AppWorking/ChooseFile.PNG)
+![Read File](https://raw.githubusercontent.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/master/Assets/AppWorking/ReadFile.PNG)
+![Choose Lecture](https://raw.githubusercontent.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/master/Assets/AppWorking/ChooseLecture.png)
+![Redirects to Lecture's Link](https://raw.githubusercontent.com/vkinsane/Time-Table-Linker-SDP-SY-SEM2/master/Assets/AppWorking/ToLectLink.PNG)
 
 ## Demo
 
