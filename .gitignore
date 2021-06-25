@@ -16,8 +16,10 @@
 # Mono auto generated files
 mono_crash.*
 
-# My Folders
+# My Folders and Files
 Mini_Backups/
+ExcelFiles/PreviousTimeTables
+.vscode/
 
 # Build results
 [Dd]ebug/
