@@ -333,7 +333,7 @@ public
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Main_Ui::typeid));
+			System::ComponentModel::ComponentResourceManager ^ resources = (gcnew System::ComponentModel::ComponentResourceManager(Main_Ui::typeid));
 			this->choose_excel_file_btn = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
@@ -415,229 +415,229 @@ public
 			this->tableLayoutPanel2->SuspendLayout();
 			this->tableLayoutPanel4->SuspendLayout();
 			this->SuspendLayout();
-			// 
+			//
 			// choose_excel_file_btn
-			// 
+			//
 			resources->ApplyResources(this->choose_excel_file_btn, L"choose_excel_file_btn");
 			this->choose_excel_file_btn->BackColor = System::Drawing::Color::Transparent;
 			this->choose_excel_file_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->choose_excel_file_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																											   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->choose_excel_file_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->choose_excel_file_btn->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->choose_excel_file_btn->Name = L"choose_excel_file_btn";
 			this->choose_excel_file_btn->UseVisualStyleBackColor = false;
 			this->choose_excel_file_btn->Click += gcnew System::EventHandler(this, &Main_Ui::choose_excel_file_btn_Click);
-			// 
+			//
 			// textBox1
-			// 
+			//
 			resources->ApplyResources(this->textBox1, L"textBox1");
 			this->textBox1->BackColor = System::Drawing::Color::White;
 			this->textBox1->ForeColor = System::Drawing::Color::Black;
 			this->textBox1->Name = L"textBox1";
-			// 
+			//
 			// openFileDialog1
-			// 
+			//
 			this->openFileDialog1->FileName = L"openFileDialog1";
-			// 
+			//
 			// read_file_btn
-			// 
+			//
 			resources->ApplyResources(this->read_file_btn, L"read_file_btn");
 			this->read_file_btn->BackColor = System::Drawing::Color::Transparent;
 			this->read_file_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->read_file_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																									   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->read_file_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->read_file_btn->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->read_file_btn->Name = L"read_file_btn";
 			this->read_file_btn->UseVisualStyleBackColor = false;
 			this->read_file_btn->Click += gcnew System::EventHandler(this, &Main_Ui::read_file_btn_Click);
-			// 
+			//
 			// textBox2
-			// 
+			//
 			resources->ApplyResources(this->textBox2, L"textBox2");
 			this->textBox2->BackColor = System::Drawing::Color::White;
 			this->textBox2->ForeColor = System::Drawing::Color::Black;
 			this->textBox2->Name = L"textBox2";
-			// 
+			//
 			// monday_lec1_btn
-			// 
+			//
 			resources->ApplyResources(this->monday_lec1_btn, L"monday_lec1_btn");
 			this->monday_lec1_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec1_btn->ForeColor = System::Drawing::Color::White;
 			this->monday_lec1_btn->Name = L"monday_lec1_btn";
 			this->monday_lec1_btn->UseVisualStyleBackColor = false;
 			this->monday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec1_btn_Click);
-			// 
+			//
 			// tuesday_lec1_btn
-			// 
+			//
 			resources->ApplyResources(this->tuesday_lec1_btn, L"tuesday_lec1_btn");
 			this->tuesday_lec1_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec1_btn->ForeColor = System::Drawing::Color::White;
 			this->tuesday_lec1_btn->Name = L"tuesday_lec1_btn";
 			this->tuesday_lec1_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec1_btn_Click);
-			// 
+			//
 			// monday_lec2_btn
-			// 
+			//
 			resources->ApplyResources(this->monday_lec2_btn, L"monday_lec2_btn");
 			this->monday_lec2_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec2_btn->ForeColor = System::Drawing::Color::White;
 			this->monday_lec2_btn->Name = L"monday_lec2_btn";
 			this->monday_lec2_btn->UseVisualStyleBackColor = false;
 			this->monday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec2_btn_Click);
-			// 
+			//
 			// monday_lec3_btn
-			// 
+			//
 			resources->ApplyResources(this->monday_lec3_btn, L"monday_lec3_btn");
 			this->monday_lec3_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec3_btn->ForeColor = System::Drawing::Color::White;
 			this->monday_lec3_btn->Name = L"monday_lec3_btn";
 			this->monday_lec3_btn->UseVisualStyleBackColor = false;
 			this->monday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec3_btn_Click);
-			// 
+			//
 			// monday_lec4_btn
-			// 
+			//
 			resources->ApplyResources(this->monday_lec4_btn, L"monday_lec4_btn");
 			this->monday_lec4_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec4_btn->ForeColor = System::Drawing::Color::White;
 			this->monday_lec4_btn->Name = L"monday_lec4_btn";
 			this->monday_lec4_btn->UseVisualStyleBackColor = false;
 			this->monday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec4_btn_Click);
-			// 
+			//
 			// monday_lec5_btn
-			// 
+			//
 			resources->ApplyResources(this->monday_lec5_btn, L"monday_lec5_btn");
 			this->monday_lec5_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec5_btn->ForeColor = System::Drawing::Color::White;
 			this->monday_lec5_btn->Name = L"monday_lec5_btn";
 			this->monday_lec5_btn->UseVisualStyleBackColor = false;
 			this->monday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec5_btn_Click);
-			// 
+			//
 			// monday_lec6_btn
-			// 
+			//
 			resources->ApplyResources(this->monday_lec6_btn, L"monday_lec6_btn");
 			this->monday_lec6_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec6_btn->ForeColor = System::Drawing::Color::White;
 			this->monday_lec6_btn->Name = L"monday_lec6_btn";
 			this->monday_lec6_btn->UseVisualStyleBackColor = false;
 			this->monday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec6_btn_Click);
-			// 
+			//
 			// friday_lec1_btn
-			// 
+			//
 			resources->ApplyResources(this->friday_lec1_btn, L"friday_lec1_btn");
 			this->friday_lec1_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec1_btn->ForeColor = System::Drawing::Color::White;
 			this->friday_lec1_btn->Name = L"friday_lec1_btn";
 			this->friday_lec1_btn->UseVisualStyleBackColor = true;
 			this->friday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec1_btn_Click);
-			// 
+			//
 			// friday_lec2_btn
-			// 
+			//
 			resources->ApplyResources(this->friday_lec2_btn, L"friday_lec2_btn");
 			this->friday_lec2_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec2_btn->ForeColor = System::Drawing::Color::White;
 			this->friday_lec2_btn->Name = L"friday_lec2_btn";
 			this->friday_lec2_btn->UseVisualStyleBackColor = true;
 			this->friday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec2_btn_Click);
-			// 
+			//
 			// time_1_label
-			// 
+			//
 			resources->ApplyResources(this->time_1_label, L"time_1_label");
 			this->time_1_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_1_label->Name = L"time_1_label";
-			// 
+			//
 			// monday_lec7_btn
-			// 
+			//
 			resources->ApplyResources(this->monday_lec7_btn, L"monday_lec7_btn");
 			this->monday_lec7_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec7_btn->ForeColor = System::Drawing::Color::White;
 			this->monday_lec7_btn->Name = L"monday_lec7_btn";
 			this->monday_lec7_btn->UseVisualStyleBackColor = false;
 			this->monday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec7_btn_Click);
-			// 
+			//
 			// monday_lec8_btn
-			// 
+			//
 			resources->ApplyResources(this->monday_lec8_btn, L"monday_lec8_btn");
 			this->monday_lec8_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec8_btn->ForeColor = System::Drawing::Color::White;
 			this->monday_lec8_btn->Name = L"monday_lec8_btn";
 			this->monday_lec8_btn->UseVisualStyleBackColor = false;
 			this->monday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec8_btn_Click);
-			// 
+			//
 			// monday_lec9_btn
-			// 
+			//
 			resources->ApplyResources(this->monday_lec9_btn, L"monday_lec9_btn");
 			this->monday_lec9_btn->BackColor = System::Drawing::Color::Transparent;
 			this->monday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->monday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->monday_lec9_btn->ForeColor = System::Drawing::Color::White;
 			this->monday_lec9_btn->Name = L"monday_lec9_btn";
 			this->monday_lec9_btn->UseVisualStyleBackColor = false;
 			this->monday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::monday_lec9_btn_Click);
-			// 
+			//
 			// tableLayoutPanel3
-			// 
+			//
 			resources->ApplyResources(this->tableLayoutPanel3, L"tableLayoutPanel3");
 			this->tableLayoutPanel3->BackColor = System::Drawing::Color::Transparent;
 			this->tableLayoutPanel3->Controls->Add(this->create_quick_meet_btn, 1, 0);
 			this->tableLayoutPanel3->Controls->Add(this->textBox3, 0, 0);
 			this->tableLayoutPanel3->Name = L"tableLayoutPanel3";
-			// 
+			//
 			// create_quick_meet_btn
-			// 
+			//
 			resources->ApplyResources(this->create_quick_meet_btn, L"create_quick_meet_btn");
 			this->create_quick_meet_btn->BackColor = System::Drawing::Color::Transparent;
 			this->create_quick_meet_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->create_quick_meet_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																											   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->create_quick_meet_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->create_quick_meet_btn->ForeColor = System::Drawing::SystemColors::ButtonHighlight;
 			this->create_quick_meet_btn->Name = L"create_quick_meet_btn";
 			this->create_quick_meet_btn->UseVisualStyleBackColor = false;
 			this->create_quick_meet_btn->Click += gcnew System::EventHandler(this, &Main_Ui::create_quick_meet_btn_Click);
-			// 
+			//
 			// textBox3
-			// 
+			//
 			resources->ApplyResources(this->textBox3, L"textBox3");
 			this->textBox3->Name = L"textBox3";
-			// 
+			//
 			// tableLayoutPanel5
-			// 
+			//
 			resources->ApplyResources(this->tableLayoutPanel5, L"tableLayoutPanel5");
 			this->tableLayoutPanel5->BackColor = System::Drawing::Color::Transparent;
 			this->tableLayoutPanel5->Controls->Add(this->time_8_label, 7, 0);
@@ -650,70 +650,70 @@ public
 			this->tableLayoutPanel5->Controls->Add(this->time_9_label, 8, 0);
 			this->tableLayoutPanel5->Controls->Add(this->time_1_label, 0, 0);
 			this->tableLayoutPanel5->Name = L"tableLayoutPanel5";
-			// 
+			//
 			// time_8_label
-			// 
+			//
 			resources->ApplyResources(this->time_8_label, L"time_8_label");
 			this->time_8_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_8_label->Name = L"time_8_label";
-			// 
+			//
 			// time_7_label
-			// 
+			//
 			resources->ApplyResources(this->time_7_label, L"time_7_label");
 			this->time_7_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_7_label->Name = L"time_7_label";
-			// 
+			//
 			// time_6_label
-			// 
+			//
 			resources->ApplyResources(this->time_6_label, L"time_6_label");
 			this->time_6_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_6_label->Name = L"time_6_label";
-			// 
+			//
 			// time_5_label
-			// 
+			//
 			resources->ApplyResources(this->time_5_label, L"time_5_label");
 			this->time_5_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_5_label->Name = L"time_5_label";
-			// 
+			//
 			// time_4_label
-			// 
+			//
 			resources->ApplyResources(this->time_4_label, L"time_4_label");
 			this->time_4_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_4_label->Name = L"time_4_label";
-			// 
+			//
 			// time_3_label
-			// 
+			//
 			resources->ApplyResources(this->time_3_label, L"time_3_label");
 			this->time_3_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_3_label->Name = L"time_3_label";
-			// 
+			//
 			// time_2_label
-			// 
+			//
 			resources->ApplyResources(this->time_2_label, L"time_2_label");
 			this->time_2_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_2_label->Name = L"time_2_label";
-			// 
+			//
 			// time_9_label
-			// 
+			//
 			resources->ApplyResources(this->time_9_label, L"time_9_label");
 			this->time_9_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_9_label->Name = L"time_9_label";
-			// 
+			//
 			// time_label
-			// 
+			//
 			resources->ApplyResources(this->time_label, L"time_label");
 			this->time_label->BackColor = System::Drawing::Color::Transparent;
 			this->time_label->Name = L"time_label";
-			// 
+			//
 			// tableLayoutPanel6
-			// 
+			//
 			resources->ApplyResources(this->tableLayoutPanel6, L"tableLayoutPanel6");
 			this->tableLayoutPanel6->BackColor = System::Drawing::Color::Transparent;
 			this->tableLayoutPanel6->Controls->Add(this->time_label, 0, 0);
 			this->tableLayoutPanel6->Name = L"tableLayoutPanel6";
-			// 
+			//
 			// tableLayoutPanel1
-			// 
+			//
 			resources->ApplyResources(this->tableLayoutPanel1, L"tableLayoutPanel1");
 			this->tableLayoutPanel1->BackColor = System::Drawing::Color::Transparent;
 			this->tableLayoutPanel1->Controls->Add(this->label1, 0, 0);
@@ -722,39 +722,39 @@ public
 			this->tableLayoutPanel1->Controls->Add(this->label4, 0, 3);
 			this->tableLayoutPanel1->Controls->Add(this->label8, 0, 4);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
-			// 
+			//
 			// label1
-			// 
+			//
 			resources->ApplyResources(this->label1, L"label1");
 			this->label1->BackColor = System::Drawing::Color::Transparent;
 			this->label1->Name = L"label1";
-			// 
+			//
 			// label2
-			// 
+			//
 			resources->ApplyResources(this->label2, L"label2");
 			this->label2->BackColor = System::Drawing::Color::Transparent;
 			this->label2->Name = L"label2";
-			// 
+			//
 			// label3
-			// 
+			//
 			resources->ApplyResources(this->label3, L"label3");
 			this->label3->BackColor = System::Drawing::Color::Transparent;
 			this->label3->Name = L"label3";
-			// 
+			//
 			// label4
-			// 
+			//
 			resources->ApplyResources(this->label4, L"label4");
 			this->label4->BackColor = System::Drawing::Color::Transparent;
 			this->label4->Name = L"label4";
-			// 
+			//
 			// label8
-			// 
+			//
 			resources->ApplyResources(this->label8, L"label8");
 			this->label8->BackColor = System::Drawing::Color::Transparent;
 			this->label8->Name = L"label8";
-			// 
+			//
 			// tableLayoutPanel2
-			// 
+			//
 			resources->ApplyResources(this->tableLayoutPanel2, L"tableLayoutPanel2");
 			this->tableLayoutPanel2->BackColor = System::Drawing::Color::Transparent;
 			this->tableLayoutPanel2->Controls->Add(this->monday_lec1_btn, 0, 0);
@@ -804,405 +804,405 @@ public
 			this->tableLayoutPanel2->Controls->Add(this->friday_lec9_btn, 8, 4);
 			this->tableLayoutPanel2->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->tableLayoutPanel2->Name = L"tableLayoutPanel2";
-			// 
+			//
 			// wednesday_lec1_btn
-			// 
+			//
 			resources->ApplyResources(this->wednesday_lec1_btn, L"wednesday_lec1_btn");
 			this->wednesday_lec1_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec1_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec1_btn->Name = L"wednesday_lec1_btn";
 			this->wednesday_lec1_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec1_btn_Click);
-			// 
+			//
 			// tuesday_lec3_btn
-			// 
+			//
 			resources->ApplyResources(this->tuesday_lec3_btn, L"tuesday_lec3_btn");
 			this->tuesday_lec3_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec3_btn->ForeColor = System::Drawing::Color::White;
 			this->tuesday_lec3_btn->Name = L"tuesday_lec3_btn";
 			this->tuesday_lec3_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec3_btn_Click);
-			// 
+			//
 			// tuesday_lec4_btn
-			// 
+			//
 			resources->ApplyResources(this->tuesday_lec4_btn, L"tuesday_lec4_btn");
 			this->tuesday_lec4_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec4_btn->ForeColor = System::Drawing::Color::White;
 			this->tuesday_lec4_btn->Name = L"tuesday_lec4_btn";
 			this->tuesday_lec4_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec4_btn_Click);
-			// 
+			//
 			// tuesday_lec5_btn
-			// 
+			//
 			resources->ApplyResources(this->tuesday_lec5_btn, L"tuesday_lec5_btn");
 			this->tuesday_lec5_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec5_btn->ForeColor = System::Drawing::Color::White;
 			this->tuesday_lec5_btn->Name = L"tuesday_lec5_btn";
 			this->tuesday_lec5_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec5_btn_Click);
-			// 
+			//
 			// tuesday_lec6_btn
-			// 
+			//
 			resources->ApplyResources(this->tuesday_lec6_btn, L"tuesday_lec6_btn");
 			this->tuesday_lec6_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec6_btn->ForeColor = System::Drawing::Color::White;
 			this->tuesday_lec6_btn->Name = L"tuesday_lec6_btn";
 			this->tuesday_lec6_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec6_btn_Click);
-			// 
+			//
 			// tuesday_lec7_btn
-			// 
+			//
 			resources->ApplyResources(this->tuesday_lec7_btn, L"tuesday_lec7_btn");
 			this->tuesday_lec7_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec7_btn->ForeColor = System::Drawing::Color::White;
 			this->tuesday_lec7_btn->Name = L"tuesday_lec7_btn";
 			this->tuesday_lec7_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec7_btn_Click);
-			// 
+			//
 			// tuesday_lec8_btn
-			// 
+			//
 			resources->ApplyResources(this->tuesday_lec8_btn, L"tuesday_lec8_btn");
 			this->tuesday_lec8_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec8_btn->ForeColor = System::Drawing::Color::White;
 			this->tuesday_lec8_btn->Name = L"tuesday_lec8_btn";
 			this->tuesday_lec8_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec8_btn_Click);
-			// 
+			//
 			// tuesday_lec9_btn
-			// 
+			//
 			resources->ApplyResources(this->tuesday_lec9_btn, L"tuesday_lec9_btn");
 			this->tuesday_lec9_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec9_btn->ForeColor = System::Drawing::Color::White;
 			this->tuesday_lec9_btn->Name = L"tuesday_lec9_btn";
 			this->tuesday_lec9_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec9_btn_Click);
-			// 
+			//
 			// tuesday_lec2_btn
-			// 
+			//
 			resources->ApplyResources(this->tuesday_lec2_btn, L"tuesday_lec2_btn");
 			this->tuesday_lec2_btn->BackColor = System::Drawing::Color::Transparent;
 			this->tuesday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										  static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->tuesday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->tuesday_lec2_btn->ForeColor = System::Drawing::Color::White;
 			this->tuesday_lec2_btn->Name = L"tuesday_lec2_btn";
 			this->tuesday_lec2_btn->UseVisualStyleBackColor = false;
 			this->tuesday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::tuesday_lec2_btn_Click);
-			// 
+			//
 			// wednesday_lec2_btn
-			// 
+			//
 			resources->ApplyResources(this->wednesday_lec2_btn, L"wednesday_lec2_btn");
 			this->wednesday_lec2_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec2_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec2_btn->Name = L"wednesday_lec2_btn";
 			this->wednesday_lec2_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec2_btn_Click);
-			// 
+			//
 			// wednesday_lec3_btn
-			// 
+			//
 			resources->ApplyResources(this->wednesday_lec3_btn, L"wednesday_lec3_btn");
 			this->wednesday_lec3_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec3_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec3_btn->Name = L"wednesday_lec3_btn";
 			this->wednesday_lec3_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec3_btn_Click);
-			// 
+			//
 			// wednesday_lec4_btn
-			// 
+			//
 			resources->ApplyResources(this->wednesday_lec4_btn, L"wednesday_lec4_btn");
 			this->wednesday_lec4_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec4_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec4_btn->Name = L"wednesday_lec4_btn";
 			this->wednesday_lec4_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec4_btn_Click);
-			// 
+			//
 			// wednesday_lec5_btn
-			// 
+			//
 			resources->ApplyResources(this->wednesday_lec5_btn, L"wednesday_lec5_btn");
 			this->wednesday_lec5_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec5_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec5_btn->Name = L"wednesday_lec5_btn";
 			this->wednesday_lec5_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec5_btn_Click);
-			// 
+			//
 			// wednesday_lec6_btn
-			// 
+			//
 			resources->ApplyResources(this->wednesday_lec6_btn, L"wednesday_lec6_btn");
 			this->wednesday_lec6_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec6_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec6_btn->Name = L"wednesday_lec6_btn";
 			this->wednesday_lec6_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec6_btn_Click);
-			// 
+			//
 			// wednesday_lec7_btn
-			// 
+			//
 			resources->ApplyResources(this->wednesday_lec7_btn, L"wednesday_lec7_btn");
 			this->wednesday_lec7_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec7_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec7_btn->Name = L"wednesday_lec7_btn";
 			this->wednesday_lec7_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec7_btn_Click);
-			// 
+			//
 			// wednesday_lec8_btn
-			// 
+			//
 			resources->ApplyResources(this->wednesday_lec8_btn, L"wednesday_lec8_btn");
 			this->wednesday_lec8_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec8_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec8_btn->Name = L"wednesday_lec8_btn";
 			this->wednesday_lec8_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec8_btn_Click);
-			// 
+			//
 			// wednesday_lec9_btn
-			// 
+			//
 			resources->ApplyResources(this->wednesday_lec9_btn, L"wednesday_lec9_btn");
 			this->wednesday_lec9_btn->BackColor = System::Drawing::Color::Transparent;
 			this->wednesday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																											static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->wednesday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->wednesday_lec9_btn->ForeColor = System::Drawing::Color::White;
 			this->wednesday_lec9_btn->Name = L"wednesday_lec9_btn";
 			this->wednesday_lec9_btn->UseVisualStyleBackColor = false;
 			this->wednesday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::wednesday_lec9_btn_Click);
-			// 
+			//
 			// thursday_lec1_btn
-			// 
+			//
 			resources->ApplyResources(this->thursday_lec1_btn, L"thursday_lec1_btn");
 			this->thursday_lec1_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec1_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec1_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec1_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec1_btn->Name = L"thursday_lec1_btn";
 			this->thursday_lec1_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec1_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec1_btn_Click);
-			// 
+			//
 			// thursday_lec2_btn
-			// 
+			//
 			resources->ApplyResources(this->thursday_lec2_btn, L"thursday_lec2_btn");
 			this->thursday_lec2_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec2_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec2_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec2_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec2_btn->Name = L"thursday_lec2_btn";
 			this->thursday_lec2_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec2_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec2_btn_Click);
-			// 
+			//
 			// thursday_lec3_btn
-			// 
+			//
 			resources->ApplyResources(this->thursday_lec3_btn, L"thursday_lec3_btn");
 			this->thursday_lec3_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec3_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec3_btn->Name = L"thursday_lec3_btn";
 			this->thursday_lec3_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec3_btn_Click);
-			// 
+			//
 			// thursday_lec4_btn
-			// 
+			//
 			resources->ApplyResources(this->thursday_lec4_btn, L"thursday_lec4_btn");
 			this->thursday_lec4_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec4_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec4_btn->Name = L"thursday_lec4_btn";
 			this->thursday_lec4_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec4_btn_Click);
-			// 
+			//
 			// thursday_lec5_btn
-			// 
+			//
 			resources->ApplyResources(this->thursday_lec5_btn, L"thursday_lec5_btn");
 			this->thursday_lec5_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec5_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec5_btn->Name = L"thursday_lec5_btn";
 			this->thursday_lec5_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec5_btn_Click);
-			// 
+			//
 			// thursday_lec6_btn
-			// 
+			//
 			resources->ApplyResources(this->thursday_lec6_btn, L"thursday_lec6_btn");
 			this->thursday_lec6_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec6_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec6_btn->Name = L"thursday_lec6_btn";
 			this->thursday_lec6_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec6_btn_Click);
-			// 
+			//
 			// thursday_lec7_btn
-			// 
+			//
 			resources->ApplyResources(this->thursday_lec7_btn, L"thursday_lec7_btn");
 			this->thursday_lec7_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec7_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec7_btn->Name = L"thursday_lec7_btn";
 			this->thursday_lec7_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec7_btn_Click);
-			// 
+			//
 			// thursday_lec8_btn
-			// 
+			//
 			resources->ApplyResources(this->thursday_lec8_btn, L"thursday_lec8_btn");
 			this->thursday_lec8_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec8_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec8_btn->Name = L"thursday_lec8_btn";
 			this->thursday_lec8_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec8_btn_Click);
-			// 
+			//
 			// thursday_lec9_btn
-			// 
+			//
 			resources->ApplyResources(this->thursday_lec9_btn, L"thursday_lec9_btn");
 			this->thursday_lec9_btn->BackColor = System::Drawing::Color::Transparent;
 			this->thursday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										   static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->thursday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->thursday_lec9_btn->ForeColor = System::Drawing::Color::White;
 			this->thursday_lec9_btn->Name = L"thursday_lec9_btn";
 			this->thursday_lec9_btn->UseVisualStyleBackColor = false;
 			this->thursday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::thursday_lec9_btn_Click);
-			// 
+			//
 			// friday_lec3_btn
-			// 
+			//
 			resources->ApplyResources(this->friday_lec3_btn, L"friday_lec3_btn");
 			this->friday_lec3_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec3_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec3_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec3_btn->ForeColor = System::Drawing::Color::White;
 			this->friday_lec3_btn->Name = L"friday_lec3_btn";
 			this->friday_lec3_btn->UseVisualStyleBackColor = true;
 			this->friday_lec3_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec3_btn_Click);
-			// 
+			//
 			// friday_lec4_btn
-			// 
+			//
 			resources->ApplyResources(this->friday_lec4_btn, L"friday_lec4_btn");
 			this->friday_lec4_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec4_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec4_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec4_btn->ForeColor = System::Drawing::Color::White;
 			this->friday_lec4_btn->Name = L"friday_lec4_btn";
 			this->friday_lec4_btn->UseVisualStyleBackColor = true;
 			this->friday_lec4_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec4_btn_Click);
-			// 
+			//
 			// friday_lec5_btn
-			// 
+			//
 			resources->ApplyResources(this->friday_lec5_btn, L"friday_lec5_btn");
 			this->friday_lec5_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec5_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec5_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec5_btn->ForeColor = System::Drawing::Color::White;
 			this->friday_lec5_btn->Name = L"friday_lec5_btn";
 			this->friday_lec5_btn->UseVisualStyleBackColor = true;
 			this->friday_lec5_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec5_btn_Click);
-			// 
+			//
 			// friday_lec6_btn
-			// 
+			//
 			resources->ApplyResources(this->friday_lec6_btn, L"friday_lec6_btn");
 			this->friday_lec6_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec6_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec6_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec6_btn->ForeColor = System::Drawing::Color::White;
 			this->friday_lec6_btn->Name = L"friday_lec6_btn";
 			this->friday_lec6_btn->UseVisualStyleBackColor = true;
 			this->friday_lec6_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec6_btn_Click);
-			// 
+			//
 			// friday_lec7_btn
-			// 
+			//
 			resources->ApplyResources(this->friday_lec7_btn, L"friday_lec7_btn");
 			this->friday_lec7_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec7_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec7_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec7_btn->ForeColor = System::Drawing::Color::White;
 			this->friday_lec7_btn->Name = L"friday_lec7_btn";
 			this->friday_lec7_btn->UseVisualStyleBackColor = true;
 			this->friday_lec7_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec7_btn_Click);
-			// 
+			//
 			// friday_lec8_btn
-			// 
+			//
 			resources->ApplyResources(this->friday_lec8_btn, L"friday_lec8_btn");
 			this->friday_lec8_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec8_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec8_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec8_btn->ForeColor = System::Drawing::Color::White;
 			this->friday_lec8_btn->Name = L"friday_lec8_btn";
 			this->friday_lec8_btn->UseVisualStyleBackColor = true;
 			this->friday_lec8_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec8_btn_Click);
-			// 
+			//
 			// friday_lec9_btn
-			// 
+			//
 			resources->ApplyResources(this->friday_lec9_btn, L"friday_lec9_btn");
 			this->friday_lec9_btn->FlatAppearance->BorderColor = System::Drawing::Color::White;
 			this->friday_lec9_btn->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(64)),
-				static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
+																										 static_cast<System::Int32>(static_cast<System::Byte>(64)), static_cast<System::Int32>(static_cast<System::Byte>(64)));
 			this->friday_lec9_btn->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Black;
 			this->friday_lec9_btn->ForeColor = System::Drawing::Color::White;
 			this->friday_lec9_btn->Name = L"friday_lec9_btn";
 			this->friday_lec9_btn->UseVisualStyleBackColor = true;
 			this->friday_lec9_btn->Click += gcnew System::EventHandler(this, &Main_Ui::friday_lec9_btn_Click);
-			// 
+			//
 			// tableLayoutPanel4
-			// 
+			//
 			resources->ApplyResources(this->tableLayoutPanel4, L"tableLayoutPanel4");
 			this->tableLayoutPanel4->BackColor = System::Drawing::Color::Transparent;
 			this->tableLayoutPanel4->Controls->Add(this->textBox2, 0, 0);
@@ -1210,9 +1210,9 @@ public
 			this->tableLayoutPanel4->Controls->Add(this->choose_excel_file_btn, 1, 0);
 			this->tableLayoutPanel4->Controls->Add(this->textBox1, 2, 0);
 			this->tableLayoutPanel4->Name = L"tableLayoutPanel4";
-			// 
+			//
 			// github_link_label
-			// 
+			//
 			resources->ApplyResources(this->github_link_label, L"github_link_label");
 			this->github_link_label->BackColor = System::Drawing::Color::Transparent;
 			this->github_link_label->Cursor = System::Windows::Forms::Cursors::Hand;
@@ -1220,13 +1220,13 @@ public
 			this->github_link_label->ForeColor = System::Drawing::Color::Transparent;
 			this->github_link_label->Name = L"github_link_label";
 			this->github_link_label->Click += gcnew System::EventHandler(this, &Main_Ui::github_link_label_Click);
-			// 
+			//
 			// Main_Ui
-			// 
+			//
 			resources->ApplyResources(this, L"$this");
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(34)), static_cast<System::Int32>(static_cast<System::Byte>(36)),
-				static_cast<System::Int32>(static_cast<System::Byte>(49)));
+															   static_cast<System::Int32>(static_cast<System::Byte>(49)));
 			this->Controls->Add(this->github_link_label);
 			this->Controls->Add(this->tableLayoutPanel4);
 			this->Controls->Add(this->tableLayoutPanel2);
@@ -1251,7 +1251,6 @@ public
 			this->tableLayoutPanel4->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
-
 		}
 #pragma endregion
 		//Initializations

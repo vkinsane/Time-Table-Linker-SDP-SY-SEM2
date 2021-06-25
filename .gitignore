@@ -20,6 +20,7 @@ mono_crash.*
 Mini_Backups/
 ExcelFiles/PreviousTimeTables
 .vscode/
+Assets/Videos/
 
 # Build results
 [Dd]ebug/

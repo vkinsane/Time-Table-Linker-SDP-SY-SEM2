@@ -47,9 +47,9 @@ _Working of the application_
 
 Install my-project from these download links
 
-For 32-bit : [Link for 32 bit](https://github.com/vkinsane)
+For 32-bit : [Link for 32 bit](https://drive.google.com/uc?id=1hxsgA5wGAeQbytD1UCYd0a0vRW9H1MRd&export=download)
 
-For 64-bit : [Link for 64 bit](https://github.com/vkinsane)
+For 64-bit : [Link for 64 bit](https://drive.google.com/uc?id=1_T2F2EYzMxb3h-EjJ_Jt8cHYB_EZHh7a&export=download)
 
 ## Support
 
