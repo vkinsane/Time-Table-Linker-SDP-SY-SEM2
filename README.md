@@ -68,7 +68,7 @@ For support, email vishukblog000@gmail.com
 In the beginning i decided to use Qt Creator for making the user interface for the application and Aspose Cells for C++ library for processing the excel file according to my need, but unfortunately Qt creator was not getting installed properly in my pc i tried almost 8 to 10 times reinstalling it and searched for 1 week about the error which it was giving and didn't got any solution 😔.
 Then i switched to Visual Studio Forms for the making user interface and started implementing the Aspose library in my CLR Project but eventually i found that this library does not work with CLR Project in Visual Studio (I wrote to the owners of this library they told me that they have found that there are some ambiguity issues of a class so you cannot use this library in CLR projec) so i then switched to libxl library.
 Now this library doesn't allow us to access more than 300 cells in excel file in free version (which i have used).
-So my application will show you only the time table of a specific day if today is monday it will show the schedule for monday and if today is saturday it wil show for saturday.
+So my application will show you only the time table of a specific day if today is monday it will show the schedule for monday and if today is saturday it will show for saturday.
 
 ## Acknowledgements
 
